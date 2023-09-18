@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mb-4 text-center md:max-w-2xl md:w-full lg:w-3/4 xl:w-1/2">
+      <div className="mb-2 text-center md:max-w-2xl md:w-full lg:w-3/4 xl:w-1/2 text-sm">
         <p>&copy; 2023 Bernardo Santo Tirso. Todos os direitos reservados. </p>
       </div>
     </main>
