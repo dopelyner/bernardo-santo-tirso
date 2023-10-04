@@ -6,3 +6,8 @@ export const socialLinks = [
     }
 ]
 
+export const presentation = [
+    {
+        videoURL: "https://www.youtube.com/watch?v=wWgIAphfn2U"
+    }
+]

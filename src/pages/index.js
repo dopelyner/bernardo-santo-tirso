@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
-import AnimatedText from '@/components/AnimatedText'
 import TransitionEffect from '@/components/TransitionEffect'
+import ReactPlayer from 'react-player'
+import { presentation } from '@/constants'
 
 export default function Home() {
+
+  const { videoURL } = presentation[0]
 
   return (
     <>
@@ -14,16 +17,18 @@ export default function Home() {
 
       {/* <TransitionEffect /> */}
 
-      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
+      <main className='w-full min-h-screen flex items-center text-dark dark:text-light'>
         <Layout className='pt-0 p-16 sm:pt-8'>
-          <div className='flex items-center justify-between w-full lg:flex-col'>
-            <AnimatedText
-              text="Home"
-              className='mb-16 lg:p-8 xs:text-7xl xs:p-8'
+
+          <div className='w-full flex items-center justify-center md:w-[600px] sm:w-auto '>
+            <ReactPlayer
+              url={videoURL}
+              width={1280}
+              height={600}
             />
           </div>
-        </Layout>
 
+        </Layout>
       </main>
     </>
   )
