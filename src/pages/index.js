@@ -24,7 +24,7 @@ export default function Home() {
             <ReactPlayer
               url={videoURL}
               width={1280}
-              height={600}
+              height={720}
             />
           </div>
 
