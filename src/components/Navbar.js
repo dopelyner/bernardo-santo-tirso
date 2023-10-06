@@ -56,7 +56,7 @@ const Navbar = () => {
     const { instagramURL, facebookURL } = socialLinks[0]
 
     return (
-        <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
+        <header className='w-full px-32 py-16 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
 
             <button className='flex-col justify-center items-center hidden lg:flex group' onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light group-hover:bg-primary group-hover:dark:bg-primaryDark transition-all duration ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <span className={`bg-dark dark:bg-light group-hover:bg-primary group-hover:dark:bg-primaryDark transition-all duration ease-out block h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </button>
 
-            <div className='w-full flex justify-between items-center lg:hidden'>
+            <div className='w-full flex justify-between items-center lg:hidden text-2xl'>
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/works" title="Trabalhos" className='ml-4' />
@@ -114,7 +114,7 @@ const Navbar = () => {
                         <nav className='flex items-center flex-col justify-center'>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
                             <CustomMobileLink href="/works" title="Trabalhos" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/contats" title="Contatos" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/contacts" title="Contatos" className='' toggle={handleClick} />
 
                         </nav>
 

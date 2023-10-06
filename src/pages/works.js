@@ -19,7 +19,7 @@ const works = () => {
 
                     <AnimatedText
                         text="Trabalhos"
-                        className='mb-16 lg:p-8 xs:text-7xl xs:p-8'
+                        className='mb-16 lg:p-8 xs:text-6xl xs:p-8'
                     />
 
 
