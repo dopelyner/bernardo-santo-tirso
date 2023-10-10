@@ -3,9 +3,9 @@ import ReactPlayer from 'react-player'
 import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
-import { Stick } from 'next/font/google'
 import { DownArrow } from '@/components/Icons'
 import { presentation } from '@/constants'
+import { Stick } from 'next/font/google'
 
 const font = Stick({
   subsets: ["latin"],
@@ -44,6 +44,7 @@ export default function Home() {
               url={videoURL}
               width={1280}
               height={720}
+              controls={true}
             />
           </div>
 
