@@ -1,5 +1,9 @@
 # Nextjs, Tailwind CSS and Framer-motion
 
+![Home Dark](https://github.com/dopelyner/3d-portfolio/blob/master/public/showcase/home-dark.png?raw=true)
+![Home Light](https://github.com/dopelyner/3d-portfolio/blob/master/public/showcase/home-light.png?raw=true)
+
+
 ##  Techologies 
 - Nextjs - the React Framework for the Web
 - TailwindCSS - a popular utility-first CSS styling framework;
