@@ -38,7 +38,7 @@ export default function Home() {
           <AnimatedText
             style={font.style}
             text="Bernardo Santo Tirso"
-            className='mb-20 xl:mb-20 2xl:mb-32 text-[150px] text-center xl:text-[150px] 2xl:text-[200px]'
+            className='mb-20 xl:mb-20 2xl:mb-32 text-[150px] text-center xl:text-[150px] 2xl:text-[200px] sm:text-[80px] sm:mb-40 sm:mt-40'
           />
 
           <div className='w-full mb-10 xl:mb-20 2xl:mb-32 hidden flex-col items-center justify-center cursor-pointer sm:flex md:flex xl:flex 2xl:flex'>
