@@ -3,9 +3,10 @@ import ReactPlayer from 'react-player'
 import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
-import { DownArrow } from '@/components/Icons'
+import { ScrollIcon } from '@/components/Icons'
 import { presentation } from '@/constants'
 import { Stick } from 'next/font/google'
+import { useRef } from 'react'
 
 const font = Stick({
   subsets: ["latin"],
@@ -16,6 +17,12 @@ export default function Home() {
 
   const { videoURL } = presentation[0]
 
+  const videoSectionRef = useRef(null);
+
+  const scrollToVideo = () => {
+    videoSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <Head>
@@ -25,21 +32,25 @@ export default function Home() {
 
       <TransitionEffect />
 
-      <main className='w-full min-h-screen flex items-center text-dark dark:text-light'>
-        <Layout className='pt-0 p-16 sm:pt-8'>
+      <main className='w-full min-h-screen flex items-center justify-center text-dark dark:text-light'>
+        <Layout className='pt-0 p-16 xl:p-24 2xl:p-32'>
 
           <AnimatedText
             style={font.style}
             text="Bernardo Santo Tirso"
-            className='mb-60 text-[200px] text-center lg:p-8 lg:text-9xl sm:text-6xl xs:text-6xl xs:p-8 xs:mb-40'
+            className='mb-20 xl:mb-20 2xl:mb-32 text-[150px] text-center xl:text-[150px] 2xl:text-[200px]'
           />
 
-          <div className='w-full flex flex-col items-center justify-center '>
-            <h2>check this out</h2>
-            <DownArrow />
+          <div className='w-full mb-10 xl:mb-20 2xl:mb-32 hidden flex-col items-center justify-center cursor-pointer sm:flex md:flex xl:flex 2xl:flex'>
+            <a href='#vid'></a>
+            <ScrollIcon onClick={scrollToVideo} />
           </div>
 
-          <div className='w-full mt-4 flex items-center justify-center md:w-[600px] sm:w-auto '>
+          <div
+            id="vid"
+            ref={videoSectionRef}
+            className='w-full flex flex-grow-0 items-center justify-center'
+          >
             <ReactPlayer
               url={videoURL}
               width={1280}
