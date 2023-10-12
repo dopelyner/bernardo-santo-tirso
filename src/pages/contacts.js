@@ -1,9 +1,10 @@
 import React, { useRef, useState } from 'react'
+import emailjs from 'emailjs-com';
 import Head from 'next/head'
 import Layout from '@/components/Layout'
-import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
-import emailjs from 'emailjs-com';
+import TransitionEffect from '@/components/TransitionEffect'
+import { emailAddress } from '@/constants'
 
 const ContactForm = () => {
 
@@ -38,7 +39,7 @@ const ContactForm = () => {
                     from_name: form.name,
                     to_name: "Bernardo Santo Tirso",
                     from_email: form.email,
-                    to_email: "taplino@gmail.com",
+                    to_email: emailAddress.email,
                     message: form.message,
                 },
                 process.env.NEXT_EMAILJS_PUBLIC_KEY
@@ -70,36 +71,36 @@ const ContactForm = () => {
             className='mt-12 flex flex-col gap-8'
         >
             <label className='flex flex-col'>
-                <span className='text-dark dark:text-light font-medium mb-4'>Nome</span>
+                <span className='text-dark dark:text-light font-medium mb-4 text-2xl'>Nome</span>
                 <input
                     type='text'
                     name='name'
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="Qual é o teu primeiro nome?"
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light text-dark dark:text-light rounded-lg outline-none border-none font-medium'
+                    placeholder="ex: Bernardo Santo Tirso"
+                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
-                <span className='text-dark dark:text-light font-medium mb-4'>Email</span>
+                <span className='text-dark dark:text-light font-medium mb-4 text-2xl'>Email</span>
                 <input
                     type='email'
                     name='email'
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="Qual é o teu email?"
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light text-dark dark:text-light rounded-lg outline-none border-none font-medium'
+                    placeholder="ex: bernardo.santo.tirso@gmail.com"
+                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
-                <span className='text-dark dark:text-light font-medium mb-4'>Mensagem</span>
+                <span className='text-dark dark:text-light font-medium mb-4 text-2xl'>Mensagem</span>
                 <textarea
                     rows={7}
                     name='message'
                     value={form.message}
                     onChange={handleChange}
-                    placeholder='O que tens para me dizer?'
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light text-dark dark:text-light rounded-lg outline-none border-none font-medium'
+                    placeholder='ex: És um verdadeiro artista ! Podemos conversar ?'
+                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
                 />
             </label>
 

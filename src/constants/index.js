@@ -6,8 +6,17 @@ export const socialLinks = [
     }
 ]
 
-export const presentation = [
-    {
-        videoURL: "https://www.youtube.com/watch?v=FVoTtWoMkaU"
-    }
-]
+export const homePresentationVideo = {
+    videoURL: "https://www.youtube.com/watch?v=FVoTtWoMkaU"
+}
+
+export const emailAddress = {
+    email: "taplino@gmail.com",
+}
+
+export const videoLinks =
+{
+    URL_1: "",
+    URL_2: "",
+    URL_3: "",
+}

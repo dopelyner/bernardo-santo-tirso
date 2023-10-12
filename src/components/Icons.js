@@ -443,7 +443,7 @@ export const ScrollIcon = ({ className, ...rest }) => (
         />
         <g
             fill="none"
-            stroke="#fff"
+            stroke="currentColor"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeMiterlimit={10}

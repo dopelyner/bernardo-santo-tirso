@@ -4,7 +4,7 @@ import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
 import { ScrollIcon } from '@/components/Icons'
-import { presentation } from '@/constants'
+import { homePresentationVideo } from '@/constants'
 import { Stick } from 'next/font/google'
 import { useRef } from 'react'
 
@@ -14,8 +14,6 @@ const font = Stick({
 })
 
 export default function Home() {
-
-  const { videoURL } = presentation[0]
 
   const videoSectionRef = useRef(null);
 
@@ -42,17 +40,17 @@ export default function Home() {
           />
 
           <div className='w-full mb-10 xl:mb-20 2xl:mb-32 hidden flex-col items-center justify-center cursor-pointer sm:flex md:flex xl:flex 2xl:flex'>
-            <a href='#vid'></a>
+            <a href='#video'></a>
             <ScrollIcon onClick={scrollToVideo} />
           </div>
 
           <div
-            id="vid"
+            id="video"
             ref={videoSectionRef}
             className='w-full flex flex-grow-0 items-center justify-center'
           >
             <ReactPlayer
-              url={videoURL}
+              url={homePresentationVideo.videoURL}
               width={1280}
               height={720}
               controls={true}
