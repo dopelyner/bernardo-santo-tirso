@@ -10,6 +10,8 @@ module.exports = {
     extend: {
       fontFamily: {
         stick: ["var(--font-stick)"],
+        abel: ["var(--font-abel)"],
+        economica: ["var(--font-economica)"],
       },
       colors: {
         dark: "#1b1b1b",

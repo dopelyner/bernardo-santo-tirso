@@ -11,3 +11,13 @@
 
 ##  Objectives
 - Create a simple portfolio in order to display information about the great artist Bernardo Santo Tirso.
+
+## Fonts
+Stick
+```
+https://fonts.google.com/specimen/Stick?preview.text=Bernardo%20Santo%20Tirso
+```
+Econonmica
+```
+https://fonts.google.com/specimen/Economica?query=economica
+```
