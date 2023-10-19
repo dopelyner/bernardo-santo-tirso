@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
 import { ScrollIcon } from '@/components/Icons'
-import { homePresentationVideo } from '@/constants'
+import { videoLinks } from '@/constants'
 import { useRef } from 'react'
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
@@ -46,7 +46,7 @@ export default function Home() {
             className='w-full flex flex-grow-0 items-center justify-center'
           >
             <ReactPlayer
-              url={homePresentationVideo.videoURL}
+              url={videoLinks.URL_1}
               width={1280}
               height={720}
               controls={true}

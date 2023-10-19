@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { motion } from 'framer-motion'
-import { SunIcon, MoonIcon, FacebookIcon, InstagramIcon } from './Icons'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 import Logo from './Logo'
+import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import { motion } from 'framer-motion'
 import { socialLinks } from '@/constants'
+import { SunIcon, MoonIcon, FacebookIcon, InstagramIcon } from './Icons'
 
 const CustomLink = ({ href, title, className = "" }) => {
 
@@ -67,8 +67,9 @@ const Navbar = () => {
             <div className='w-full flex justify-between items-center lg:hidden text-2xl'>
                 <nav>
                     <CustomLink href="/" title="Home" className='mr-4' />
-                    <CustomLink href="/works" title="Trabalhos" className='ml-4' />
+                    <CustomLink href="/projects" title="Projetos" className='ml-4' />
                     <CustomLink href="/contacts" title="Contatos" className='ml-4' />
+                    <CustomLink href="/moments" title=" Momentos" className='ml-4' />
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
@@ -92,7 +93,7 @@ const Navbar = () => {
                     <button
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
                         className={`ml-3 flex items-center justify-center rounded-full p-1
-                    ${mode === "light " ? "bg-dark text-light" : "bg-light text-dark"}`}>
+                    ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
                         {
                             mode === "dark"
                                 ? <SunIcon className={"fill-dark"} />
@@ -113,9 +114,9 @@ const Navbar = () => {
 
                         <nav className='flex items-center flex-col justify-center'>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/works" title="Trabalhos" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/projects" title="Projetos" className='' toggle={handleClick} />
                             <CustomMobileLink href="/contacts" title="Contatos" className='' toggle={handleClick} />
-
+                            <CustomMobileLink href="/moments" title="Momentos" className='' toggle={handleClick} />
                         </nav>
 
                         <nav className='flex items-center justify-center flex-wrap mt-2'>
