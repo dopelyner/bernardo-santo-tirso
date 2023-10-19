@@ -8,6 +8,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        stick: ["var(--font-stick)"],
+      },
       colors: {
         dark: "#1b1b1b",
         light: "#f5f5f5",

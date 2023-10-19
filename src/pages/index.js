@@ -1,22 +1,19 @@
 import Head from 'next/head'
-import ReactPlayer from 'react-player'
+import dynamic from 'next/dynamic'
+import localFont from 'next/font/local'
 import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
 import { ScrollIcon } from '@/components/Icons'
 import { homePresentationVideo } from '@/constants'
-import { Stick } from 'next/font/google'
 import { useRef } from 'react'
 
-const font = Stick({
-  subsets: ["latin"],
-  weight: ["400"]
-})
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+const StickFont = localFont({ src: '../../public/fonts/Stick-Regular.ttf' })
 
 export default function Home() {
 
   const videoSectionRef = useRef(null);
-
   const scrollToVideo = () => {
     videoSectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -34,9 +31,8 @@ export default function Home() {
         <Layout className='pt-0 p-16 xl:p-24 2xl:p-32'>
 
           <AnimatedText
-            style={font.style}
             text="Bernardo Santo Tirso"
-            className='mb-20 xl:mb-20 2xl:mb-32 text-[150px] text-center xl:text-[150px] 2xl:text-[200px] sm:text-[80px] sm:mb-40 sm:mt-40'
+            className={`${StickFont.className} font-stick mb-20 xl:mb-20 2xl:mb-32 text-[150px] text-center xl:text-[150px] 2xl:text-[200px] sm:text-[80px] sm:mb-40 sm:mt-40`}
           />
 
           <div className='w-full mb-10 xl:mb-20 2xl:mb-32 hidden flex-col items-center justify-center cursor-pointer sm:flex md:flex xl:flex 2xl:flex'>
