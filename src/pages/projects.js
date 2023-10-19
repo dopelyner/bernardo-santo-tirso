@@ -33,7 +33,7 @@ const projects = () => {
                             text="“In art, the hand can never execute anything higher than the heart can imagine.”"
                             className='lg:p-8 xs:text-6xl xs:p-8 normal-case italic'
                         />
-                        <h2 className='mb-32 text-2xl text-end mr-32 xs:m-0'>by Ralph Waldo Emerson</h2>
+                        <h2 className='mb-16 text-2xl text-end mr-32 xs:m-0'>by Ralph Waldo Emerson</h2>
                     </div>
 
                     <SeparatorBar />
@@ -50,12 +50,12 @@ const projects = () => {
                         />
                     </div>
 
-                    <div className='w-full flex flex-row mt-40 items-center md:flex-col'>
+                    <div className='w-full flex flex-row items-center justify-center md:flex-col'>
                         <AnimatedText
                             text="Biografia"
-                            className='w-1/2 mb-16 lg:p-8 xs:text-5xl xs:p-8'
+                            className='w-1/2 mb-16 xs:mb-6 xs:text-7xl lg:text-7xl'
                         />
-                        <div className='w-full mt-32 text-xl xs:text-xl'>
+                        <div className='w-full mt-32 text-xl xs:text-2xl'>
                             {biography.paragraphs.map((paragraph, index) => (
                                 <li
                                     key={index}
@@ -69,12 +69,11 @@ const projects = () => {
 
                     <SeparatorBar />
 
-                    <div className='w-full flex flex-row mt-40 items-center md:flex-col'>
+                    <div className='w-full flex flex-row mt-40 items-center justify-center md:flex-col'>
                         <AnimatedText
                             text="Momentos"
-                            className='w-1/2 mb-16 lg:p-8 xs:text-5xl xs:p-8'
+                            className='w-1/2 mb-16 xs:text-5xl'
                         />
-
                         <Image
                             src={imageLinks.PIC_1}
                             width={500}

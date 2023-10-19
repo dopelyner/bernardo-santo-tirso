@@ -4,7 +4,8 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import AnimatedText from '@/components/AnimatedText'
 import TransitionEffect from '@/components/TransitionEffect'
-import { emailAddress } from '@/constants'
+import { emailAddress, imageLinks } from '@/constants'
+import Image from 'next/image';
 
 const ContactForm = () => {
 
@@ -129,14 +130,22 @@ const contacts = () => {
                 <Layout className='pt-16'>
 
                     <div className='flex xl:flex-col xl:items-center xl:justify-center'>
-                        <div className='w-2/5'>
+                        <div className='w-2/5 flex flex-col xs:items-center xs:justify-center'>
                             <AnimatedText
                                 text="Contatos"
-                                className='mb-16 lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl xs:p-0'
+                                className='mb-16 lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-5xl xs:p-0'
                             />
+                            <div className='w-fit rounded-lg xs:text-center border border-dark dark:border-light xs:w-[250px] xs:h-[250px]'>
+                                <Image
+                                    src={imageLinks.PROFILE_PIC}
+                                    alt='profile pic'
+                                    width={400}
+                                    height={400}
+                                />
+                            </div>
                         </div>
 
-                        <div className='w-3/5 mb-20'>
+                        <div className='w-3/5 mb-20 xs:w-full sm:w-4/5 xl:w-4/5'>
                             <ContactForm />
                         </div>
                     </div>

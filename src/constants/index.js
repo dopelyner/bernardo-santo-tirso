@@ -1,6 +1,7 @@
 import pic1 from '../../public/images/pic1.jpg'
 import pic2 from '../../public/images/pic2.jpg'
 import pic3 from '../../public/images/pic3.jpg'
+import bernie from '../../public/images/bernie.jpg'
 
 export const socialLinks = [
     {
@@ -22,6 +23,7 @@ export const videoLinks =
 
 export const imageLinks =
 {
+    PROFILE_PIC: bernie,
     PIC_1: pic1,
     PIC_2: pic2,
     PIC_3: pic3,
