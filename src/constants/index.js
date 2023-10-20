@@ -29,7 +29,7 @@ export const imageLinks =
     PIC_3: pic3,
 }
 
-export const biography = {
+export const biographyText = {
     paragraphs: [
         "Bernardo Santo Tirso Ribeiro é ator, nasceu em Aveiro – São Bernardo, em 1995.",
         "Concluiu o curso profissional de artes do espetáculo – interpretação em 2015,no Conservatório de Música da Jobra.",

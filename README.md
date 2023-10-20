@@ -1,7 +1,7 @@
 # Nextjs, Tailwind CSS and Framer-motion
 
-![Home Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/showcase/home-dark.png?raw=true)
-![Home Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/showcase/home-light.png?raw=true)
+![Home Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-dark.png?raw=true)
+![Home Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-light.png?raw=true)
 
 
 ##  Techologies 

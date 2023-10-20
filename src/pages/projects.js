@@ -1,21 +1,15 @@
 import React, { useRef } from 'react'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
-import { biography, imageLinks, videoLinks } from '@/constants'
-import dynamic from 'next/dynamic'
-import Image from 'next/image'
-import { LinkArrow } from '@/components/Icons'
+import SeparatorBar from '@/components/SeparatorBar'
+import { videoLinks } from '@/constants'
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
-const SeparatorBar = () => (
-    <div className="flex justify-center items-center my-20">
-        <div className="w-[200px] h-[3px] bg-dark dark:bg-light m-0"></div>
-    </div>
-);
-const projects = () => {
+const Projects = () => {
     return (
         <>
             <Head>
@@ -33,7 +27,7 @@ const projects = () => {
                             text="“In art, the hand can never execute anything higher than the heart can imagine.”"
                             className='lg:p-8 xs:text-6xl xs:p-8 normal-case italic'
                         />
-                        <h2 className='mb-16 text-2xl text-end mr-32 xs:m-0'>by Ralph Waldo Emerson</h2>
+                        <h2 className='mb-16 text-2xl text-end mr-32 xs:m-0'>Ralph Waldo Emerson</h2>
                     </div>
 
                     <SeparatorBar />
@@ -50,36 +44,27 @@ const projects = () => {
                         />
                     </div>
 
-                    <div className='w-full flex flex-row items-center justify-center md:flex-col'>
-                        <AnimatedText
-                            text="Biografia"
-                            className='w-1/2 mb-16 xs:mb-6 xs:text-7xl lg:text-7xl'
-                        />
-                        <div className='w-full mt-32 text-xl xs:text-2xl'>
-                            {biography.paragraphs.map((paragraph, index) => (
-                                <li
-                                    key={index}
-                                    className='list-none my-4'
-                                >
-                                    {paragraph}
-                                </li>
-                            ))}
-                        </div>
-                    </div>
-
                     <SeparatorBar />
 
-                    <div className='w-full flex flex-row mt-40 items-center justify-center md:flex-col'>
-                        <AnimatedText
-                            text="Momentos"
-                            className='w-1/2 mb-16 xs:text-5xl'
-                        />
-                        <Image
-                            src={imageLinks.PIC_1}
-                            width={500}
-                            className='rounded-lg'
-                            alt='pic'
-                        />
+                    <div className='flex flex-col items-center justify-center'>
+                        <div className='flex'>
+                            <AnimatedText
+                                text="Ator ( Teatro & Cinema)"
+                                className='w-full mb-32 xs:text-5xl lg:text-center'
+                            />
+                        </div>
+                        <div className='flex'>
+                            <AnimatedText
+                                text="Designer de Luz"
+                                className='w-full mb-32 xs:text-5xl lg:text-center'
+                            />
+                        </div>
+                        <div className='flex'>
+                            <AnimatedText
+                                text="Fotógrafo"
+                                className='w-full mb-32 xs:text-5xl lg:text-center'
+                            />
+                        </div>
                     </div>
 
                 </Layout>
@@ -88,4 +73,4 @@ const projects = () => {
     )
 }
 
-export default projects
+export default Projects
