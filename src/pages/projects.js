@@ -34,7 +34,7 @@ const Projects = () => {
 
                     <div
                         id="video2"
-                        className='w-full flex flex-grow-0 items-center justify-center'
+                        className='flex items-center justify-center'
                     >
                         <ReactPlayer
                             url={videoLinks.URL_2}
@@ -46,7 +46,7 @@ const Projects = () => {
 
                     <SeparatorBar />
 
-                    <div className='flex flex-col items-center justify-center'>
+                    <div className='flex flex-col items-center justify-center lg:mt-0'>
                         <div className='flex'>
                             <AnimatedText
                                 text="Ator ( Teatro & Cinema)"

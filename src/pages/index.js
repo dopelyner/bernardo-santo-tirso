@@ -43,7 +43,7 @@ export default function Home() {
           <div
             id="video"
             ref={videoSectionRef}
-            className='w-full flex flex-grow-0 items-center justify-center'
+            className=' lg:w-max-screen flex flex-grow-0 items-center justify-center'
           >
             <ReactPlayer
               url={videoLinks.URL_1}

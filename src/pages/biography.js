@@ -25,8 +25,8 @@ const Biography = () => {
     return (
         <>
             <Head>
-                <title>Bernardo Santo Tirso | Momentos</title>
-                <meta name="Bernardo Santo Tirso" content='Momentos...' />
+                <title>Bernardo Santo Tirso | Biografia</title>
+                <meta name="Bernardo Santo Tirso" content='Biografia...' />
             </Head>
 
             {/* <TransitionEffect /> */}
@@ -68,7 +68,6 @@ const Biography = () => {
                             text="Momentos"
                             className='w-full mb-16 xs:text-5xl text-center'
                         />
-
                     </div>
 
                     <div className='w-full flex flex-1 items-center justify-center mt-20 gap-20 lg:flex-col'>
@@ -76,7 +75,7 @@ const Biography = () => {
                             <Image
                                 src={imageLinks.PIC_3}
                                 width={400}
-                                className='rounded-lg'
+                                className='rounded-lg cursor-pointer'
                                 alt='pic3'
                                 onClick={() => openModal(imageLinks.PIC_3)}
                             />
@@ -85,7 +84,7 @@ const Biography = () => {
                             <Image
                                 src={imageLinks.PIC_1}
                                 width={400}
-                                className='rounded-lg'
+                                className='rounded-lg cursor-pointer'
                                 alt='pic1'
                                 onClick={() => openModal(imageLinks.PIC_1)}
                             />
@@ -95,12 +94,13 @@ const Biography = () => {
                             <Image
                                 src={imageLinks.PIC_2}
                                 width={400}
-                                className='rounded-lg'
+                                className='rounded-lg cursor-pointer'
                                 alt='pic2'
                                 onClick={() => openModal(imageLinks.PIC_2)}
                             />
                         </div>
                     </div>
+
                     <div className='w-full items-center justify-center'>
                         <Modal
                             className={`w-[800px] lg:w-[600px] md:w-[400px]`}
@@ -113,7 +113,6 @@ const Biography = () => {
                                     maxWidth: '800px',
                                     margin: '0 auto',
                                     transform: 'translate(0%, 40%)',
-
                                 },
                             }}
                         >
@@ -125,6 +124,7 @@ const Biography = () => {
                             )}
                         </Modal>
                     </div>
+
                 </Layout>
             </main>
         </>

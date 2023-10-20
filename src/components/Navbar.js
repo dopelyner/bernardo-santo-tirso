@@ -114,7 +114,7 @@ const Navbar = () => {
 
                         <nav className='flex items-center flex-col justify-center'>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/biografia" title="Biografia" className='' toggle={handleClick} />
+                            <CustomMobileLink href="/biography" title="Biografia" className='' toggle={handleClick} />
                             <CustomMobileLink href="/projects" title="Projetos" className='' toggle={handleClick} />
                             <CustomMobileLink href="/contacts" title="Contatos" className='' toggle={handleClick} />
                         </nav>
