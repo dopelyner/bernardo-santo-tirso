@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
 import SeparatorBar from '@/components/SeparatorBar'
-import { videoLinks } from '@/constants'
+import { quotes, videoLinks } from '@/constants'
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -22,43 +22,61 @@ const Projects = () => {
             <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
 
-                    <div className='w-full flex flex-col'>
+                    <div className='w-full mb-32 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
-                            text="“In art, the hand can never execute anything higher than the heart can imagine.”"
+                            text={`“` + quotes.quote2.quote2_1}
                             className='lg:p-8 xs:text-6xl xs:p-8 normal-case italic'
                         />
-                        <h2 className='mb-16 text-2xl text-end mr-32 xs:m-0'>Ralph Waldo Emerson</h2>
-                    </div>
-
-                    <SeparatorBar />
-
-                    <div
-                        id="video2"
-                        className='flex items-center justify-center'
-                    >
-                        <ReactPlayer
-                            url={videoLinks.URL_2}
-                            width={1280}
-                            height={720}
-                            controls={true}
+                        <AnimatedText
+                            text={quotes.quote2.quote2_2}
+                            className='lg:p-8 xs:text-6xl xs:p-8 normal-case italic'
                         />
+                        <AnimatedText
+                            text={quotes.quote2.quote2_3 + `”`}
+                            className='lg:p-8 xs:text-6xl xs:p-8 normal-case italic'
+                        />
+                        <h2 className='mb-16 text-2xl text-end mr-32 xs:m-0'>{quotes.author} 2/3</h2>
                     </div>
 
-                    <SeparatorBar />
 
                     <div className='flex flex-col items-center justify-center lg:mt-0'>
-                        <div className='flex'>
+                        <div className='flex flex-col mb-16'>
                             <AnimatedText
                                 text="Ator ( Teatro & Cinema)"
-                                className='w-full mb-32 xs:text-5xl lg:text-center'
+                                className='w-full mb-32 xs:text-5xl text-center'
                             />
+                            <div className='flex flex-col'>
+                                <AnimatedText
+                                    text="Ride"
+                                    className='mt-0 italic text-5xl xs:text-4xl text-center'
+                                />
+                                <div
+                                    id="video2"
+                                    className='w-[1080px] h-[720px] flex flex-col items-center justify-center xl:w-[720px] lg:w-[720px] 
+                                                md:w-[600px] sm:w-[400px] xs:w-[300px]'
+                                >
+                                    <ReactPlayer
+                                        url={videoLinks.URL_2}
+                                        width="100%"
+                                        height="100%"
+                                        controls={true}
+                                        className="w-full sm:w-4/5 lg:w-3/5 xl:w-2/5"
+                                    />
+                                </div>
+                            </div>
                         </div>
+
+                        <SeparatorBar />
+
                         <div className='flex'>
                             <AnimatedText
                                 text="Designer de Luz"
                                 className='w-full mb-32 xs:text-5xl lg:text-center'
                             />
                         </div>
+                        
+                        <SeparatorBar />
+
                         <div className='flex'>
                             <AnimatedText
                                 text="Fotógrafo"

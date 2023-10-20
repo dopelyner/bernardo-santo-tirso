@@ -14,15 +14,13 @@ export const emailAddress = {
     email: "taplino@gmail.com",
 }
 
-export const videoLinks =
-{
+export const videoLinks = {
     URL_1: "https://www.youtube.com/watch?v=FVoTtWoMkaU",
     URL_2: "https://vimeo.com/572113578",
     URL_3: "",
 }
 
-export const imageLinks =
-{
+export const imageLinks = {
     PROFILE_PIC: bernie,
     PIC_1: pic1,
     PIC_2: pic2,
@@ -46,3 +44,22 @@ export const biographyText = {
 
     ]
 }
+
+export const quotes = {
+    author : "O Credo do Lobo",
+    quote1: {
+        quote1_1: "Respeita os mais velhos",
+        quote1_2: "Ensina os mais novos",
+        quote1_3: "Coopera com a alcateia",
+    },
+    quote2: {
+        quote2_1: "Brinca quando podes",
+        quote2_2: "Caça quando deves",
+        quote2_3: "Descansa entretanto",
+    },
+    quote3: {
+        quote3_1: "Partilha os teus afectos",
+        quote3_2: "Exprime os teus sentimentos",
+        quote3_3: "Deixa a tua marca",
+    },
+} 
