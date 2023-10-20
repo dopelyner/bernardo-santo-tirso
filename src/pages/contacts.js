@@ -132,17 +132,17 @@ const contacts = () => {
                     <div className='w-full flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
                             text={`“` + quotes.quote3.quote3_1}
-                            className='lg:p-8 xs:text-2xl xs:p-8 normal-case italic'
+                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-8 normal-case italic'
                         />
                         <AnimatedText
                             text={quotes.quote3.quote3_2}
-                            className='lg:p-8 xs:text-2xl xs:p-8 normal-case italic'
+                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-8 normal-case italic'
                         />
                         <AnimatedText
                             text={quotes.quote3.quote3_3 + `”`}
-                            className='lg:p-8 xs:text-2xl xs:p-8 normal-case italic'
+                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-8 normal-case italic'
                         />
-                        <h2 className='mb-16 text-2xl text-end mr-32 xs:m-0'>{quotes.author} 3/3</h2>
+                        <h2 className='mb-32 text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 3/3</h2>
                     </div>
 
                     <div className='mt-32 flex xl:flex-col xl:items-center xl:justify-center'>
