@@ -6,6 +6,7 @@ import AnimatedText from '@/components/AnimatedText'
 import TransitionEffect from '@/components/TransitionEffect'
 import { emailAddress, imageLinks, quotes } from '@/constants'
 import Image from 'next/image';
+import SeparatorBar from '@/components/SeparatorBar';
 
 const ContactForm = () => {
 
@@ -89,14 +90,14 @@ const ContactForm = () => {
                     name='email'
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="ex: bernardo.santo.tirso@gmail.com"
+                    placeholder="ex: bernardo.s.tirso@gmail.com"
                     className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
                 <span className='text-dark dark:text-light font-medium mb-4 text-2xl'>Mensagem</span>
                 <textarea
-                    rows={7}
+                    rows={4}
                     name='message'
                     value={form.message}
                     onChange={handleChange}
@@ -129,31 +130,33 @@ const contacts = () => {
             <main className='w-full mb-16 min-h-screen flex flex-row items-center justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
 
-                    <div className='w-full flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
+                    <div className='w-full flex flex-col xs:text-6xl'>
                         <AnimatedText
                             text={`“` + quotes.quote3.quote3_1}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-8 normal-case italic'
+                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <AnimatedText
                             text={quotes.quote3.quote3_2}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-8 normal-case italic'
+                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <AnimatedText
                             text={quotes.quote3.quote3_3 + `”`}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-8 normal-case italic'
+                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <h2 className='mb-32 text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 3/3</h2>
                     </div>
 
-                    <div className='mt-32 flex xl:flex-col xl:items-center xl:justify-center'>
+                    <SeparatorBar />
+
+                    <div className='mt-16 flex xl:flex-col xl:items-center xl:justify-center'>
                         <div className='w-2/5 flex flex-col xs:items-center xs:justify-center'>
                             <AnimatedText
                                 text="Contatos"
-                                className='mb-16 lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-5xl xs:p-0'
+                                className='lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl'
                             />
-                            <div className='w-fit rounded-lg xs:text-center border border-dark dark:border-light xs:w-[250px] xs:h-[250px]'>
+                            <div className='w-max h-auto rounded-lg xs:text-center border border-dark dark:border-light xs:w-[250px] xs:h-[250px]'>
                                 <Image
-                                    src={imageLinks.PROFILE_PIC}
+                                    src={imageLinks.PIC_4}
                                     alt='profile pic'
                                     width={400}
                                     height={400}
@@ -161,7 +164,7 @@ const contacts = () => {
                             </div>
                         </div>
 
-                        <div className='w-3/5 mb-20 xs:w-full sm:w-4/5 xl:w-4/5'>
+                        <div className='w-3/5 mt-16 mb-20 xs:w-full sm:w-4/5 xl:w-4/5'>
                             <ContactForm />
                         </div>
                     </div>

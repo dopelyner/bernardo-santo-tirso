@@ -18,7 +18,7 @@ const Footer = () => {
                     target={'_blank'}
                     className='w-full flex items-center justify-center hover:scale-105'
                 >
-                    <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; All rights reserved.</span>
+                    <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
                 </MotionLink>
             </Layout>
         </footer>
