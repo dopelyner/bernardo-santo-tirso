@@ -1,6 +1,9 @@
 # Nextjs, Tailwind CSS and Framer-motion
 
 ![Home Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-dark.png?raw=true)
+![Biography Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/biography-dark.png?raw=true)
+![Projects Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/projects-dark.png?raw=true)
+![Contact Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/contact-dark.png?raw=true)
 ![Home Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-light.png?raw=true)
 
 
