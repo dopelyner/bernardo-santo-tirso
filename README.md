@@ -27,3 +27,10 @@ Econonmica
 ```
 https://fonts.google.com/specimen/Economica?query=economica
 ```
+
+## Environment variables
+```
+NEXT_EMAILJS_SERVICE_ID=
+NEXT_EMAILJS_TEMPLATE_ID=
+NEXT_EMAILJS_PUBLIC_KEY=
+```
