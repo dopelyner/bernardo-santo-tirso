@@ -81,7 +81,7 @@ const Photography = () => {
                                 </div>
                             ))}
                         </Masonry>
-                        <Modal
+                        {/* <Modal
                             isOpen={isModalOpen}
                             onRequestClose={closeModal}
                             contentLabel="Image Modal"
@@ -98,7 +98,7 @@ const Photography = () => {
                             <button onClick={closeModal} className="absolute text-[white] text-lg cursor-pointer border-[none] right-5 top-5">
                                 Close
                             </button>
-                        </Modal>
+                        </Modal> */}
                     </div>
 
                 </Layout>
