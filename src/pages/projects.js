@@ -9,6 +9,7 @@ import Head from 'next/head'
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const ProjectItem = ({ title, subTitle, videoURL }) => {
+
     return (
         <div className='flex flex-col mb-24'>
             <AnimatedText

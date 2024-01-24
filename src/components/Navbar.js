@@ -69,11 +69,11 @@ const Navbar = () => {
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/biography" title="Biografia" className='ml-4' />
                     <CustomLink href="/projects" title="Projetos" className='ml-4' />
-                    <CustomLink href="/cinema" title="Cinema" className='ml-4' />
-                    <CustomLink href="/theater" title="Teatro" className='ml-4' />
-                    <CustomLink href="/light" title="Luz" className='ml-4' />
-                    <CustomLink href="/photography" title="Fotografia" className='ml-4' />
-                    <CustomLink href="/staging" title="Encenação" className='ml-4' />
+                    {/* <CustomLink href="/cinema" title="Cinema" className='ml-4' /> */}
+                    {/* <CustomLink href="/theater" title="Teatro" className='ml-4' /> */}
+                    {/* <CustomLink href="/light" title="Luz" className='ml-4' /> */}
+                    {/* <CustomLink href="/photography" title="Fotografia" className='ml-4' /> */}
+                    {/* <CustomLink href="/staging" title="Encenação" className='ml-4' /> */}
                     <CustomLink href="/contacts" title="Contatos" className='ml-4' />
                 </nav>
 
