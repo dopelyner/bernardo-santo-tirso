@@ -41,12 +41,12 @@ const ProjectItem = ({ title, subTitle, videoURL }) => {
     )
 }
 
-const Cinema = () => {
+const Theater = () => {
     return (
         <>
             <Head>
-                <title>Bernardo Santo Tirso | Cinema</title>
-                <meta name="Bernardo Santo Tirso" content='Projetos relativos ao cinema...' />
+                <title>Bernardo Santo Tirso | Teatro</title>
+                <meta name="Bernardo Santo Tirso" content='Projetos de teatro...' />
             </Head>
 
             <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
@@ -56,40 +56,12 @@ const Cinema = () => {
 
                         <div className='flex flex-col mb-16'>
                             <AnimatedText
-                                text="Cinema"
+                                text="Teatro"
                                 className='w-full mb-6 xs:text-5xl text-center'
                             />
-
                             <SeparatorBar size="big" />
 
-                            <ProjectItem
-                                title="Ride"
-                                subTitle="Filme de Animação realizado por Paul Bush"
-                                videoURL="videos/ride.mp4"
-                            />
 
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="O céu aqui é mais baixo"
-                                subTitle="Realizado por Henrique Vilão"
-                                videoURL="videos/o-ceu-aqui-e-mais-baixo.mp4"
-                            />
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="The spill - B**ch is gone (videoclipe)"
-                                subTitle="Realizado por The spill"
-                                videoURL="videos/the-spill-bitch-is-gone.mp4"
-                            />
-
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="Ao acaso, um rapaz"
-                                subTitle="Realizado por João Macedo"
-                            // videoURL="videos/ao-acaso-um-rapaz.mp4"
-                            />
                         </div>
                     </div>
 
@@ -99,4 +71,4 @@ const Cinema = () => {
     )
 }
 
-export default Cinema
+export default Theater

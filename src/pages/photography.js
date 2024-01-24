@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
 const ProjectItem = ({ title, subTitle, videoURL }) => {
     return (
         <div className='flex flex-col mb-24'>
@@ -41,12 +42,12 @@ const ProjectItem = ({ title, subTitle, videoURL }) => {
     )
 }
 
-const Cinema = () => {
+const Photography = () => {
     return (
         <>
             <Head>
-                <title>Bernardo Santo Tirso | Cinema</title>
-                <meta name="Bernardo Santo Tirso" content='Projetos relativos ao cinema...' />
+                <title>Bernardo Santo Tirso | Fotografia</title>
+                <meta name="Bernardo Santo Tirso" content='Projetos de fotografia...' />
             </Head>
 
             <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
@@ -56,40 +57,12 @@ const Cinema = () => {
 
                         <div className='flex flex-col mb-16'>
                             <AnimatedText
-                                text="Cinema"
+                                text="Fotografia"
                                 className='w-full mb-6 xs:text-5xl text-center'
                             />
-
                             <SeparatorBar size="big" />
 
-                            <ProjectItem
-                                title="Ride"
-                                subTitle="Filme de Animação realizado por Paul Bush"
-                                videoURL="videos/ride.mp4"
-                            />
 
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="O céu aqui é mais baixo"
-                                subTitle="Realizado por Henrique Vilão"
-                                videoURL="videos/o-ceu-aqui-e-mais-baixo.mp4"
-                            />
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="The spill - B**ch is gone (videoclipe)"
-                                subTitle="Realizado por The spill"
-                                videoURL="videos/the-spill-bitch-is-gone.mp4"
-                            />
-
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="Ao acaso, um rapaz"
-                                subTitle="Realizado por João Macedo"
-                            // videoURL="videos/ao-acaso-um-rapaz.mp4"
-                            />
                         </div>
                     </div>
 
@@ -99,4 +72,4 @@ const Cinema = () => {
     )
 }
 
-export default Cinema
+export default Photography

@@ -64,12 +64,12 @@ const Projects = () => {
                     </div>
 
                     <div className='flex flex-col items-center justify-center lg:mt-0'>
-                        <div className='flex flex-col mt-60'>
-                            <CustomLink href="/cinema" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/teatro" title="Teatro" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/luz" title="Luz" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/fotografia" title="Fotografia" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/encenacao" title="Encenação" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                        <div className='flex flex-col mt-64'>
+                            <CustomLink href="/cinema" title="Cinema" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/theater" title="Teatro" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/light" title="Luz" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/photography" title="Fotografia" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/staging" title="Encenação" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
 
 
                         </div>
