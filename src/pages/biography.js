@@ -52,7 +52,7 @@ const Biography = () => {
 
                     <SeparatorBar />
 
-                    <div className='w-full flex flex-row items-center justify-center lg:flex-col'>
+                    <div className='w-full flex flex-row mb-36 items-center justify-center lg:flex-col'>
                         <AnimatedText
                             text="Biografia"
                             className='w-1/2 xs:mb-6 xs:text-7xl lg:text-7xl lg:text-center'
@@ -71,7 +71,7 @@ const Biography = () => {
 
                     <SeparatorBar />
 
-                    <div className='w-full flex flex-row items-center justify-center mt-32 md:flex-col'>
+                    {/* <div className='w-full flex flex-row items-center justify-center mt-32 md:flex-col'>
                         <AnimatedText
                             text="Momentos"
                             className='w-full mb-16 xs:text-5xl text-center'
@@ -131,7 +131,7 @@ const Biography = () => {
                                 </div>
                             )}
                         </Modal>
-                    </div>
+                    </div> */}
 
                 </Layout>
             </main>

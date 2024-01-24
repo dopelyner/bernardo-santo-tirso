@@ -88,7 +88,7 @@ const Cinema = () => {
                             <ProjectItem
                                 title="Ao acaso, um rapaz"
                                 subTitle="Realizado por João Macedo"
-                            // videoURL="videos/ao-acaso-um-rapaz.mp4"
+                                videoURL="videos/ao-acaso-um-rapaz.mp4"
                             />
                         </div>
                     </div>

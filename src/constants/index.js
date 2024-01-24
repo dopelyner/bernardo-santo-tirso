@@ -4,6 +4,18 @@ import pic3 from '../../public/images/pic3.jpg'
 import pic4 from '../../public/images/pic4.jpg'
 import bernie from '../../public/images/bernie.jpg'
 
+// Photography
+import photo1 from '../../public/images/fotografias/05_11_2023.jpg'
+import photo2 from '../../public/images/fotografias/05_11_2023_2.jpg'
+import photo3 from '../../public/images/fotografias/14_11_2023.jpg'
+import photo4 from '../../public/images/fotografias/14_12_23.jpg'
+import photo5 from '../../public/images/fotografias/IMG_5229.jpg'
+import photo6 from '../../public/images/fotografias/Untitled-1.png'
+// import photo7 from '../../public/images/fotografias/'
+// import photo8 from '../../public/images/fotografias/'
+// import photo9 from '../../public/images/fotografias/'
+// import photo10 from '../../public/images/fotografias/'
+
 export const socialLinks = [
     {
         instagramURL: "https://www.instagram.com/bernardosantotirso_/",
@@ -63,4 +75,17 @@ export const quotes = {
         quote3_2: "Exprime os teus sentimentos",
         quote3_3: "Deixa a tua marca",
     },
-} 
+}
+
+export const photography = {
+    photo1: photo1,
+    photo2: photo2,
+    photo3: photo3,
+    photo4: photo4,
+    photo5: photo5,
+    photo6: photo6,
+    photo7: pic1,
+    photo8: pic2,
+    photo9: pic3,
+    photo10: pic4,
+}

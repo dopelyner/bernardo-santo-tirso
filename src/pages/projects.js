@@ -70,8 +70,6 @@ const Projects = () => {
                             <CustomLink href="/light" title="Luz" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/photography" title="Fotografia" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/staging" title="Encenação" className='w-full mb-8 text-8xl xs:text-5xl text-center' />
-
-
                         </div>
                     </div>
                 </Layout>
