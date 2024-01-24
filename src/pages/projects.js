@@ -1,11 +1,11 @@
-import React, { useRef } from 'react'
-import Head from 'next/head'
-import dynamic from 'next/dynamic'
-import Layout from '@/components/Layout'
-import TransitionEffect from '@/components/TransitionEffect'
 import AnimatedText from '@/components/AnimatedText'
+import Layout from '@/components/Layout'
+import { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
+import TitleStickText from '@/components/TitleStickText'
 import { quotes, videoLinks } from '@/constants'
+import dynamic from 'next/dynamic'
+import Head from 'next/head'
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -45,8 +45,6 @@ const Projects = () => {
                 <meta name="Bernardo Santo Tirso" content='Projetos...' />
             </Head>
 
-            {/* <TransitionEffect /> */}
-
             <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16'>
 
@@ -67,38 +65,17 @@ const Projects = () => {
                     </div>
 
                     <div className='flex flex-col items-center justify-center lg:mt-0'>
-                        <div className='flex flex-col mb-16'>
-                            <AnimatedText
-                                text="Ator ( Teatro & Cinema)"
-                                className='w-full mb-32 xs:text-5xl text-center'
-                            />
+                        <div className='flex flex-col mt-60'>
+                            <CustomLink href="/cinema" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <TitleStickText title="." className="text-red-500"/>
+                            <CustomLink href="/Teatro" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/Luz" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/Fotografia" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/Encenação" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
 
-                            <ProjectItem
-                                title="Ride"
-                                subTitle="Filme de Animação realizado por Paul Bush em 2017"
-                                videoURL={videoLinks.URL_2}
-                            />
-                        </div>
 
-                        <SeparatorBar />
-
-                        <div className='flex'>
-                            <AnimatedText
-                                text="Designer de Luz"
-                                className='w-full mb-32 xs:text-5xl lg:text-center'
-                            />
-                        </div>
-
-                        <SeparatorBar />
-
-                        <div className='flex'>
-                            <AnimatedText
-                                text="Fotógrafo"
-                                className='w-full mb-32 xs:text-5xl lg:text-center'
-                            />
                         </div>
                     </div>
-
                 </Layout>
             </main>
         </>

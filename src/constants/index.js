@@ -18,7 +18,7 @@ export const emailAddress = {
 export const videoLinks = {
     URL_1: "https://www.youtube.com/watch?v=FVoTtWoMkaU",
     URL_2: "https://vimeo.com/572113578",
-    URL_3: "",
+    URL_3: "vid1",
 }
 
 export const imageLinks = {
@@ -43,12 +43,11 @@ export const biographyText = {
         "No cinema realça a participação no Filme de Animação – RIDE – realizado por Paul Bush em 2017 e a primeira curta metragem realizada por Henrique Vilão “O céu aqui é mais baixo”.",
         "Como possível músico, atuou como baixista em Gold Note Diggers (2012-2015) e foi banjoísta em Mimo’s Dixie Band (2017 – 2019).",
         "Assumiu a direção artística do projeto Erasmus+ “Music For Chameleons” (contava com 60 pessoas de 6 países diferentes)."
-
     ]
 }
 
 export const quotes = {
-    author : "O Credo do Lobo",
+    author: "O Credo do Lobo",
     quote1: {
         quote1_1: "Respeita os mais velhos",
         quote1_2: "Ensina os mais novos",

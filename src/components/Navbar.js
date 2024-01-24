@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { socialLinks } from '@/constants'
 import { SunIcon, MoonIcon, FacebookIcon, InstagramIcon } from './Icons'
 
-const CustomLink = ({ href, title, className = "" }) => {
+export const CustomLink = ({ href, title, className = "" }) => {
 
     const router = useRouter()
 
@@ -69,6 +69,7 @@ const Navbar = () => {
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/biography" title="Biografia" className='ml-4' />
                     <CustomLink href="/projects" title="Projetos" className='ml-4' />
+                    <CustomLink href="/cinema" title="Cinema" className='ml-4' />
                     <CustomLink href="/contacts" title="Contatos" className='ml-4' />
                 </nav>
 
