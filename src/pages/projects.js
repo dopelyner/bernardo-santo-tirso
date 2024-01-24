@@ -1,9 +1,8 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
-import SeparatorBar from '@/components/SeparatorBar'
 import TitleStickText from '@/components/TitleStickText'
-import { quotes, videoLinks } from '@/constants'
+import { quotes } from '@/constants'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 
@@ -67,11 +66,10 @@ const Projects = () => {
                     <div className='flex flex-col items-center justify-center lg:mt-0'>
                         <div className='flex flex-col mt-60'>
                             <CustomLink href="/cinema" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <TitleStickText title="." className="text-red-500"/>
-                            <CustomLink href="/Teatro" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/Luz" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/Fotografia" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/Encenação" title="Cinema" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/teatro" title="Teatro" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/luz" title="Luz" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/fotografia" title="Fotografia" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/encenacao" title="Encenação" className='w-full mb-6 text-8xl xs:text-5xl text-center' />
 
 
                         </div>
