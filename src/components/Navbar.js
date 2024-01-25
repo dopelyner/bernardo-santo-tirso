@@ -21,13 +21,18 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
     };
 
     return (
-        <div className={`${className} relative group inline-block`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`${className} relative group inline-block`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
 
             {subMenu ? (
                 <div className="group relative inline-block">
-                    <h3 className="block px-4 text-dark dark:text-light cursor-pointer">
-                        {title}
-                    </h3>
+                    <Link href="/projects" >
+                        <h3 className={`block px-4  text-dark dark:text-light  
+                                transition-colors duration-300 cursor-pointer ${router.asPath == href ? 'font-bold underline' : ''}`}>
+                            {title}
+                        </h3>
+                    </Link>
                     <span className="h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 w-full transition-[width] 
                     ease duration-300" />
                     {isSubMenuOpen && (
