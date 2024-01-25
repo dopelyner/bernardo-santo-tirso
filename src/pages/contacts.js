@@ -125,12 +125,10 @@ const contacts = () => {
                 <meta name="Bernardo Santo Tirso" content='Contatos...' />
             </Head>
 
-            {/* <TransitionEffect /> */}
-
             <main className='w-full mb-16 min-h-screen flex flex-row items-center justify-center overflow-hidden dark:text-light'>
                 <Layout className='pt-16'>
 
-                    <div className='w-full flex flex-col xs:text-6xl'>
+                    <div className='w-full mb-24 flex flex-col xs:text-6xl'>
                         <AnimatedText
                             text={`“` + quotes.quote3.quote3_1}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
@@ -146,25 +144,26 @@ const contacts = () => {
                         <h2 className='mb-32 text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 3/3</h2>
                     </div>
 
-                    <SeparatorBar />
+                    <SeparatorBar size="big" />
 
-                    <div className='mt-16 flex xl:flex-col xl:items-center xl:justify-center'>
-                        <div className='w-2/5 flex flex-col xs:items-center xs:justify-center'>
+                    <div className='mt-40 flex xl:flex-col xl:items-center xl:justify-center text-center'>
+                        <div className='w-2/5 flex flex-col xs:items-center xs:justify-center mr-20 lg:m-0 xl:mr-0'>
                             <AnimatedText
                                 text="Contatos"
-                                className='lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl'
+                                className='lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl text-center'
                             />
-                            <div className='w-max h-auto rounded-lg xs:text-center border border-dark dark:border-light xs:w-[250px] xs:h-[250px]'>
+                            <div className='w-max h-auto rounded-lg xs:text-center border border-dark dark:border-light xs:w-full sm:w-[90%] md:w-[80%] lg:w-[98%] '>
                                 <Image
                                     src={imageLinks.PIC_4}
                                     alt='profile pic'
                                     width={400}
                                     height={400}
+                                    className='rounded-lg '
                                 />
                             </div>
                         </div>
 
-                        <div className='w-3/5 mt-16 mb-20 xs:w-full sm:w-4/5 xl:w-4/5'>
+                        <div className='w-full sm:w-3/5 xl:w-full mt-16 mb-10 sm:mb-16 xl:mb-20'>
                             <ContactForm />
                         </div>
                     </div>
