@@ -146,11 +146,11 @@ const contacts = () => {
 
                     <SeparatorBar size="big" />
 
-                    <div className='mt-40 flex xl:flex-col xl:items-center xl:justify-center text-center'>
+                    <div className='mt-40 flex xl:flex-col xl:items-center xl:justify-center'>
                         <div className='w-2/5 flex flex-col xs:items-center xs:justify-center mr-20 lg:m-0 xl:mr-0'>
                             <AnimatedText
                                 text="Contatos"
-                                className='lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl text-center'
+                                className='lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl'
                             />
                             <div className='w-max h-auto rounded-lg xs:text-center border border-dark dark:border-light xs:w-full sm:w-[90%] md:w-[80%] lg:w-[98%] '>
                                 <Image
