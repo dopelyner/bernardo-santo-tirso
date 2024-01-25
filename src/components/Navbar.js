@@ -1,4 +1,4 @@
-import { socialLinks } from '@/constants'
+import { projectsSubMenu, socialLinks } from '@/constants'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -11,38 +11,74 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
     const router = useRouter()
 
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+    let leaveTimeout;
 
     const handleMouseEnter = () => {
         setIsSubMenuOpen(true);
     };
 
     const handleMouseLeave = () => {
+        // Delay the execution of hiding submenu
+        leaveTimeout = setTimeout(() => {
+            setIsSubMenuOpen(false);
+        }, 300);
+    };
+
+    const handleSubMenuMouseEnter = () => {
+        // Clear the timeout to prevent hiding the submenu
+        clearTimeout(leaveTimeout);
+    };
+
+    const handleSubMenuMouseLeave = () => {
         setIsSubMenuOpen(false);
+    };
+
+    const handleSubMenuLinkClick = () => {
+        // Clear the timeout to prevent hiding the submenu
+        clearTimeout(leaveTimeout);
     };
 
     return (
         <div className={`${className} relative group inline-block`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-
             {subMenu ? (
-                <div className="group relative inline-block">
-                    <Link href="/projects" >
-                        <h3 className={`block px-4  text-dark dark:text-light  
-                                transition-colors duration-300 cursor-pointer ${router.asPath == href ? 'font-bold underline' : ''}`}>
+                <div
+                    className="group relative inline-block"
+                    onMouseEnter={handleSubMenuMouseEnter}
+                    onMouseLeave={handleSubMenuMouseLeave}
+                >
+                    <Link href={href}>
+                        <h3
+                            className={`block px-4 text-dark dark:text-light  
+                                transition-colors duration-300 cursor-pointer  ${router.asPath == href ? 'underline' : ''
+                                }`}
+                            onClick={handleSubMenuLinkClick}
+                        >
                             {title}
                         </h3>
                     </Link>
                     <span className="h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 w-full transition-[width] 
-                    ease duration-300" />
+                    ease duration-300"
+                    />
                     {isSubMenuOpen && (
-                        <div className={`absolute top-full left-0 ml-2 mt-2 flex bg-dark dark:bg-light/75 rounded-lg
-                         backdrop-blur-md py-2 ${isSubMenuOpen ? 'flex' : 'hidden'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-
+                        <div
+                            className={`absolute top-full left-0 ml-2 mt-0 flex bg-dark dark:bg-light/75 rounded-lg
+                         backdrop-blur-md py-2 ${isSubMenuOpen ? 'flex' : 'hidden'
+                                }`}
+                            onMouseEnter={handleSubMenuMouseEnter}
+                            onMouseLeave={handleSubMenuMouseLeave}
+                        >
                             {subMenu.map((item, index) => (
-                                <Link key={index} href={item.href} >
-                                    <h3 className={`block px-4 py-2 text-light dark:text-dark  
-                                transition-colors duration-300 cursor-pointer ${router.asPath == item.href ? 'font-bold underline' : 'hover:underline'}`}>
+                                <Link key={index} href={item.href}>
+                                    <h3
+                                        className={`block px-4 py-2 text-light dark:text-dark  
+                                transition-colors duration-300 cursor-pointer ${router.asPath == item.href
+                                                ? 'font-bold underline'
+                                                : ''
+                                            }`}
+                                        onClick={handleSubMenuLinkClick}
+                                    >
                                         {item.title}
                                     </h3>
                                 </Link>
@@ -87,22 +123,14 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
 const Navbar = () => {
 
+    const { instagramURL, facebookURL } = socialLinks[0]
+    
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = () => {
         setIsOpen(!isOpen)
     }
-
-    const { instagramURL, facebookURL } = socialLinks[0]
-
-    const projectsSubMenu = [
-        { href: '/cinema', title: 'Cinema' },
-        { href: '/theater', title: 'Teatro' },
-        { href: '/light', title: 'Luz' },
-        { href: '/photography', title: 'Fotografia' },
-        { href: '/staging', title: 'Encenação' },
-    ];
 
     return (
         <header className='w-full px-32 py-16 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
@@ -114,10 +142,10 @@ const Navbar = () => {
 
             <div className='w-full flex justify-between items-center lg:hidden text-2xl'>
                 <nav className='flex'>
-                    <CustomLink href="/" title="Home" className='mr-4' />
-                    <CustomLink href="/biography" title="Biografia" className='ml-4' />
-                    <CustomLink href="/projects" title="Projetos" className='ml-4' subMenu={projectsSubMenu} />
-                    <CustomLink href="/contacts" title="Contatos" className='ml-4' />
+                    <CustomLink href="/" title="Home" className='mx-2' />
+                    <CustomLink href="/biography" title="Biografia" className='mx-4' />
+                    <CustomLink href="/projects" title="Projetos" className='mx-4' subMenu={projectsSubMenu} />
+                    <CustomLink href="/contacts" title="Contatos" className='mx-4' />
                 </nav>
 
 

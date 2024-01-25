@@ -17,15 +17,15 @@ const Biography = () => {
 
                     <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
-                            text={`“` + quotes.quote1.quote1_1}
+                            text={`“` + quotes.quote1.line1}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <AnimatedText
-                            text={quotes.quote1.quote1_2}
+                            text={quotes.quote1.line2}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <AnimatedText
-                            text={quotes.quote1.quote1_3 + `”`}
+                            text={quotes.quote1.line3 + `”`}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <h2 className='mb-32 text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 1/3</h2>

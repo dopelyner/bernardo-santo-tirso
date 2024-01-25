@@ -1,10 +1,9 @@
+// Photography
+import bernie from '../../public/images/bernie.jpg'
 import pic1 from '../../public/images/pic1.jpg'
 import pic2 from '../../public/images/pic2.jpg'
 import pic3 from '../../public/images/pic3.jpg'
 import pic4 from '../../public/images/pic4.jpg'
-import bernie from '../../public/images/bernie.jpg'
-
-// Photography
 import photo1 from '../../public/images/fotografias/05_11_2023.jpg'
 import photo2 from '../../public/images/fotografias/05_11_2023_2.jpg'
 import photo3 from '../../public/images/fotografias/14_11_2023.jpg'
@@ -15,6 +14,28 @@ import photo6 from '../../public/images/fotografias/Untitled-1.png'
 // import photo8 from '../../public/images/fotografias/'
 // import photo9 from '../../public/images/fotografias/'
 // import photo10 from '../../public/images/fotografias/'
+
+export const imageLinks = {
+    PROFILE_PIC: bernie,
+    PIC_1: pic1,
+    PIC_2: pic2,
+    PIC_3: pic3,
+    PIC_4: pic4,
+}
+
+export const photography = {
+    photo1: photo1,
+    photo2: photo2,
+    photo3: photo3,
+    photo4: photo4,
+    photo5: photo5,
+    photo6: photo6,
+    photo7: pic1,
+    photo8: pic2,
+    photo9: pic3,
+    photo10: pic4,
+}
+
 
 export const socialLinks = [
     {
@@ -31,14 +52,6 @@ export const videoLinks = {
     URL_1: "https://www.youtube.com/watch?v=FVoTtWoMkaU",
     URL_2: "https://vimeo.com/572113578",
     URL_3: "vid1",
-}
-
-export const imageLinks = {
-    PROFILE_PIC: bernie,
-    PIC_1: pic1,
-    PIC_2: pic2,
-    PIC_3: pic3,
-    PIC_4: pic4,
 }
 
 export const biographyText = {
@@ -61,31 +74,26 @@ export const biographyText = {
 export const quotes = {
     author: "O Credo do Lobo",
     quote1: {
-        quote1_1: "Respeita os mais velhos",
-        quote1_2: "Ensina os mais novos",
-        quote1_3: "Coopera com a alcateia",
+        line1: "Respeita os mais velhos",
+        line2: "Ensina os mais novos",
+        line3: "Coopera com a alcateia",
     },
     quote2: {
-        quote2_1: "Brinca quando podes",
-        quote2_2: "Caça quando deves",
-        quote2_3: "Descansa entretanto",
+        line1: "Brinca quando podes",
+        line2: "Caça quando deves",
+        line3: "Descansa entretanto",
     },
     quote3: {
         quote3_1: "Partilha os teus afectos",
-        quote3_2: "Exprime os teus sentimentos",
-        quote3_3: "Deixa a tua marca",
+        line2: "Exprime os teus sentimentos",
+        line3: "Deixa a tua marca",
     },
 }
 
-export const photography = {
-    photo1: photo1,
-    photo2: photo2,
-    photo3: photo3,
-    photo4: photo4,
-    photo5: photo5,
-    photo6: photo6,
-    photo7: pic1,
-    photo8: pic2,
-    photo9: pic3,
-    photo10: pic4,
-}
+export const projectsSubMenu = [
+    { href: '/cinema', title: 'Cinema' },
+    { href: '/theater', title: 'Teatro' },
+    { href: '/light', title: 'Luz' },
+    { href: '/photography', title: 'Fotografia' },
+    { href: '/staging', title: 'Encenação' },
+];

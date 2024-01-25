@@ -130,15 +130,15 @@ const contacts = () => {
 
                     <div className='w-full mb-24 flex flex-col xs:text-6xl'>
                         <AnimatedText
-                            text={`“` + quotes.quote3.quote3_1}
+                            text={`“` + quotes.quote3.line1}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <AnimatedText
-                            text={quotes.quote3.quote3_2}
+                            text={quotes.quote3.line2}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <AnimatedText
-                            text={quotes.quote3.quote3_3 + `”`}
+                            text={quotes.quote3.line3 + `”`}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <h2 className='mb-32 text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 3/3</h2>
