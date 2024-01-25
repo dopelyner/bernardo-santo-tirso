@@ -34,7 +34,7 @@ const Projects = () => {
 
                     <SeparatorBar size="big" />
 
-                    <div className='flex flex-col items-center justify-center lg:mt-0'>
+                    <div className='flex flex-col xl:mb-12 xs:mb-16 items-center justify-center lg:mt-0'>
                         <div className='flex flex-col mt-24 gap-y-12'>
                             <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />

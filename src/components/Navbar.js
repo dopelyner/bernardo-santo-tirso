@@ -1,27 +1,63 @@
-import Link from 'next/link'
-import useThemeSwitcher from './hooks/useThemeSwitcher'
-import Logo from './Logo'
-import React, { useState } from 'react'
-import { useRouter } from 'next/router'
-import { motion } from 'framer-motion'
 import { socialLinks } from '@/constants'
-import { SunIcon, MoonIcon, FacebookIcon, InstagramIcon } from './Icons'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { useState } from 'react'
+import { FacebookIcon, InstagramIcon, MoonIcon, SunIcon } from './Icons'
+import useThemeSwitcher from './hooks/useThemeSwitcher'
 
-export const CustomLink = ({ href, title, className = "" }) => {
+export const CustomLink = ({ href, title, className = "", subMenu }) => {
 
     const router = useRouter()
 
+    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsSubMenuOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsSubMenuOpen(false);
+    };
+
     return (
-        <Link href={href} className={`${className} relative group`}>
-            {title}
-            <span className={`h-[2px] inline-block bg-dark absolute left-0 
-            -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-            ${router.asPath == href ? 'w-full' : 'w-0'}
-            bg-primary dark:bg-primaryDark`}>&nbsp;
-            </span>
-        </Link>
-    )
-}
+        <div className={`${className} relative group inline-block`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+
+            {subMenu ? (
+                <div className="group relative inline-block">
+                    <h3 className="block px-4 text-dark dark:text-light cursor-pointer">
+                        {title}
+                    </h3>
+                    <span className="h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 w-full transition-[width] 
+                    ease duration-300" />
+                    {isSubMenuOpen && (
+                        <div className={`absolute top-full left-0 ml-2 mt-2 flex bg-dark dark:bg-light/75 rounded-lg
+                         backdrop-blur-md py-2 ${isSubMenuOpen ? 'flex' : 'hidden'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+
+                            {subMenu.map((item, index) => (
+                                <Link key={index} href={item.href} >
+                                    <h3 className={`block px-4 py-2 text-light dark:text-dark  
+                                transition-colors duration-300 cursor-pointer ${router.asPath == item.href ? 'font-bold underline' : 'hover:underline'}`}>
+                                        {item.title}
+                                    </h3>
+                                </Link>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            ) : (
+                <Link href={href} className={`${className} relative group`}>
+                    {title}
+                    <span className={`h-[2px] inline-block bg-dark absolute left-0 
+                -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
+                ${router.asPath == href ? 'w-full' : 'w-0'}
+                bg-primary dark:bg-primaryDark`}>&nbsp;
+                    </span>
+                </Link>
+            )}
+        </div>
+    );
+};
 
 const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
@@ -55,9 +91,16 @@ const Navbar = () => {
 
     const { instagramURL, facebookURL } = socialLinks[0]
 
+    const projectsSubMenu = [
+        { href: '/cinema', title: 'Cinema' },
+        { href: '/theater', title: 'Teatro' },
+        { href: '/light', title: 'Luz' },
+        { href: '/photography', title: 'Fotografia' },
+        { href: '/staging', title: 'Encenação' },
+    ];
+
     return (
         <header className='w-full px-32 py-16 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
-
             <button className='flex-col justify-center items-center hidden lg:flex group' onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light group-hover:bg-dark group-hover:dark:bg-light transition-all duration ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light group-hover:bg-dark group-hover:dark:bg-light transition-all duration ease-out block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'} `}></span>
@@ -65,17 +108,13 @@ const Navbar = () => {
             </button>
 
             <div className='w-full flex justify-between items-center lg:hidden text-2xl'>
-                <nav>
+                <nav className='flex'>
                     <CustomLink href="/" title="Home" className='mr-4' />
                     <CustomLink href="/biography" title="Biografia" className='ml-4' />
-                    <CustomLink href="/projects" title="Projetos" className='ml-4' />
-                    {/* <CustomLink href="/cinema" title="Cinema" className='ml-4' /> */}
-                    {/* <CustomLink href="/theater" title="Teatro" className='ml-4' /> */}
-                    {/* <CustomLink href="/light" title="Luz" className='ml-4' /> */}
-                    {/* <CustomLink href="/photography" title="Fotografia" className='ml-4' /> */}
-                    {/* <CustomLink href="/staging" title="Encenação" className='ml-4' /> */}
+                    <CustomLink href="/projects" title="Projetos" className='ml-4' subMenu={projectsSubMenu} />
                     <CustomLink href="/contacts" title="Contatos" className='ml-4' />
                 </nav>
+
 
                 <nav className='flex items-center justify-center flex-wrap'>
                     <motion.a href={facebookURL} target={'_blank'}
