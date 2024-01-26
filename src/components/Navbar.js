@@ -44,7 +44,7 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
             onMouseLeave={handleMouseLeave}>
             {subMenu ? (
                 <div
-                    className="group relative inline-block"
+                    className={`group relative inline-block `}
                     onMouseEnter={handleSubMenuMouseEnter}
                     onMouseLeave={handleSubMenuMouseLeave}
                 >
@@ -58,9 +58,9 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
                             {title}
                         </h3>
                     </Link>
-                    <span className="h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 w-full transition-[width] 
+                    {/* <span className="h-[2px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 w-full transition-[width] 
                     ease duration-300"
-                    />
+                    /> */}
                     {isSubMenuOpen && (
                         <div
                             className={`absolute top-full left-0 ml-2 mt-0 flex bg-dark dark:bg-light/75 rounded-lg
@@ -73,7 +73,7 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
                                 <Link key={index} href={item.href}>
                                     <h3
                                         className={`block px-4 py-2 text-light dark:text-dark  
-                                transition-colors duration-300 cursor-pointer ${router.asPath == item.href
+                                        transition-colors duration-300 cursor-pointer hover:underline ${router.asPath == item.href
                                                 ? 'font-bold underline'
                                                 : ''
                                             }`}
@@ -124,7 +124,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 const Navbar = () => {
 
     const { instagramURL, facebookURL } = socialLinks[0]
-    
+
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false);
 
@@ -143,9 +143,9 @@ const Navbar = () => {
             <div className='w-full flex justify-between items-center lg:hidden text-2xl'>
                 <nav className='flex'>
                     <CustomLink href="/" title="Home" className='mx-2' />
-                    <CustomLink href="/biography" title="Biografia" className='mx-4' />
-                    <CustomLink href="/projects" title="Projetos" className='mx-4' subMenu={projectsSubMenu} />
-                    <CustomLink href="/contacts" title="Contatos" className='mx-4' />
+                    <CustomLink href="/biography" title="Biografia" className='mx-2' />
+                    <CustomLink href="/projects" title="Projetos" className='mx-2' subMenu={projectsSubMenu} />
+                    <CustomLink href="/contacts" title="Contatos" className='mx-2' />
                 </nav>
 
 
