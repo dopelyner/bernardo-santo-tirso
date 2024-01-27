@@ -84,7 +84,7 @@ export const quotes = {
         line3: "Descansa entretanto",
     },
     quote3: {
-        quote3_1: "Partilha os teus afectos",
+        line1: "Partilha os teus afectos",
         line2: "Exprime os teus sentimentos",
         line3: "Deixa a tua marca",
     },
