@@ -97,3 +97,16 @@ export const projectsSubMenu = [
     { href: '/photography', title: 'Fotografia' },
     { href: '/staging', title: 'Encenação' },
 ];
+
+export const projects = [
+    { id: 1, title: "Project 1", imageURL: photography.photo1 },
+    { id: 2, title: "Project 2", imageURL: photography.photo2 },
+    { id: 3, title: "Project 3", imageURL: photography.photo3 },
+    { id: 4, title: "Project 4", imageURL: photography.photo4 },
+    { id: 5, title: "Project 5", imageURL: photography.photo5 },
+    { id: 6, title: "Project 6", imageURL: photography.photo6 },
+    { id: 7, title: "Project 7", imageURL: photography.photo7 },
+    { id: 8, title: "Project 8", imageURL: photography.photo8 },
+    { id: 9, title: "Project 9", imageURL: photography.photo9 },
+    { id: 10, title: "Project 10", imageURL: photography.photo10 },
+];

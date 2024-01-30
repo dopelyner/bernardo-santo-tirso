@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
 import SeparatorBar from '@/components/SeparatorBar';
-import { imageLinks, photography } from '@/constants';
+import { projects } from '@/constants';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -22,18 +22,6 @@ const Photography = () => {
         setIsModalOpen(false);
     };
 
-    const projects = [
-        { id: 1, title: "Project 1", imageURL: photography.photo1 },
-        { id: 2, title: "Project 2", imageURL: photography.photo2 },
-        { id: 3, title: "Project 3", imageURL: photography.photo3 },
-        { id: 4, title: "Project 4", imageURL: photography.photo4 },
-        { id: 5, title: "Project 5", imageURL: photography.photo5 },
-        { id: 6, title: "Project 6", imageURL: photography.photo6 },
-        { id: 7, title: "Project 7", imageURL: photography.photo7 },
-        { id: 8, title: "Project 8", imageURL: photography.photo8 },
-        { id: 9, title: "Project 9", imageURL: photography.photo9 },
-        { id: 10, title: "Project 10", imageURL: photography.photo10 },
-    ];
 
     // Masonry breakpoints
     const breakpoints = {
@@ -81,24 +69,25 @@ const Photography = () => {
                                 </div>
                             ))}
                         </Masonry>
-                        {/* <Modal
+                        <Modal
                             isOpen={isModalOpen}
                             onRequestClose={closeModal}
                             contentLabel="Image Modal"
-                            className="absolute w-[80%] flex items-center justify-center inset-0"
-                            overlayClassName="fixed inset-0"
+                            className="aabsolute w-full sm:w-5/6 md:w-4/5 lg:w-3/5 xl:w-2/5 h-full sm:h-5/6 md:h-4/5 lg:h-3/5 xl:h-2/5 mx-auto my-auto inset-0"
+                            overlayClassName="fixed inset-0 bg-black bg-opacity-50"
                         >
                             {selectedImage && (
                                 <Image
                                     src={selectedImage}
                                     alt="Full Screen Image"
-                                    className='fill object-contain'
+                                    layout="fill"
+                                    objectFit="contain"
                                 />
                             )}
-                            <button onClick={closeModal} className="absolute text-[white] text-lg cursor-pointer border-[none] right-5 top-5">
+                            <button onClick={closeModal} className="absolute text-white text-xl cursor-pointer top-4 right-4 z-20 ">
                                 Close
                             </button>
-                        </Modal> */}
+                        </Modal>
                     </div>
 
                 </Layout>
