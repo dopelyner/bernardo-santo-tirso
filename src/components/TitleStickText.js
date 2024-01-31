@@ -2,7 +2,7 @@ import React from 'react'
 import localFont from 'next/font/local'
 import AnimatedText from './AnimatedText';
 
-const StickFont = localFont({ src: '../../public/fonts/Stick-Regular.ttf' })
+const StickFont = localFont({ src: '../../public/fonts/Stick-Regular.ttf', display: 'swap' })
 
 const TitleStickText = ({ title, className = "" }) => {
     return (
