@@ -67,7 +67,6 @@ const Cinema = () => {
                                 subTitle="Filme de Animação realizado por Paul Bush"
                                 videoURL="videos/ride.mp4"
                             />
-
                             <SeparatorBar />
 
                             <ProjectItem
