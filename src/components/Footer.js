@@ -16,7 +16,7 @@ const Footer = () => {
                 <MotionLink
                     href={instagramURL}
                     target={'_blank'}
-                    className='w-full flex items-center justify-center hover:scale-105'
+                    className='w-full flex items-center justify-center'
                 >
                     <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
                 </MotionLink>

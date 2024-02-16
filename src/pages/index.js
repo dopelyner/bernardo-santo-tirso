@@ -26,7 +26,7 @@ export default function Home() {
       <TransitionEffect />
 
       <main className='w-full min-h-screen flex items-center justify-center text-dark dark:text-light sm:justify-center'>
-        <Layout className='pt-0 p-16 xl:p-24 2xl:p-32'>
+        <Layout className='pt-0 p-16 xl:p-24 2xl:p-16'>
 
           <TitleStickText title="Bernardo Santo Tirso" />
 
