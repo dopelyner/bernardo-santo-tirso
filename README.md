@@ -7,12 +7,13 @@
 
 
 ##  Techologies 
-- Nextjs - the React Framework for the Web
-- TailwindCSS - a popular utility-first CSS styling framework;
-- Framer Motion - the most popular library used to bring your React website to life with animations
+- [Nextjs](https://nextjs.org/) - the React Framework for the Web
+- [TailwindCSS](https://tailwindcss.com/) - a popular utility-first CSS styling framework;
+- [Framer Motion](https://www.framer.com/motion/) - the most popular library used to bring your React website to life with animations
+- [Cloudinary](https://cloudinary.com/) - end-to-end image- and video-management solution for websites and mobile apps, covering everything from image and video uploads, storage, manipulations, optimizations to delivery
 
 ##  Objectives
-- Create a simple portfolio in order to display information about the great artist Bernardo Santo Tirso.
+- Create a simple portfolio in order to display information about the great Portuguese Artist Bernardo Santo Tirso.
 
 ## Fonts
 Stick
