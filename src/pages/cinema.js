@@ -65,21 +65,21 @@ const Cinema = () => {
                             <ProjectItem
                                 title="Ride"
                                 subTitle="Filme de Animação realizado por Paul Bush"
-                                videoURL="videos/ride.mp4"
+                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/ride"
                             />
                             <SeparatorBar />
 
                             <ProjectItem
                                 title="O céu aqui é mais baixo"
                                 subTitle="Realizado por Henrique Vilão"
-                                videoURL="videos/o-ceu-aqui-e-mais-baixo.mp4"
+                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/o-ceu-aqui-e-mais-baixo"
                             />
                             <SeparatorBar />
 
                             <ProjectItem
                                 title="The spill - B**ch is gone (videoclipe)"
                                 subTitle="Realizado por The spill"
-                                videoURL="videos/the-spill-bitch-is-gone.mp4"
+                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/the-spill-bitch-is-gone"
                             />
 
                             <SeparatorBar />
@@ -87,7 +87,7 @@ const Cinema = () => {
                             <ProjectItem
                                 title="Ao acaso, um rapaz"
                                 subTitle="Realizado por João Macedo"
-                                videoURL="videos/ao-acaso-um-rapaz.mp4"
+                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/ao-acaso-um-rapaz"
                             />
                         </div>
                     </div>
