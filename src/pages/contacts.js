@@ -1,12 +1,11 @@
-import React, { useRef, useState } from 'react'
-import emailjs from 'emailjs-com';
-import Head from 'next/head'
-import Layout from '@/components/Layout'
-import AnimatedText from '@/components/AnimatedText'
-import TransitionEffect from '@/components/TransitionEffect'
-import { emailAddress, imageLinks, quotes } from '@/constants'
-import Image from 'next/image';
+import AnimatedText from '@/components/AnimatedText';
+import Layout from '@/components/Layout';
 import SeparatorBar from '@/components/SeparatorBar';
+import { emailAddress, imageLinks, quotes } from '@/constants';
+import emailjs from 'emailjs-com';
+import Head from 'next/head';
+import Image from 'next/image';
+import { useRef, useState } from 'react';
 
 const ContactForm = () => {
 
