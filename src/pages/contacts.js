@@ -154,7 +154,7 @@ const contacts = () => {
                             />
                             <div className='w-max h-auto rounded-lg xs:text-center border border-dark dark:border-light xs:w-full sm:w-[90%] md:w-[80%] lg:w-[98%] '>
                                 <Image
-                                    src={imageLinks.PIC_4}
+                                    src={imageLinks.PIC_CONTACTS}
                                     alt='profile pic'
                                     width={400}
                                     height={400}

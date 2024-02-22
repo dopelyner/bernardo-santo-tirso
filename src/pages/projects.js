@@ -39,7 +39,6 @@ const Projects = () => {
                             <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
-                            <CustomLink href="/photography" title="Fotografia" className='w-full text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
                         </div>
                     </div>
