@@ -11,7 +11,7 @@ const Footer = () => {
     const { instagramURL } = socialLinks[0]
 
     return (
-        <footer className='w-full  font-medium text-lg  sm:text-base'>
+        <footer className='w-full font-medium text-lg sm:text-base'>
             <div className='w-full flex justify-center items-center'>
                 <Image
                     src={"../../images/bernardosantotirso.png"}
