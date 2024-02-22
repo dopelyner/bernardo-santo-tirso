@@ -21,14 +21,15 @@ export default function Home() {
 
           <TitleStickText title="Bernardo Santo Tirso" />
 
-          <div className='w-full flex justify-center items-center'>
+          {/* <div className='w-full flex justify-center items-center'>
             <Image
               src={"../../images/bernardosantotirso.png"}
               alt='Bernardo Santo Tirso'
               width={500}
               height={500}
             />
-          </div>
+          </div> */}
+
         </Layout>
       </main>
     </>
