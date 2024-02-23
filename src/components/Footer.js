@@ -8,7 +8,7 @@ const MotionLink = motion(Link)
 
 const Footer = () => {
 
-    const { instagramURL } = socialLinks[0]
+    const { instagramURL, instagramDeveloper } = socialLinks[0]
 
     return (
         <footer className='w-full font-medium text-lg sm:text-base'>
@@ -20,14 +20,15 @@ const Footer = () => {
                     height={500}
                 />
             </div>
-            <Layout className='py-10 flex items-center justify-center lg:flex-col lg:py-10 border-t-2 border-solid
+            <Layout className='py-10 flex flex-col items-center justify-center text-center lg:flex-col lg:py-10 border-t-2 border-solid
              border-dark dark:border-light dark:text-light'>
+                <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
                 <MotionLink
-                    href={instagramURL}
+                    href={instagramDeveloper}
                     target={'_blank'}
-                    className='w-full flex items-center justify-center'
+                    className='mt-2 hover:-translate-y-0.5'
                 >
-                    <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
+                    <span className='hover:font-bold'>Developed by Tiago Lino</span>
                 </MotionLink>
             </Layout>
         </footer>
