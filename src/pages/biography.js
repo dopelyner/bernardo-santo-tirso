@@ -49,16 +49,17 @@ const Biography = () => {
                                         <div key={`slice-` + i}>
                                             <Image
                                                 src={slice}
-                                                width={"200"}
+                                                width={"250"}
                                                 height="auto"
                                                 alt='Slice'
                                                 className='border-2 border-black dark:border-light'
                                             />
                                         </div>
                                     ))}
+
                             </div>
 
-                            <div className=' mt-16 text-xl xs:text-2xl'>
+                            <div className='flex flex-col mt-16 text-xl xs:text-2xl'>
                                 {biographyText.paragraphs.map((paragraph, index) => (
                                     <li
                                         key={index}
