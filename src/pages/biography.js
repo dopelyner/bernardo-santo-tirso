@@ -38,25 +38,24 @@ const Biography = () => {
 
                         <AnimatedText
                             text="Biografia"
-                            className='w-1/2 text-center xs:mb-6 xs:text-7xl lg:text-7xl '
+                            className='w-1/2 mt-16 text-center xs:mb-6 xs:text-7xl lg:text-7xl '
                         />
 
                         <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
 
-                            <div className="grid grid-cols-2 gap-2 xl:gap-0 ">
+                            <div className="grid grid-cols-2 gap-1 ">
                                 {
                                     bernieSliced.slices.map((slice, i) => (
                                         <div key={`slice-` + i}>
                                             <Image
                                                 src={slice}
-                                                width={"250"}
+                                                width={"350"}
                                                 height="auto"
                                                 alt='Slice'
                                                 className='border-2 border-black dark:border-light'
                                             />
                                         </div>
                                     ))}
-
                             </div>
 
                             <div className='flex flex-col mt-16 text-xl xs:text-2xl'>
