@@ -1,8 +1,9 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import SeparatorBar from '@/components/SeparatorBar'
-import { biographyText, quotes } from '@/constants'
+import { bernieSliced, biographyText, imageLinks, quotes } from '@/constants'
 import Head from 'next/head'
+import Image from 'next/image'
 
 const Biography = () => {
     return (
@@ -33,20 +34,41 @@ const Biography = () => {
 
                     <SeparatorBar size="big" />
 
-                    <div className='w-full flex flex-row mb-36 items-center justify-center lg:flex-col'>
+                    <div className='w-full flex flex-col mb-36 items-center justify-center lg:flex-col'>
+
                         <AnimatedText
                             text="Biografia"
-                            className='w-1/2 xs:mb-6 xs:text-7xl lg:text-7xl lg:text-center'
+                            className='w-1/2 text-center xs:mb-6 xs:text-7xl lg:text-7xl '
                         />
-                        <div className='w-full mt-16 text-xl xs:text-2xl'>
-                            {biographyText.paragraphs.map((paragraph, index) => (
-                                <li
-                                    key={index}
-                                    className='list-none my-4'
-                                >
-                                    {paragraph}
-                                </li>
-                            ))}
+
+                        <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
+
+                            <div className="grid grid-cols-2 gap-2 xl:gap-0 ">
+                                {
+                                    bernieSliced.slices.map((slice, i) => (
+                                        <div key={`slice-` + i}>
+                                            <Image
+                                                src={slice}
+                                                width={"200"}
+                                                height="auto"
+                                                alt='Slice'
+                                                className='border-2 border-black dark:border-light'
+                                            />
+                                        </div>
+                                    ))}
+                            </div>
+
+                            <div className=' mt-16 text-xl xs:text-2xl'>
+                                {biographyText.paragraphs.map((paragraph, index) => (
+                                    <li
+                                        key={index}
+                                        className='list-none my-4'
+                                    >
+                                        {paragraph}
+                                    </li>
+                                ))}
+                            </div>
+
                         </div>
                     </div>
                 </Layout>
