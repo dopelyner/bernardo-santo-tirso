@@ -6,6 +6,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 const Biography = () => {
+
     return (
         <>
             <Head>
@@ -42,14 +43,13 @@ const Biography = () => {
                         />
 
                         <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
-
                             <div className="grid grid-cols-2 gap-1 ">
                                 {
                                     bernieSliced.slices.map((slice, i) => (
                                         <div key={`slice-` + i}>
                                             <Image
                                                 src={slice}
-                                                width={"350"}
+                                                width={250}
                                                 height="auto"
                                                 alt='Slice'
                                                 className='border-2 border-black dark:border-light'
@@ -57,9 +57,8 @@ const Biography = () => {
                                         </div>
                                     ))}
                             </div>
-
                             <div className='flex flex-col mt-16 text-xl xs:text-2xl'>
-                                {biographyText.paragraphs.map((paragraph, index) => (
+                                {biographyText.paragraph01.map((paragraph, index) => (
                                     <li
                                         key={index}
                                         className='list-none my-4'
@@ -68,9 +67,34 @@ const Biography = () => {
                                     </li>
                                 ))}
                             </div>
-
                         </div>
+
+                        <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
+                            <div className='flex flex-col mt-16 text-xl xs:text-2xl'>
+                                {biographyText.paragraph02.map((paragraph, index) => (
+                                    <li
+                                        key={index}
+                                        className='list-none my-4'
+                                    >
+                                        {paragraph}
+                                    </li>
+                                ))}
+                            </div>
+                            <div className="">
+                                <Image
+                                    src={imageLinks.PIC_BIOGRAPHY02}
+                                    width={400}
+                                    height="auto"
+                                    alt='Slice'
+                                    className='border-2 border-black dark:border-light'
+                                />
+                            </div>
+                        </div>
+
+
+
                     </div>
+
                 </Layout>
             </main>
         </>
