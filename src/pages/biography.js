@@ -50,14 +50,14 @@ const Biography = () => {
                                             <Image
                                                 src={slice}
                                                 width={250}
-                                                height="auto"
+                                                height={250}
                                                 alt='Slice'
                                                 className='border-2 border-black dark:border-light'
                                             />
                                         </div>
                                     ))}
                             </div>
-                            <div className='flex flex-col mt-16 text-xl xs:text-2xl'>
+                            <div className=' mt-16 text-xl xs:text-2xl'>
                                 {biographyText.paragraph01.map((paragraph, index) => (
                                     <li
                                         key={index}
@@ -70,7 +70,7 @@ const Biography = () => {
                         </div>
 
                         <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
-                            <div className='flex flex-col mt-16 text-xl xs:text-2xl'>
+                            <div className='mt-16 text-xl xs:text-2xl'>
                                 {biographyText.paragraph02.map((paragraph, index) => (
                                     <li
                                         key={index}
@@ -90,8 +90,6 @@ const Biography = () => {
                                 />
                             </div>
                         </div>
-
-
 
                     </div>
 
