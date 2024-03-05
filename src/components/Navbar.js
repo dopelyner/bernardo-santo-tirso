@@ -2,7 +2,7 @@ import { projectsSubMenu, socialLinks } from '@/constants'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { FacebookIcon, InstagramIcon, MoonIcon, SunIcon } from './Icons'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 
@@ -58,9 +58,7 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
                             {title}
                         </h3>
                     </Link>
-                    {/* <span className="h-[2px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 w-full transition-[width] 
-                    ease duration-300"
-                    /> */}
+
                     {isSubMenuOpen && (
                         <div
                             className={`absolute top-full left-0 ml-2 mt-0 flex bg-dark dark:bg-light/75 rounded-lg
@@ -110,12 +108,11 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     }
 
     return (
-        <button href={href} className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
+        <button href={href} className={`${className} relative group text-light text-2xl dark:text-dark my-2`} onClick={handleClick}>
             {title}
-            <span className={`h-[2px] inline-block bg-light absolute left-0 
+            <span className={`h-[2px] inline-block bg-light dark:bg-dark absolute left-0
                 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300
-                ${router.asPath == href ? 'w-full' : 'w-0'}
-                dark:bg-dark `}>&nbsp;
+                ${router.asPath == href ? 'w-full' : 'w-0'}`}>&nbsp;
             </span>
         </button>
     )
@@ -127,6 +124,21 @@ const Navbar = () => {
 
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false);
+    const ref = useRef()
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (ref.current && !ref.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, []);
 
     const handleClick = () => {
         setIsOpen(!isOpen)
@@ -187,7 +199,9 @@ const Navbar = () => {
                         initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                         animate={{ scale: 1, opacity: 1 }}
                         className='min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 
-                            -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'>
+                            -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'
+                        ref={ref}
+                    >
 
                         <nav className='flex items-center flex-col justify-center'>
                             <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
@@ -196,7 +210,7 @@ const Navbar = () => {
                             <CustomMobileLink href="/contacts" title="Contatos" className='' toggle={handleClick} />
                         </nav>
 
-                        <nav className='flex items-center justify-center flex-wrap mt-2'>
+                        <nav className='flex items-center justify-center flex-wrap mt-10'>
                             <motion.a href={facebookURL} target={'_blank'}
                                 className="w-6 mr-3 sm:mx-1"
                                 whileHover={{ y: -2 }}
