@@ -42,52 +42,53 @@ const Biography = () => {
                             className='w-1/2 mt-16 text-center xs:mb-6 xs:text-7xl lg:text-7xl '
                         />
 
-                        <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
-                            <Image
-                                src={imageLinks.PIC_BIOGRAPHY01}
-                                width={400}
-                                height={400}
-                                alt='Slice'
-                                className='border-2 border-black dark:border-light'
-                            />
-                            <div className=' mt-16 text-xl xs:text-2xl'>
+                        <div className='flex flex-row gap-x-10  justify-center items-center xl:flex-col'>
+                            <div className='flex flex-col gap-4 justify-center items-center'>
+                                <Image
+                                    src={imageLinks.PIC_BIOGRAPHY01}
+                                    width={400}
+                                    height={400}
+                                    alt='Bernardo Sto Tirso 1'
+                                    className='rounded-xl border-2 border-black dark:border-light'
+                                />
+                                <h3 className='text-lg'>Fotografia de João Pádua</h3>
+                            </div>
+                            <div className='mt-6 text-xl xs:text-2xl'>
                                 {biographyText.paragraph01.map((paragraph, index) => (
                                     <li
                                         key={index}
-                                        className='list-none my-4'
+                                        className='list-none my-6'
                                     >
                                         {paragraph}
                                     </li>
                                 ))}
                             </div>
-                        </div>
-
-                        <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
-                            <div className='mt-16 text-xl xs:text-2xl'>
-                                {biographyText.paragraph02.map((paragraph, index) => (
-                                    <li
-                                        key={index}
-                                        className='list-none my-4'
-                                    >
-                                        {paragraph}
-                                    </li>
-                                ))}
-                            </div>
-                            <div className="">
+                            <div className='flex flex-col mt-10 gap-4 justify-center items-center'>
                                 <Image
                                     src={imageLinks.PIC_BIOGRAPHY02}
                                     width={400}
                                     height="auto"
-                                    alt='Slice'
-                                    className='border-2 border-black dark:border-light'
+                                    alt='Bernardo Sto Tirso 2'
+                                    className='rounded-xl border-2 border-black dark:border-light'
                                 />
+                                <h3 className='text-lg'>Fotografia de João Pádua</h3>
                             </div>
-                        </div>
+                            <div className='mt-6 text-xl xs:text-2xl'>
+                                {biographyText.paragraph02.map((paragraph, index) => (
+                                    <li
+                                        key={index}
+                                        className='list-none my-6'
+                                    >
+                                        {paragraph}
+                                    </li>
+                                ))}
+                            </div>
 
+                        </div>
                     </div>
 
                 </Layout>
-            </main>
+            </main >
         </>
     )
 }
