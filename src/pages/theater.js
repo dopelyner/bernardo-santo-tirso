@@ -1,5 +1,6 @@
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
+import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
@@ -61,6 +62,14 @@ const Theater = () => {
                             />
                             <SeparatorBar size="big" />
 
+                            <div className='flex flex-col items-center justify-center'>
+                                <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
+                                <div className='flex flex-row gap-20 lg:flex-col'>
+                                    <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
+                                    <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
+                                    <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
+                                </div>
+                            </div>
 
                         </div>
                     </div>
