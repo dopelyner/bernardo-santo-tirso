@@ -1,33 +1,12 @@
-import picContacts from '../../public/images/pic-contacts.jpg'
 import picBiography01 from '../../public/images/biography01.JPG'
 import picBiography02 from '../../public/images/biography02.JPG'
+import picContacts from '../../public/images/pic-contacts.jpg'
 
-import slice01 from '../../public/images/sliced/part_01.jpg'
-import slice02 from '../../public/images/sliced/part_02.jpg'
-import slice03 from '../../public/images/sliced/part_03.jpg'
-import slice04 from '../../public/images/sliced/part_04.jpg'
-import slice05 from '../../public/images/sliced/part_05.jpg'
-import slice06 from '../../public/images/sliced/part_06.jpg'
-import slice07 from '../../public/images/sliced/part_07.jpg'
-import slice08 from '../../public/images/sliced/part_08.jpg'
 
 export const imageLinks = {
     PIC_CONTACTS: picContacts,
     PIC_BIOGRAPHY01: picBiography01,
     PIC_BIOGRAPHY02: picBiography02,
-}
-
-export const bernieSliced = {
-    slices: [
-        slice01,
-        slice02,
-        slice03,
-        slice04,
-        slice05,
-        slice06,
-        slice07,
-        slice08,
-    ]
 }
 
 export const socialLinks = [

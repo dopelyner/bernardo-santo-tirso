@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import SeparatorBar from '@/components/SeparatorBar'
-import { bernieSliced, biographyText, imageLinks, quotes } from '@/constants'
+import { biographyText, imageLinks, quotes } from '@/constants'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -43,20 +43,13 @@ const Biography = () => {
                         />
 
                         <div className='flex flex-row gap-x-10 mt-20 justify-center items-center xl:flex-col'>
-                            <div className="grid grid-cols-2 gap-1 ">
-                                {
-                                    bernieSliced.slices.map((slice, i) => (
-                                        <div key={`slice-` + i}>
-                                            <Image
-                                                src={slice}
-                                                width={250}
-                                                height={250}
-                                                alt='Slice'
-                                                className='border-2 border-black dark:border-light'
-                                            />
-                                        </div>
-                                    ))}
-                            </div>
+                            <Image
+                                src={imageLinks.PIC_BIOGRAPHY01}
+                                width={400}
+                                height={400}
+                                alt='Slice'
+                                className='border-2 border-black dark:border-light'
+                            />
                             <div className=' mt-16 text-xl xs:text-2xl'>
                                 {biographyText.paragraph01.map((paragraph, index) => (
                                     <li
