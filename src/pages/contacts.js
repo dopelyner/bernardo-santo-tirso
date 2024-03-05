@@ -151,7 +151,7 @@ const contacts = () => {
                                 text="Contatos"
                                 className='w-full mb-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
                             />
-                            <div className='w-max h-auto items-center justify-center rounded-lg xs:text-center border-2 border-dark dark:border-light '>
+                            <div className='w-max sm:w-[80%] h-auto items-center justify-center rounded-lg xs:text-center border-2 border-dark dark:border-light '>
                                 <Image
                                     src={imageLinks.PIC_CONTACTS}
                                     alt='profile pic'
@@ -162,7 +162,7 @@ const contacts = () => {
                             </div>
                         </div>
 
-                        <div className='w-full sm:w-3/5 xl:w-full mt-16 mb-10 sm:mb-16 xl:mb-20'>
+                        <div className='w-full sm:w-4/5 xl:w-full mt-16 mb-10 sm:mb-16 xl:mb-20'>
                             <ContactForm />
                         </div>
                     </div>
