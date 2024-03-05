@@ -145,19 +145,19 @@ const contacts = () => {
 
                     <SeparatorBar size="big" />
 
-                    <div className='mt-40 flex xl:flex-col xl:items-center xl:justify-center'>
-                        <div className='w-2/5 flex flex-col xs:items-center xs:justify-center mr-20 lg:m-0 xl:mr-0'>
+                    <div className='mt-40 flex xl:flex-col xl:items-center xl:justify-center '>
+                        <div className='w-2/5 flex flex-col items-center justify-center mr-20 lg:m-0 xl:mr-0 md:w-max'>
                             <AnimatedText
                                 text="Contatos"
-                                className='lg:p-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl'
+                                className='w-full mb-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
                             />
-                            <div className='w-max h-auto rounded-lg xs:text-center border border-dark dark:border-light xs:w-full sm:w-[90%] md:w-[80%] lg:w-[98%] '>
+                            <div className='w-max h-auto items-center justify-center rounded-lg xs:text-center border-2 border-dark dark:border-light '>
                                 <Image
                                     src={imageLinks.PIC_CONTACTS}
                                     alt='profile pic'
                                     width={400}
                                     height={400}
-                                    className='rounded-lg '
+                                    className='rounded-lg'
                                 />
                             </div>
                         </div>
