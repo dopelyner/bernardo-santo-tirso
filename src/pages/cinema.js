@@ -1,14 +1,16 @@
 import AnimatedText from '@/components/AnimatedText';
+import { LeftArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 const ProjectItem = ({ title, subTitle, videoURL }) => {
     return (
-        <div className='flex flex-col mb-24'>
+        <div className='flex flex-col justify-center items-center mb-24'>
             <AnimatedText
                 text={title}
                 className='mt-0 italic text-5xl xs:text-4xl text-center'
@@ -50,12 +52,12 @@ const Cinema = () => {
                 <meta name="Bernardo Santo Tirso" content='Projetos relativos ao cinema...' />
             </Head>
 
-            <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
+            <main className='w-full flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16'>
 
                     <div className='flex flex-col items-center justify-center lg:mt-0'>
 
-                        <div className='flex flex-col mb-16'>
+                        <div className='flex flex-col '>
                             <AnimatedText
                                 text="Cinema"
                                 className='w-full mb-6 xs:text-5xl text-center'
@@ -92,18 +94,27 @@ const Cinema = () => {
                             />
                         </div>
 
-                        <SeparatorBar size="big" />
-
-                        <div className='flex flex-col items-center justify-center'>
-                            <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
-                            <div className='flex flex-row gap-20 lg:flex-col'>
-                                <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
-                                <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
-                                <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
-                            </div>
+                        <div className='flex self-center pb-16'>
+                            <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
+                                <LeftArrow />
+                            <h3 className='text-2xl italic'>Voltar</h3>
+                            </Link>
                         </div>
 
                     </div>
+
+                    <SeparatorBar size="big" />
+
+                    <div className='flex flex-col items-center justify-center'>
+                            <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
+                        <div className='flex flex-row gap-20 lg:flex-col'>
+                            <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
+                            <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
+                        </div>
+                    </div>
+
+
 
                 </Layout>
             </main>

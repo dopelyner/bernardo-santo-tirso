@@ -1,9 +1,11 @@
 import AnimatedText from '@/components/AnimatedText';
+import { LeftArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 const ProjectItem = ({ title, subTitle, videoURL }) => {
@@ -60,6 +62,14 @@ const Light = () => {
                                 text="Luz"
                                 className='w-full mb-6 xs:text-5xl text-center'
                             />
+
+                            <div className='flex self-center pb-16'>
+                                <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
+                                    <LeftArrow />
+                                    <h3 className='text-2xl italic'>Voltar</h3>
+                                </Link>
+                            </div>
+
                             <SeparatorBar size="big" />
 
                             <div className='flex flex-col items-center justify-center'>
@@ -70,8 +80,6 @@ const Light = () => {
                                     <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 
