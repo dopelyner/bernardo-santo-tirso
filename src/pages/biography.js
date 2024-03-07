@@ -49,8 +49,9 @@ const Biography = () => {
                                     width="100%"
                                     height="100%"
                                     alt='Bernardo Sto Tirso 1'
+                                    className='shadow-2xl rounded-3xl shadow-primaryDark'
                                 />
-                                <h3 className='absolute bottom-0 w-full text-light 
+                                <h3 className='absolute bottom-0 w-full rounded-b-3xl text-light 
                                 text-center bg-transparent/40 text-xl p-4 hover:bg-transparent/60'>Fotografia de João Pádua</h3>
                             </div>
                             <div className='w-screen flex flex-col max-w-prose text-3xl lg:p-16 sm:p-8 xs:text-2xl text-justify'>
