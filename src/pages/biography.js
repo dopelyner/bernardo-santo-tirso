@@ -53,7 +53,7 @@ const Biography = () => {
                                 <h3 className='absolute bottom-0 w-full text-light 
                                 text-center bg-transparent/40 text-xl p-4 hover:bg-transparent/60'>Fotografia de João Pádua</h3>
                             </div>
-                            <div className='w-screen flex flex-col max-w-prose text-3xl xs:text-2xl text-justify'>
+                            <div className='w-screen flex flex-col max-w-prose text-3xl lg:p-16 sm:p-8 xs:text-2xl text-justify'>
                                 {biographyText.paragraph01.map((paragraph, index) => (
                                     <li
                                         key={index}
