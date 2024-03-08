@@ -1,6 +1,8 @@
 import AnimatedText from '@/components/AnimatedText'
+import { DownArrow } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import SeparatorBar from '@/components/SeparatorBar'
+import VerticalTimeLine from '@/components/VerticalTimeLine'
 import { biographyText, imageLinks, quotes } from '@/constants'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -42,7 +44,7 @@ const Biography = () => {
                             className='w-1/2 mb-16 text-center xs:mb-6 xs:text-7xl lg:text-7xl '
                         />
 
-                        <div className='flex flex-row xl:flex-col justify-center items-center gap-x-6'>
+                        <div className='flex flex-row xl:flex-col justify-center items-start gap-x-6'>
                             <div className='relative w-fit h-fit flex flex-col'>
                                 <Image
                                     src={imageLinks.PIC_BIOGRAPHY01}
@@ -54,7 +56,12 @@ const Biography = () => {
                                 <h3 className='absolute bottom-0 w-full rounded-b-3xl text-light 
                                 text-center bg-transparent/40 text-xl p-4 hover:bg-transparent/60'>Fotografia de João Pádua</h3>
                             </div>
-                            <div className='w-screen flex flex-col max-w-prose text-3xl lg:p-16 sm:p-8 xs:text-2xl text-justify'>
+
+                            <div className='w-full h-auto items-start'>
+                                <VerticalTimeLine />
+                            </div>
+
+                            {/* <div className='w-screen flex flex-col max-w-prose text-3xl lg:p-16 sm:p-8 xs:text-2xl text-justify'>
                                 {biographyText.paragraph01.map((paragraph, index) => (
                                     <li
                                         key={index}
@@ -72,7 +79,9 @@ const Biography = () => {
                                         {paragraph}
                                     </li>
                                 ))}
-                            </div>
+                            </div> */}
+
+
                         </div>
 
                     </div>
