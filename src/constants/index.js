@@ -27,22 +27,39 @@ export const videoLinks = {
     URL_3: "vid1",
 }
 
-export const biographyText = {
-    paragraph01: [
-        "Bernardo Santo Tirso Ribeiro é ator, nasceu em Aveiro – São Bernardo, em 1995.",
-        "Concluiu o curso profissional de artes do espetáculo – interpretação em 2015,no Conservatório de Música da Jobra.",
-        "Frequentou aulas de formação musical e trompete na escola PALCO CENTRAL.",
-        "Frequentou o primeiro ano de Interpretação na ESMAE.",
-        "Licenciou-se em Teatro – variante Luz e Som na ESMAE em 2023.",
-        "Participou em vários workshops, dos quais salienta: Julieta Rodrigues e António Oliveira (Teatro Físico), Marcelo Lafontana,\
+export const biographyAccordion = [
+    {
+        title: "Início da Carreira e Educação",
+        content: [
+            "Bernardo Santo Tirso Ribeiro é ator, nasceu em Aveiro – São Bernardo, em 1995.",
+            "Concluiu o curso profissional de artes do espetáculo – interpretação em 2015,no Conservatório de Música da Jobra.",
+            "Frequentou aulas de formação musical e trompete na escola PALCO CENTRAL.",
+            "Frequentou o primeiro ano de Interpretação na ESMAE.",
+        ],
+    },
+    {
+        title: "Formação Avançada e Workshops",
+        content: [
+            "Licenciou-se em Teatro – variante Luz e Som na ESMAE em 2023.",
+            "Participou em vários workshops, dos quais salienta: Julieta Rodrigues e António Oliveira (Teatro Físico), Marcelo Lafontana,\
             Jordi Bertran, Tommy Luther (Manipulação de Formas Animadas), Paulo Ferreira (Interpretação para câmera).",
-        "Frequentou a Formação Avançada de Interpretação e Criação Coreográfica (Companhia Instável).",
-        "Como ator, já colaborou com: Viv’arte; Cabeças no Ar e Pés na Terra; ASSéDIO; Radar 360o, Companhia Historioscopio, Companhia do Jogo.",
-        "No cinema realça a participação no Filme de Animação – RIDE – realizado por Paul Bush em 2017 e a primeira curta metragem realizada por Henrique Vilão “O céu aqui é mais baixo”.",
-        "Como possível músico, atuou como baixista em Gold Note Diggers (2012-2015) e foi banjoísta em Mimo’s Dixie Band (2017 – 2019).",
-        "Assumiu a direção artística do projeto Erasmus+ “Music For Chameleons” (contava com 60 pessoas de 6 países diferentes)."
-    ]
-}
+        ]
+    },
+    {
+        title: "Experiência Profissional em Teatro",
+        content: [
+            "Frequentou a Formação Avançada de Interpretação e Criação Coreográfica (Companhia Instável).",
+            "Como ator, já colaborou com: Viv’arte; Cabeças no Ar e Pés na Terra; ASSéDIO; Radar 360o, Companhia Historioscopio, Companhia do Jogo.",
+        ]
+    },
+    {
+        title: "Experiência em Cinema e Música",
+        content: [
+            "No cinema realça a participação no Filme de Animação – RIDE – realizado por Paul Bush em 2017 e a primeira curta metragem realizada por Henrique Vilão “O céu aqui é mais baixo”.",
+            "Como possível músico, atuou como baixista em Gold Note Diggers (2012-2015) e foi banjoísta em Mimo’s Dixie Band (2017 – 2019).",
+            "Assumiu a direção artística do projeto Erasmus+ “Music For Chameleons” (contava com 60 pessoas de 6 países diferentes)."
+        ]
+    }]
 
 export const quotes = {
     author: "O Credo do Lobo",

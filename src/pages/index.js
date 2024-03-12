@@ -14,8 +14,11 @@ export default function Home() {
 
       <TransitionEffect />
 
-      <main className='w-full min-h-96 flex  justify-center text-dark dark:text-light sm:justify-center'>
+      <main className='relative w-full min-h-96 flex justify-center text-dark dark:text-light sm:justify-center'>
         <Layout className='pt-0'>
+
+          <div aria-hidden className='absolute inset-1/3 rotate-45 -z-10 h-80 rounded-full 
+          bg-gradient-to-b dark:from-dark to-light dark:to-darkBlue blur-3xl mx-auto scale-125 opacity-75' />
 
           <TitleStickText title="Bernardo Santo Tirso" className='mt-16' />
 

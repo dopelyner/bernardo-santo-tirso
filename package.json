@@ -10,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/accordion": "^2.0.28",
+    "@nextui-org/theme": "^2.1.18",
     "@vercel/speed-insights": "^1.0.10",
     "emailjs-com": "^3.2.0",
     "eslint": "8.36.0",
