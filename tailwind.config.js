@@ -21,7 +21,8 @@ module.exports = {
         grey: "#808080",
         olive: '#a8b893',
         oliveDark: "#515f3f",
-        purple: "#674d69"
+        purple: "#674d69",
+        blue: "#02387f",
       },
     },
     screens: {

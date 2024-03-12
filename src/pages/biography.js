@@ -61,88 +61,16 @@ const Biography = () => {
                                     key={index}
                                     aria-label={item.title}
                                     title={item.title}
-                                    className='text-6xl px-8 py-4 text-justify flex flex-col justify-between border-b-purple hover:text-purple border-b-2 text-light hover:-translate-y-1'
+                                    className='text-6xl px-8 py-4 text-justify flex flex-col justify-between border-b-blue hover:text-blue border-b-2 text-light hover:-translate-y-1'
                                     indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
                                 >
-                                    <p className='text-2xl text-light pr-16'>{item.content}</p>
-                                    {/* <p className='text-2xl text-light'>Bernardo Santo Tirso Ribeiro é ator, nasceu em Aveiro &#8208; São Bernardo, em 1995.
-                                    </p>
-                                    <p className='text-2xl text-light'>
-                                        Concluiu o curso profissional de artes do espetáculo &#8208; interpretação em 2015, no Conservatório de Música da Jobra.
-                                    </p>
-                                    <p className='text-2xl text-light'>
-                                        Frequentou aulas de formação musical e trompete na escola PALCO CENTRAL.
-                                    </p>
-                                    <p className='text-2xl text-light'>
-                                        Frequentou o primeiro ano de Interpretação na ESMAE.
-                                    </p> */}
+                                    <p className='text-2xl text-light pr-16 '>{item.content[0]}</p>
+                                    <p className='text-2xl text-light pr-16 '>{item.content[1]}</p>
+                                    <p className='text-2xl text-light pr-16 '>{item.content[2]}</p>
+                                    <p className='text-2xl text-light pr-16 '>{item.content[3]}</p>
                                 </AccordionItem>
                             ))}
 
-                            {/* <AccordionItem
-                                key="1"
-                                aria-label="Início da Carreira e Educação"
-                                title="Início da Carreira e Educação"
-                                className='text-6xl px-8 py-4 text-justify flex flex-col justify-between border-b-violet-950 hover:text-violet-950 border-b-2 text-light hover:-translate-y-1'
-                                indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
-                            >
-
-                                <p className='text-2xl text-light'>Bernardo Santo Tirso Ribeiro é ator, nasceu em Aveiro &#8208; São Bernardo, em 1995.
-                                </p>
-                                <p className='text-2xl text-light'>
-                                    Concluiu o curso profissional de artes do espetáculo &#8208; interpretação em 2015, no Conservatório de Música da Jobra.
-                                </p>
-                                <p className='text-2xl text-light'>
-                                    Frequentou aulas de formação musical e trompete na escola PALCO CENTRAL.
-                                </p>
-                                <p className='text-2xl text-light'>
-                                    Frequentou o primeiro ano de Interpretação na ESMAE.
-                                </p>
-                            </AccordionItem> */}
-
-                            {/* <AccordionItem
-                                key="2"
-                                aria-label="Formação Avançada e Workshops"
-                                title="Formação Avançada e Workshops"
-                                className='text-6xl px-8 py-4 text-justify flex flex-col border-b-violet-950 hover:text-violet-950 border-b-2 text-light hover:-translate-y-1'
-                                indicator={({ isOpen }) => (isOpen ? (<MinusCircle />) : <PlusCircle />)}
-                            >
-                                <p className='text-2xl text-light'>Licenciou-se em Teatro &#8208; variante Luz e Som na ESMAE em 2023.
-                                </p>
-                                <p className='text-2xl text-light'>
-                                    Participou em vários workshops, dos quais salienta: Julieta Rodrigues e António Oliveira (Teatro Físico), Marcelo Lafontana, Jordi Bertran, Tommy Luther (Manipulação de Formas Animadas), Paulo Ferreira (Interpretação para câmera).
-                                </p>
-                                <p className='text-2xl text-light'>
-                                    Frequentou a Formação Avançada de Interpretação e Criação Coreográfica (Companhia Instável).
-                                </p>
-                            </AccordionItem>
-
-
-                            <AccordionItem
-                                key="3"
-                                aria-label="Experiência Profissional em Teatro"
-                                title="Experiência Profissional em Teatro"
-                                className='text-6xl px-8 py-4 text-justify flex flex-col border-b-violet-950 hover:text-violet-950 border-b-2 text-light hover:-translate-y-1'
-                                indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
-                            >
-                                <p className='text-2xl text-light'>Como ator, já colaborou com: Viv’arte; Cabeças no Ar e Pés na Terra; ASSéDIO; Radar 360o, Companhia Historioscopio, Companhia do Jogo.
-                                </p>
-                            </AccordionItem>
-
-                            <AccordionItem
-                                key="4"
-                                aria-label="Experiência em Cinema e Música"
-                                title="Experiência em Cinema e Música"
-                                className='text-6xl px-8 py-4 text-justify flex flex-col border-b-violet-950 hover:text-violet-950 border-b-2 text-light hover:-translate-y-1'
-                                indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
-                            >
-                                <p className='text-2xl text-light'>No cinema realça a participação no Filme de Animação &#8208; RIDE &#8208; realizado por Paul Bush em 2017 e a primeira curta metragem realizada por Henrique Vilão “O céu aqui é mais baixo”.
-                                </p>
-                                <p className='text-2xl text-light'>Como possível músico, atuou como baixista em Gold Note Diggers (2012-2015) e foi banjoísta em Mimo’s Dixie Band (2017 &#8208; 2019).
-                                </p>
-                                <p className='text-2xl text-light'>Assumiu a direção artística do projeto Erasmus+ “Music For Chameleons” (contava com 60 pessoas de 6 países diferentes).
-                                </p>
-                            </AccordionItem> */}
                         </Accordion>
                     </div>
 
