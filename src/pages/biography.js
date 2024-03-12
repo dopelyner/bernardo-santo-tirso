@@ -1,6 +1,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import { MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
+import { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
 import { biographyAccordion, imageLinks, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
@@ -16,8 +17,8 @@ const Biography = () => {
                 <meta name="Bernardo Santo Tirso" content='Biografia...' />
             </Head>
 
-            <main className='w-full flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light bg-dark'>
-                <Layout className='pt-6'>
+            <main className='w-full flex flex-col items-center min-h-fit justify-center overflow-hidden text-dark dark:text-light'>
+                <Layout className='pt-6 '>
 
                     <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
@@ -38,14 +39,14 @@ const Biography = () => {
                     {/* <SeparatorBar size="big" /> */}
                 </Layout>
 
-                <div className='w-full flex flex-row xl:flex-col justify-center items-start gap-x-6'>
+                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-primary'>
                     <div className='relative w-1/2 flex flex-col self-center'>
                         <Image
                             src={imageLinks.PIC_BIOGRAPHY01}
                             width="100%"
                             height="100%"
                             alt='Bernardo Sto Tirso 1'
-                            className='max-h-[1200px] w-auto roudned'
+                            className='max-h-[1200px]'
                         />
                         <h3 className='absolute -bottom-0 bg-dark/60 w-full text-light italic 
                                 text-center text-xl p-6'>Fotografia de João Pádua</h3>
@@ -61,20 +62,27 @@ const Biography = () => {
                                     key={index}
                                     aria-label={item.title}
                                     title={item.title}
-                                    className='text-6xl px-8 py-4 text-justify flex flex-col justify-between border-b-blue hover:text-blue border-b-2 text-light hover:-translate-y-1'
+                                    className='text-6xl px-8 py-4 text-justify flex flex-col border-b-blue
+                                     hover:text-blue border-b-2 text-light hover:-translate-y-1'
                                     indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
                                 >
-                                    <p className='text-2xl text-light pr-16 '>{item.content[0]}</p>
-                                    <p className='text-2xl text-light pr-16 '>{item.content[1]}</p>
-                                    <p className='text-2xl text-light pr-16 '>{item.content[2]}</p>
-                                    <p className='text-2xl text-light pr-16 '>{item.content[3]}</p>
+                                    <p className='text-2xl text-light pb-2'>{item.content[0]}</p>
+                                    <p className='text-2xl text-light py-2'>{item.content[1]}</p>
+                                    <p className='text-2xl text-light py-2'>{item.content[2]}</p>
+                                    <p className='text-2xl text-light pt-2'>{item.content[3]}</p>
                                 </AccordionItem>
                             ))}
-
                         </Accordion>
                     </div>
+                </section>
 
+                <div className='flex flex-row xl:flex-col my-24 gap-20'>
+                    <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
+                    <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
+                    <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
+                    <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
                 </div>
+
             </main >
         </>
     )
