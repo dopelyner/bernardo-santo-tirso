@@ -39,7 +39,7 @@ const Biography = () => {
                     {/* <SeparatorBar size="big" /> */}
                 </Layout>
 
-                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-primary'>
+                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-primary/10'>
                     <div className='relative w-1/2 xl:w-full sm:w-full flex flex-col self-center'>
                         <Image
                             src={imageLinks.PIC_BIOGRAPHY01}
@@ -79,9 +79,9 @@ const Biography = () => {
                 </section>
 
                 <div className='flex flex-col items-center justify-center my-20'>
-                    <h3 className='text-3xl italic'>Projectos</h3>
+                    <h3 className='text-5xl italic xl:hidden'>Projectos</h3>
 
-                    <div className='flex flex-row xl:flex-col my-12  gap-20'>
+                    <div className='flex flex-row xl:flex-col my-12 gap-20'>
                         <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
                         <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
                         <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
