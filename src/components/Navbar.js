@@ -2,9 +2,11 @@ import { projectsSubMenu, socialLinks } from '@/constants'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { FacebookIcon, InstagramIcon, MoonIcon, SunIcon } from './Icons'
+import TitleStickText from './TitleStickText'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
+
 
 export const CustomLink = ({ href, title, className = "", subMenu }) => {
 
@@ -186,9 +188,10 @@ const Navbar = () => {
                         initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                         animate={{ scale: 1, opacity: 1 }}
                         className='min-w-[70vw] min-h-screen flex flex-col justify-between items-center fixed top-1/2 left-2/3 
-                             z-30 bg-dark/90 dark:bg-light/75 backdrop-blur-md py-32'
+                             z-30 bg-dark/90 dark:bg-light/75 backdrop-blur-md pt-16'
                         ref={ref}
                     >
+                        <TitleStickText title="Bernardo Santo Tirso" className='!text-light dark:!text-dark !text-5xl' />
 
                         <nav className='flex flex-col justify-center items-center gap-y-8'>
                             <CustomMobileLink href="/" title="Home" className='text-3xl' toggle={handleClick} />
@@ -197,9 +200,9 @@ const Navbar = () => {
                             <CustomMobileLink href="/contacts" title="Contatos" className='text-3xl' toggle={handleClick} />
                         </nav>
 
-                        <nav className='flex items-center justify-center flex-wrap mt-10'>
+                        <nav className='flex items-center justify-center flex-wrap mt-10 gap-x-6 py-16'>
                             <motion.a href={facebookURL} target={'_blank'}
-                                className="w-6 mr-3 sm:mx-1"
+                                className="w-6 mr-3 sm:scale-150"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
@@ -207,7 +210,7 @@ const Navbar = () => {
                             </motion.a>
 
                             <motion.a href={instagramURL} target={'_blank'}
-                                className="w-6 mr-3 sm:mx-1"
+                                className="w-6 mr-3 sm:scale-150"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
@@ -216,8 +219,8 @@ const Navbar = () => {
 
                             <button
                                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                                className={`ml-3 flex items-center justify-center rounded-full p-1
-                                    ${mode === "light " ? "bg-dark text-light" : "bg-light text-dark"}`}>
+                                className={` flex items-center justify-center rounded-full p-1
+                                    ${mode === "light" ? "bg-light text-dark" : "bg-dark text-light"}`}>
                                 {
                                     mode === "dark"
                                         ? <SunIcon className={"fill-dark"} />

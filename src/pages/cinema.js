@@ -97,7 +97,7 @@ const Cinema = () => {
                         <div className='flex self-center pb-16'>
                             <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
                                 <LeftArrow />
-                            <h3 className='text-2xl italic'>Voltar</h3>
+                                <h3 className='text-2xl italic'>Voltar</h3>
                             </Link>
                         </div>
 
@@ -106,7 +106,7 @@ const Cinema = () => {
                     <SeparatorBar size="big" />
 
                     <div className='flex flex-col items-center justify-center'>
-                            <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
+                        <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
                         <div className='flex flex-row gap-20 lg:flex-col'>
                             <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
                             <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
