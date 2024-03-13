@@ -39,7 +39,7 @@ const Biography = () => {
                     {/* <SeparatorBar size="big" /> */}
                 </Layout>
 
-                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-primary/10'>
+                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-greyDark'>
                     <div className='relative w-1/2 xl:w-full sm:w-full flex flex-col self-center'>
                         <Image
                             src={imageLinks.PIC_BIOGRAPHY01}

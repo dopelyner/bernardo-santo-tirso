@@ -126,22 +126,9 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const ref = useRef()
 
-    useEffect(() => {
-        const handleOutsideClick = (event) => {
-            if (ref.current && !ref.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        };
-
-        document.addEventListener('mousedown', handleOutsideClick);
-
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        };
-    }, []);
-
     const handleClick = () => {
-        setIsOpen(!isOpen)
+        setIsOpen((prevIsOpen) => !prevIsOpen); // Toggle the isOpen state
+
     }
 
     return (
@@ -198,16 +185,16 @@ const Navbar = () => {
                     <motion.div
                         initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                         animate={{ scale: 1, opacity: 1 }}
-                        className='min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 
-                            -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'
+                        className='min-w-[70vw] min-h-screen flex flex-col justify-between items-center fixed top-1/2 left-2/3 
+                             z-30 bg-dark/90 dark:bg-light/75 backdrop-blur-md py-32'
                         ref={ref}
                     >
 
-                        <nav className='flex items-center flex-col justify-center'>
-                            <CustomMobileLink href="/" title="Home" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/biography" title="Biografia" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/projects" title="Projetos" className='' toggle={handleClick} />
-                            <CustomMobileLink href="/contacts" title="Contatos" className='' toggle={handleClick} />
+                        <nav className='flex flex-col justify-center items-center gap-y-8'>
+                            <CustomMobileLink href="/" title="Home" className='text-3xl' toggle={handleClick} />
+                            <CustomMobileLink href="/biography" title="Biografia" className='text-3xl' toggle={handleClick} />
+                            <CustomMobileLink href="/projects" title="Projetos" className='text-3xl' toggle={handleClick} />
+                            <CustomMobileLink href="/contacts" title="Contatos" className='text-3xl' toggle={handleClick} />
                         </nav>
 
                         <nav className='flex items-center justify-center flex-wrap mt-10'>
