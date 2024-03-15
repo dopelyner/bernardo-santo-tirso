@@ -22,6 +22,8 @@ export default function Home() {
 
           <TitleStickText title="Bernardo Santo Tirso" className='mt-16' />
 
+          {/* BERNIE ON THE RIGHT SIDE OF TITLE */}
+
         </Layout>
       </main>
     </>
