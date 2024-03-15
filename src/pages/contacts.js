@@ -167,6 +167,11 @@ const contacts = () => {
                         </div>
                     </div>
 
+
+                    {/* SHORT THE SIZE OF THE MESSAGE CONTAINER */}
+
+                    {/* REMOVE IMAGE AND PUT BERNIE SIDE BY SIDE OF THE REMAINING CONTENT*/}
+                    
                 </Layout>
             </main >
         </>
