@@ -2,6 +2,7 @@ import Layout from '@/components/Layout'
 import TitleStickText from '@/components/TitleStickText'
 import TransitionEffect from '@/components/TransitionEffect'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
 
@@ -15,15 +16,23 @@ export default function Home() {
       <TransitionEffect />
 
       <main className='relative w-full min-h-96 flex justify-center text-dark dark:text-light sm:justify-center'>
-        <Layout className='pt-0'>
+        <Layout className='pb-0'>
 
-          <div aria-hidden className='absolute inset-1/3 rotate-45 -z-10 h-80 rounded-full 
-          bg-gradient-to-b dark:from-dark to-light dark:to-darkBlue blur-3xl mx-auto scale-125 opacity-75' />
+          <div className='w-full flex items-end justify-center'>
+            <TitleStickText title="Bernardo Santo Tirso" className='pb-28 ' />
 
-          <TitleStickText title="Bernardo Santo Tirso" className='mt-16' />
+            {/* BERNIE ON THE RIGHT SIDE OF TITLE */}
+            <div className='w-full flex '>
+              <Image
+                title='Bernardo Santo Tirso'
+                src={"../../images/bernardosantotirso.png"}
+                alt='Bernardo Santo Tirso'
+                width={600}
+                height={600}
+              />
+            </div>
 
-          {/* BERNIE ON THE RIGHT SIDE OF TITLE */}
-
+          </div>
         </Layout>
       </main>
     </>

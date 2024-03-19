@@ -124,8 +124,8 @@ const contacts = () => {
                 <meta name="Bernardo Santo Tirso" content='Contatos...' />
             </Head>
 
-            <main className='w-full mb-16 min-h-screen flex flex-row items-center justify-center overflow-hidden dark:text-light'>
-                <Layout className='pt-16'>
+            <main className='w-full min-h-screen flex flex-row items-center justify-center overflow-hidden dark:text-light'>
+                <Layout className='pt-16 pb-0'>
 
                     <div className='w-full mb-24 flex flex-col xs:text-6xl'>
                         <AnimatedText
@@ -151,13 +151,12 @@ const contacts = () => {
                                 text="Contatos"
                                 className='w-full mb-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
                             />
-                            <div className='w-max sm:w-[80%] h-auto items-center justify-center rounded-lg xs:text-center border-2 border-dark dark:border-light '>
+                            <div className='w-full flex justify-center items-center'>
                                 <Image
-                                    src={imageLinks.PIC_CONTACTS}
-                                    alt='profile pic'
-                                    width={400}
-                                    height={400}
-                                    className='rounded-lg'
+                                    src={"../../images/bernardosantotirso.png"}
+                                    alt='Bernardo Santo Tirso'
+                                    width={500}
+                                    height={500}
                                 />
                             </div>
                         </div>
@@ -171,7 +170,7 @@ const contacts = () => {
                     {/* SHORT THE SIZE OF THE MESSAGE CONTAINER */}
 
                     {/* REMOVE IMAGE AND PUT BERNIE SIDE BY SIDE OF THE REMAINING CONTENT*/}
-                    
+
                 </Layout>
             </main >
         </>

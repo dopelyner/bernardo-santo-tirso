@@ -12,14 +12,14 @@ const Footer = () => {
 
     return (
         <footer className='w-full font-medium text-lg sm:text-base'>
-            <div className='w-full flex justify-center items-center'>
+            {/* <div className='w-full flex justify-center items-center'>
                 <Image
                     src={"../../images/bernardosantotirso.png"}
                     alt='Bernardo Santo Tirso'
                     width={500}
                     height={500}
                 />
-            </div>
+            </div> */}
             <Layout className='py-10 flex flex-col items-center justify-center text-center lg:flex-col lg:py-10 border-t-2 border-solid
              border-dark dark:border-light dark:text-light'>
                 <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
