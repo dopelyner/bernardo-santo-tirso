@@ -89,6 +89,16 @@ const Biography = () => {
                     </div>
                 </div>
 
+                <div className='w-full flex justify-center items-center'>
+                    <Image
+                        src={"../../images/bernardosantotirso.png"}
+                        alt='Bernardo Santo Tirso'
+                        width={600}
+                        height={600}
+                        className='xs:w-[400px]'
+                    />
+                </div>
+
             </main >
         </>
     )

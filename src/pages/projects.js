@@ -4,6 +4,7 @@ import { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
 import { quotes } from '@/constants'
 import Head from 'next/head'
+import Image from 'next/image'
 
 const Projects = () => {
     return (
@@ -13,7 +14,7 @@ const Projects = () => {
                 <meta name="Bernardo Santo Tirso" content='Projetos...' />
             </Head>
 
-            <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
+            <main className='w-full flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16'>
 
                     <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
@@ -43,6 +44,17 @@ const Projects = () => {
                         </div>
                     </div>
                 </Layout>
+
+                <div className='w-full flex justify-center items-center'>
+                    <Image
+                        src={"../../images/bernardosantotirso.png"}
+                        alt='Bernardo Santo Tirso'
+                        width={600}
+                        height={600}
+                        className='xs:w-[400px]'
+                    />
+                </div>
+                
             </main>
         </>
     )
