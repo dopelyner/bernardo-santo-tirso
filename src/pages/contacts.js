@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
 import SeparatorBar from '@/components/SeparatorBar';
-import { emailAddress, imageLinks, quotes } from '@/constants';
+import { emailAddress, quotes } from '@/constants';
 import emailjs from 'emailjs-com';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -145,31 +145,28 @@ const contacts = () => {
 
                     <SeparatorBar size="big" />
 
-                    <div className='mt-40 flex xl:flex-col xl:items-center xl:justify-center '>
-                        <div className='w-2/5 flex flex-col items-center justify-center mr-20 lg:m-0 xl:mr-0 md:w-max'>
-                            <AnimatedText
-                                text="Contatos"
-                                className='w-full mb-8 lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
-                            />
-                            <div className='w-full flex justify-center items-center'>
+                    <AnimatedText
+                        text="Contatos"
+                        className='w-full lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
+                    />
+
+                    <div className='mt-32 flex xl:flex-col xl:items-center xl:justify-center '>
+                        <div className=' flex flex-col items-center justify-center mr-20 lg:m-0 xl:mr-0 md:w-max'>
+                            <div className='w-full flex justify-end items-end 2xl:bottom-0'>
                                 <Image
                                     src={"../../images/bernardosantotirso.png"}
                                     alt='Bernardo Santo Tirso'
-                                    width={500}
-                                    height={500}
+                                    width={600}
+                                    height={600}
+                                    className='xs:w-[400px]'
                                 />
                             </div>
                         </div>
 
-                        <div className='w-full sm:w-4/5 xl:w-full mt-16 mb-10 sm:mb-16 xl:mb-20'>
+                        <div className='w-3/5 xl:w-full 2xl:mb-16'>
                             <ContactForm />
                         </div>
                     </div>
-
-
-                    {/* SHORT THE SIZE OF THE MESSAGE CONTAINER */}
-
-                    {/* REMOVE IMAGE AND PUT BERNIE SIDE BY SIDE OF THE REMAINING CONTENT*/}
 
                 </Layout>
             </main >
