@@ -1,12 +1,7 @@
-import picBiography01 from '../../public/images/biography01.JPG'
-import picBiography02 from '../../public/images/biography02.JPG'
-import picContacts from '../../public/images/pic-contacts.jpg'
-
+import biography from '../../public/images/biography.jpg'
 
 export const imageLinks = {
-    PIC_CONTACTS: picContacts,
-    PIC_BIOGRAPHY01: picBiography01,
-    PIC_BIOGRAPHY02: picBiography02,
+    BIOGRAPHY: biography,
 }
 
 export const socialLinks = [

@@ -23,7 +23,8 @@ module.exports = {
         olive: '#a8b893',
         oliveDark: "#515f3f",
         purple: "#674d69",
-        blue: "#32598c",
+        // blue: "#32598c",
+        blue: "#2b62ab",
       },
     },
     screens: {

@@ -16,8 +16,8 @@ const Biography = () => {
                 <meta name="Bernardo Santo Tirso" content='Biografia...' />
             </Head>
 
-            <main className='w-full flex flex-col items-center min-h-fit justify-center overflow-hidden text-dark dark:text-light'>
-                <Layout className='pt-6 '>
+            <main className='w-full flex flex-col justify-center items-center min-h-fit overflow-hidden text-dark dark:text-light'>
+                <Layout className='pt-6'>
 
                     <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
@@ -38,10 +38,10 @@ const Biography = () => {
                 </Layout>
 
                 <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-greyDark'>
-                    <div className='relative w-1/2 xl:w-full sm:w-full flex flex-col self-center'>
+                    <div className='relative w-1/2 xl:min-w-max 2xl:w-1/2 sm:w-full flex flex-col self-center'>
                         <Image
                             priority
-                            src={imageLinks.PIC_BIOGRAPHY01}
+                            src={imageLinks.BIOGRAPHY}
                             width="100%"
                             height="100%"
                             alt='Bernardo Sto Tirso 1'
@@ -97,7 +97,7 @@ const Biography = () => {
                         height={600}
                         className='xs:w-[400px]'
                     />
-                    
+
                 </div>
 
             </main >
