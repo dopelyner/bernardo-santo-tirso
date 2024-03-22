@@ -16,21 +16,19 @@ export default function Home() {
       <TransitionEffect />
 
       <main className='relative w-full min-h-96 flex justify-center text-dark dark:text-light sm:justify-center'>
-        <Layout className='pb-0'>
+        <Layout className='pb-0 xl:pb-0 lg:pb-0 sm:pb-0'>
 
-          <div className='w-full flex items-end justify-center'>
-            <TitleStickText title="Bernardo Santo Tirso" className='pb-28 ' />
+          <div className='w-full flex flex-col justify-end items-center xl:p-0'>
+            <TitleStickText title="Bernardo Santo Tirso" className='pb-28' />
 
-            {/* BERNIE ON THE RIGHT SIDE OF TITLE */}
-            <div className='w-full flex '>
-              <Image
-                title='Bernardo Santo Tirso'
-                src={"../../images/bernardosantotirso.png"}
-                alt='Bernardo Santo Tirso'
-                width={600}
-                height={600}
-              />
-            </div>
+            <Image
+              priority
+              title='Bernardo Santo Tirso'
+              src={"../../images/bernardosantotirso.png"}
+              alt='Bernardo Santo Tirso'
+              width={600}
+              height={600}
+            />
 
           </div>
         </Layout>
