@@ -2,7 +2,6 @@ import AnimatedText from '@/components/AnimatedText'
 import { MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
-import SeparatorBar from '@/components/SeparatorBar'
 import { biographyAccordion, imageLinks, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import Head from 'next/head'
@@ -36,7 +35,6 @@ const Biography = () => {
                         <h2 className='text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 1/3</h2>
                     </div>
 
-                    {/* <SeparatorBar size="big" /> */}
                 </Layout>
 
                 <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-greyDark'>
@@ -63,14 +61,14 @@ const Biography = () => {
                                         key={index}
                                         aria-label={item.title}
                                         title={item.title}
-                                        className='text-6xl px-8 py-4 text-justify flex flex-col border-b-blue
+                                        className='text-6xl px-8 py-4 text-start sm:w-full flex flex-col border-b-blue
                                     hover:text-blue border-b-2 text-light hover:-translate-y-1'
                                         indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
                                     >
-                                        <p className='text-2xl text-light pb-2'>{item.content[0]}</p>
-                                        <p className='text-2xl text-light py-2'>{item.content[1]}</p>
-                                        <p className='text-2xl text-light py-2'>{item.content[2]}</p>
-                                        <p className='text-2xl text-light pt-2'>{item.content[3]}</p>
+                                        <p className='text-2xl text-light pb-2 text-justify'>{item.content[0]}</p>
+                                        <p className='text-2xl text-light py-2 text-justify'>{item.content[1]}</p>
+                                        <p className='text-2xl text-light py-2 text-justify'>{item.content[2]}</p>
+                                        <p className='text-2xl text-light pt-2 text-justify'>{item.content[3]}</p>
                                     </AccordionItem>
                                 ))}
                             </Accordion>
