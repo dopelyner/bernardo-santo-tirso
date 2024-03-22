@@ -51,7 +51,7 @@ const Biography = () => {
                     </div>
 
                     <div className='flex flex-col w-full'>
-                        <AnimatedText text="A Grande Caminhada" className='text-center p-16 text-light' />
+                        <AnimatedText text="A Grande Caminhada" className='text-center sm:text-7xl p-16 text-light' />
 
                         <div className='flex justify-center items-center'>
                             <Accordion>
