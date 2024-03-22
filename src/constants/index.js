@@ -59,7 +59,15 @@ export const biographyAccordion = [
             "Como possível músico, atuou como baixista em Gold Note Diggers (2012-2015) e foi banjoísta em Mimo’s Dixie Band (2017 – 2019).",
             "Assumiu a direção artística do projeto Erasmus+ “Music For Chameleons” (contava com 60 pessoas de 6 países diferentes)."
         ]
-    }]
+    },
+    {
+        title: "Experiência em Fotografia",
+        content: [
+            "Apaixonado pela fotografia, iniciou o projeto 50.mm, em 2019.",
+            "Fotografando (Galo Cant’Às Duas e Olla Tshou – duas bandas musicais).",
+        ]
+    },
+]
 
 export const quotes = {
     author: "O Credo do Lobo",
