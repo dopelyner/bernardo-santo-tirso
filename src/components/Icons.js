@@ -28,6 +28,7 @@ export const LinkedinIcon = ({ className, ...rest }) => (
         height={24}
         viewBox="0 0 24 24"
         {...rest}
+        className={`w-full h-auto ${className}`}
     >
         <circle
             cx={4.983}

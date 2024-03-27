@@ -165,7 +165,6 @@ const Navbar = () => {
                         whileTap={{ scale: 0.9 }}
                     >
                         <InstagramIcon className="!fill-dark dark:!fill-light" />
-
                     </motion.a>
 
                     <motion.a href={linkedinURL} target={'_blank'}
@@ -174,7 +173,6 @@ const Navbar = () => {
                         whileTap={{ scale: 0.9 }}
                     >
                         <LinkedinIcon className="!fill-dark dark:!fill-light" />
-
                     </motion.a>
 
                     <button
@@ -224,6 +222,14 @@ const Navbar = () => {
                                 whileTap={{ scale: 0.9 }}
                             >
                                 <InstagramIcon className="dark:!fill-dark" />
+                            </motion.a>
+
+                            <motion.a href={linkedinURL} target={'_blank'}
+                                className="w-6 mr-3 sm:mx-1"
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                            >
+                                <LinkedinIcon className="!text-light dark:!text-dark" />
                             </motion.a>
 
                             <button
