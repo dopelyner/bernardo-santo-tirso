@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useRef, useState } from 'react'
-import { FacebookIcon, InstagramIcon, MoonIcon, SunIcon } from './Icons'
+import { FacebookIcon, InstagramIcon, LinkedinIcon, MoonIcon, SunIcon } from './Icons'
 import TitleStickText from './TitleStickText'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 
@@ -122,7 +122,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
 const Navbar = () => {
 
-    const { instagramURL, facebookURL } = socialLinks[0]
+    const { instagramURL, facebookURL, linkedinURL } = socialLinks[0]
 
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false);
@@ -165,6 +165,15 @@ const Navbar = () => {
                         whileTap={{ scale: 0.9 }}
                     >
                         <InstagramIcon className="!fill-dark dark:!fill-light" />
+
+                    </motion.a>
+
+                    <motion.a href={linkedinURL} target={'_blank'}
+                        className="w-6 mr-3 sm:mx-1"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
+                        <LinkedinIcon className="!fill-dark dark:!fill-light" />
 
                     </motion.a>
 
