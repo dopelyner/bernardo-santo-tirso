@@ -63,7 +63,7 @@ export const CustomLink = ({ href, title, className = "", subMenu }) => {
 
                     {isSubMenuOpen && (
                         <div
-                            className={`absolute top-full left-0 ml-2 mt-0 flex bg-dark dark:bg-light/75 rounded-lg
+                            className={`absolute top-full left-0 ml-2 mt-0 flex bg-dark dark:bg-light/75
                          backdrop-blur-md py-2 ${isSubMenuOpen ? 'flex' : 'hidden'
                                 }`}
                             onMouseEnter={handleSubMenuMouseEnter}
