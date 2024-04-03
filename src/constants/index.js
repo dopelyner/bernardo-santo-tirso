@@ -4,6 +4,21 @@ export const imageLinks = {
     BIOGRAPHY: biography,
 }
 
+export const homeMedia = [
+    {
+        path: '/images/IMG-20240322-WA0004.jpg',
+    },
+    {
+        path: '/images/IMG-20240322-WA0005.jpg',
+    },
+    {
+        path: '/images/IMG-20240322-WA0006.jpg',
+    },
+    {
+        path: '/images/IMG-20240322-WA0007.jpg',
+    },
+]
+
 export const socialLinks = [
     {
         instagramURL: "https://www.instagram.com/bernardosantotirso_/",
