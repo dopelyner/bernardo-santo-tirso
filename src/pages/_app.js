@@ -1,10 +1,10 @@
+import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
+import { AnimatePresence } from 'framer-motion'
+import localFont from 'next/font/local'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-import localFont from 'next/font/local'
-import { AnimatePresence } from 'framer-motion'
 
 const EconomicaFont = localFont({ src: '../../public/fonts/Economica-Regular.ttf' })
 

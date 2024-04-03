@@ -39,9 +39,7 @@ export default function Home() {
             }
           </div>
         </Layout>
-        <Layout className=''>
-          <AnimatedText text="Sobre mim" className='text-center' />
-        </Layout>
+
       </main>
     </>
   )
