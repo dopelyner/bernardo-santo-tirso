@@ -16,10 +16,10 @@ const Biography = () => {
                 <meta name="Bernardo Santo Tirso" content='Biografia...' />
             </Head>
 
-            <main className='w-full flex flex-col justify-center items-center min-h-fit overflow-hidden text-dark dark:text-light'>
-                <Layout className='pt-6'>
+            <main className='w-full flex flex-col justify-center items-center min-h-screen overflow-hidden text-dark dark:text-light'>
+                <Layout className='pt-16 xs:py-0 xs:pb-6'>
 
-                    <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
+                    <div className='w-full mb-24 xs:-mb-6 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
                             text={`“` + quotes.quote1.line1}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
@@ -34,6 +34,7 @@ const Biography = () => {
                         />
                         <h2 className='text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 1/3</h2>
                     </div>
+
                     <div className='hidden sm:flex sm:justify-end'>
                         <ArrowVertical />
                     </div>
@@ -100,7 +101,6 @@ const Biography = () => {
                         height={600}
                         className='xs:w-[400px]'
                     />
-
                 </div>
 
             </main >
