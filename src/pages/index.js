@@ -24,7 +24,7 @@ export default function Home() {
             <ArrowHorizontal />
           </div>
 
-          <div className='w-full h-full xs:w-full sm:h-fit absolute z-20 p-32 xl:p-16 sm:p-0 bottom-0 bg-transparent/60 dark:bg-transparent/50'>
+          <div className='w-full h-full xs:w-full sm:h-fit absolute z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bottom-0 bg-transparent/60 dark:bg-transparent/50'>
             <TitleStickText title="Bernardo Santo Tirso" className='text-light sm:scale-90 xs:scale-50' />
           </div>
 
