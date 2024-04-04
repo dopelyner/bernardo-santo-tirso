@@ -25,10 +25,10 @@ export default function Home() {
           </div>
 
           <div className='w-full h-full xs:w-full sm:h-fit absolute z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bottom-0 bg-transparent/60 dark:bg-transparent/50'>
-            <TitleStickText title="Bernardo Santo Tirso" className='text-light sm:scale-90 xs:scale-50' />
+            <TitleStickText title="Bernardo Santo Tirso" className='sm:w-fit text-light sm:scale-90 xs:scale-50' />
           </div>
 
-          <div className='w-full flex items-center justify-center gap-10 overflow-clip sm:overflow-x-scroll ' >
+          <div className='w-full h-auto flex items-center justify-center gap-10 overflow-clip sm:overflow-x-scroll ' >
             {homeMedia.map((item, index) => (
               <Image
                 priority
