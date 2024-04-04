@@ -1,21 +1,35 @@
-import biography from '../../public/images/biography.jpg'
+import biography from '../../public/images/biography-og.png'
 
 export const imageLinks = {
     BIOGRAPHY: biography,
 }
 
+// export const homeMedia = [
+//     {
+//         path: '/images/IMG-20240322-WA0004.png',
+//     },
+//     {
+//         path: '/images/IMG-20240322-WA0005.png',
+//     },
+//     {
+//         path: '/images/IMG-20240322-WA0006.png',
+//     },
+//     {
+//         path: '/images/IMG-20240322-WA0007.png',
+//     },
+// ]
 export const homeMedia = [
     {
-        path: '/images/IMG-20240322-WA0004.jpg',
+        path: '/images/original/IMG-20240322-WA0004.png',
     },
     {
-        path: '/images/IMG-20240322-WA0005.jpg',
+        path: '/images/original/IMG-20240322-WA0005.png',
     },
     {
-        path: '/images/IMG-20240322-WA0006.jpg',
+        path: '/images/original/IMG-20240322-WA0006.png',
     },
     {
-        path: '/images/IMG-20240322-WA0007.jpg',
+        path: '/images/original/IMG-20240322-WA0007.png',
     },
 ]
 

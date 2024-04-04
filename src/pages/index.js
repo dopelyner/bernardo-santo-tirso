@@ -17,18 +17,18 @@ export default function Home() {
 
       <TransitionEffect />
 
-      <main className='relative w-full min-h-96 flex flex-col justify-center text-dark dark:text-light sm:justify-center sm:items-center'>
-        <Layout className='p-0 xl:p-0 lg:p-0 sm:p-0 '>
+      <main className='relative w-full min-h-fit p-0 flex flex-col justify-center text-dark dark:text-light sm:justify-center sm:items-center'>
+        <Layout className='px-0 py-0 sm:pl-0 sm:py-0'>
 
-          <div className='absolute sm:flex right-0 -translate-x-6 p-2 hidden'>
+          <div className='absolute sm:flex right-0 -translate-x-6 pt-4 hidden'>
             <ArrowHorizontal />
           </div>
 
-          <div className='w-full h-full xs:w-full sm:h-fit absolute z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bottom-0 bg-transparent/60 dark:bg-transparent/50'>
-            <TitleStickText title="Bernardo Santo Tirso" className='sm:w-fit text-light sm:scale-90 xs:scale-50' />
+          <div className='w-full h-full sm:flex sm:bottom-0 sm:h-fit absolute left-[50%]  translate-x-[-50%] z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bg-transparent/60 dark:bg-transparent/50'>
+            <TitleStickText title="Bernardo Santo Tirso" className='sm:w-fit p-0 text-light sm:scale-90 xs:scale-75' />
           </div>
 
-          <div className='w-full h-auto flex items-center justify-center gap-10 overflow-clip sm:overflow-x-scroll ' >
+          <div className='w-screen h-auto flex items-center justify-center gap-10 overflow-clip sm:overflow-x-scroll' >
             {homeMedia.map((item, index) => (
               <Image
                 priority
@@ -43,7 +43,6 @@ export default function Home() {
             }
           </div>
         </Layout>
-
       </main>
     </>
   )
