@@ -1,5 +1,5 @@
 import AnimatedText from '@/components/AnimatedText'
-import { MinusCircle, PlusCircle } from '@/components/Icons'
+import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
 import { biographyAccordion, imageLinks, quotes } from '@/constants'
@@ -33,6 +33,9 @@ const Biography = () => {
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
                         />
                         <h2 className='text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 1/3</h2>
+                    </div>
+                    <div className='hidden sm:flex sm:justify-end'>
+                        <ArrowVertical />
                     </div>
 
                 </Layout>

@@ -577,3 +577,44 @@ export const ArrowHorizontal = ({ className, ...rest }) => (
         </g>
     </svg>
 )
+
+export const ArrowVertical = ({ className, ...rest }) => (
+
+    <svg xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        viewBox="0 0 24 24"
+        {...rest}>
+        <g
+            transform="rotate(90 12 12)">
+            <g
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}>
+                <path
+                    strokeDasharray={12} strokeDashoffset={12}
+                    d="M15 7H3.5M9 17H20.5">
+                    <animate
+                        fill="freeze"
+                        attributeName="stroke-dashoffset"
+                        dur="0.3s"
+                        values="12;0">
+                    </animate>
+                </path>
+                <path
+                    strokeDasharray={8}
+                    strokeDashoffset={8} d="M3 7L7 11M3 7L7 3M21 17L17 21M21 17L17 13">
+                    <animate
+                        fill="freeze"
+                        attributeName="stroke-dashoffset"
+                        begin="0.3s"
+                        dur="0.2s"
+                        values="8;0">
+                    </animate>
+                </path>
+            </g>
+        </g>
+    </svg>
+)
