@@ -416,38 +416,6 @@ export const DownArrow = ({ className, ...rest }) => (
     </svg>
 );
 
-export const ScrollIcon = ({ className, ...rest }) => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width={72}
-        height={72}
-        {...rest}>
-        <path
-            fill="#D0CFCE"
-            d="M37.297 16.773h-2.472c-5.876 0-10.684 4.808-10.684 10.684V44.39c0 5.876 4.808 10.684 10.684 10.684h2.472c5.876 0 10.684-4.808 10.684-10.684V27.457c0-5.876-4.808-10.684-10.684-10.684z"
-        />
-        <path
-            fill="#3F3F3F"
-            d="M36.061 22.112a2.08 2.08 0 0 0-2.074 2.074v5.834a2.08 2.08 0 0 0 2.074 2.073 2.08 2.08 0 0 0 2.074-2.073v-5.834a2.08 2.08 0 0 0-2.074-2.074z"
-        />
-        <path
-            fill="#9B9B9A"
-            d="M35.136 18.177c3.027 1.299 5.904 3.163 6.239 7.873.388 5.455-1.63 15.669-2.28 20.857-.453 3.627-2.247 5.307-4.63 7.21-1.2.961 5.267.844 7.93-.713 2.286-1.336 4.5-3.629 4.527-2.904l.323-25.805s-.937-6.937-8.566-6.94c0 0-7.652-.393-3.543.422z"
-        />
-        <g
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit={10}
-            strokeWidth={2}
-        >
-            <path d="M38.83 54.501h-5.537c-4.97 0-9.035-4.065-9.035-9.034V26.38c0-4.969 4.066-9.034 9.035-9.034h5.536c4.97 0 9.035 4.065 9.035 9.034v19.087c0 4.969-4.066 9.034-9.035 9.034z" />
-            <path d="M36.145 32.155h-.168a2.035 2.035 0 0 1-2.03-2.03V24.08c0-1.116.914-2.029 2.03-2.029h.168c1.116 0 2.03.913 2.03 2.03v6.046c0 1.116-.914 2.03-2.03 2.03zm5.186 27.861-5.216 5.216m-5.258-5.216 5.216 5.216m-5.216-53.34 5.216-5.216m5.258 5.216-5.216-5.216" />
-        </g>
-    </svg>
-)
-
 export const LeftArrow = ({ className, ...rest }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -529,7 +497,8 @@ export const PlusCircle = ({ className, ...rest }) => (
 )
 
 export const ArrowRight = ({ className, ...rest }) => (
-    <svg xmlns="http://www.w3.org/2000/svg"
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
         width={40}
         height={40}
         viewBox="0 0 24 24"
@@ -565,6 +534,46 @@ export const ArrowRight = ({ className, ...rest }) => (
                     </animate>
                 </path>
             </g>
+        </g>
+    </svg>
+)
+
+export const ArrowHorizontal = ({ className, ...rest }) => (
+
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={24}
+        height={24}
+        viewBox="0 0 24 24"
+        {...rest}>
+        <g
+            fill="none"
+            stroke="#fff"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}>
+            <path
+                strokeDasharray={12}
+                strokeDashoffset={12}
+                d="M15 7H3.5M9 17H20.5">
+                <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    dur="0.3s"
+                    values="12;0">
+                </animate>
+            </path>
+            <path
+                strokeDasharray={8}
+                strokeDashoffset={8} d="M3 7L7 11M3 7L7 3M21 17L17 21M21 17L17 13">
+                <animate
+                    fill="freeze"
+                    attributeName="stroke-dashoffset"
+                    begin="0.3s"
+                    dur="0.2s"
+                    values="8;0">
+                </animate>
+            </path>
         </g>
     </svg>
 )
