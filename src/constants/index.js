@@ -4,33 +4,11 @@ export const imageLinks = {
     BIOGRAPHY: biography,
 }
 
-// export const homeMedia = [
-//     {
-//         path: '/images/IMG-20240322-WA0004.png',
-//     },
-//     {
-//         path: '/images/IMG-20240322-WA0005.png',
-//     },
-//     {
-//         path: '/images/IMG-20240322-WA0006.png',
-//     },
-//     {
-//         path: '/images/IMG-20240322-WA0007.png',
-//     },
-// ]
 export const homeMedia = [
-    {
-        path: '/images/original/IMG-20240322-WA0004.png',
-    },
-    {
-        path: '/images/original/IMG-20240322-WA0005.png',
-    },
-    {
-        path: '/images/original/IMG-20240322-WA0006.png',
-    },
-    {
-        path: '/images/original/IMG-20240322-WA0007.png',
-    },
+    { path: '/images/original/IMG-20240322-WA0004.png', },
+    { path: '/images/original/IMG-20240322-WA0005.png', },
+    { path: '/images/original/IMG-20240322-WA0006.png', },
+    { path: '/images/original/IMG-20240322-WA0007.png', },
 ]
 
 export const socialLinks = [

@@ -19,7 +19,7 @@ const Biography = () => {
             <main className='w-full flex flex-col justify-center items-center min-h-screen overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16 xs:py-0 xs:pb-6'>
 
-                    <div className='w-full mb-24 xs:-mb-6 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
+                    <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
                         <AnimatedText
                             text={`“` + quotes.quote1.line1}
                             className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
@@ -59,9 +59,9 @@ const Biography = () => {
                         <AnimatedText text="A Grande Caminhada" className='text-center sm:text-7xl p-16 text-light' />
 
                         <div className='flex justify-center items-center'>
-                            <Accordion>
-                                {biographyAccordion.map((item, index) => (
 
+                            <Accordion className='flex flex-1 justify-between'>
+                                {biographyAccordion.map((item, index) => (
                                     <AccordionItem
                                         key={index}
                                         aria-label={item.title}
@@ -77,6 +77,7 @@ const Biography = () => {
                                     </AccordionItem>
                                 ))}
                             </Accordion>
+
                         </div>
                     </div>
                 </section>
