@@ -79,7 +79,7 @@ const ContactForm = () => {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="ex: Bernardo Santo Tirso"
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
+                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark shadow-md shadow-primary dark:text-light outline-none border-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
@@ -90,7 +90,7 @@ const ContactForm = () => {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="ex: bernardo.s.tirso@gmail.com"
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
+                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light shadow-md shadow-primary outline-none border-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
@@ -101,13 +101,13 @@ const ContactForm = () => {
                     value={form.message}
                     onChange={handleChange}
                     placeholder='ex: És um verdadeiro artista ! Podemos conversar ?'
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light rounded-lg outline-none border-none font-medium'
+                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light shadow-md shadow-primary outline-none border-none font-medium'
                 />
             </label>
 
             <button
                 type='submit'
-                className='bg-secondary py-3 px-8 place-self-end rounded-xl outline-none w-fit text-dark dark:text-light font-bold shadow-md shadow-primary'
+                className='bg-secondary py-3 px-8 place-self-end outline-none w-fit text-dark dark:text-light font-bold shadow-md shadow-primary hover:-translate-y-0.5'
             >
                 {loading ? "A enviar..." : "Enviar"}
             </button>
