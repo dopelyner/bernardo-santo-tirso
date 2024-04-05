@@ -60,7 +60,7 @@ const Biography = () => {
 
                         <div className='flex justify-center items-center'>
 
-                            <Accordion className='flex flex-1 justify-between'>
+                            <Accordion className='flex-1 justify-between'>
                                 {biographyAccordion.map((item, index) => (
                                     <AccordionItem
                                         key={index}
