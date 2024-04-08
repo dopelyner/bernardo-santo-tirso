@@ -1,10 +1,13 @@
-import { ArrowHorizontal } from '@/components/Icons'
+import AnimatedText from '@/components/AnimatedText'
+import { ArrowHorizontal, LinkArrow } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import TitleStickText from '@/components/TitleStickText'
 import TransitionEffect from '@/components/TransitionEffect'
-import { homeMedia } from '@/constants'
+import { homeMedia, projectsSubMenu } from '@/constants'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+
 
 export default function Home() {
 
@@ -17,8 +20,8 @@ export default function Home() {
 
       <TransitionEffect />
 
-      <main className='relative flex flex-col justify-center text-dark dark:text-light sm:justify-center sm:items-center'>
-        <Layout className='w-full min-h-fit p-0 px-0 py-0 xl:p-0 lg:p-0 sm:pl-0 sm:py-0'>
+      <main className='flex flex-col justify-center text-dark dark:text-light sm:justify-center sm:items-center'>
+        <Layout className='relative w-full min-h-fit px-0 py-0 xl:px-0 xl:py-0 lg:py-0 lg:px-0 sm:px-0 sm:py-0'>
 
           <div className='absolute sm:flex right-0 -translate-x-6 pt-4 hidden z-50'>
             <ArrowHorizontal />
@@ -28,7 +31,7 @@ export default function Home() {
             <TitleStickText title="Bernardo Santo Tirso" className='sm:w-fit p-0 text-light sm:scale-90 xs:scale-75' />
           </div>
 
-          <div className='w-screen h-auto flex items-center justify-center sm:justify-normal gap-10 overflow-clip sm:overflow-x-scroll' >
+          <div className='w-full h-auto flex items-center justify-center sm:justify-normal gap-10 overflow-clip sm:overflow-x-scroll' >
             {homeMedia.map((item, index) => (
               <Image
                 priority
@@ -43,7 +46,35 @@ export default function Home() {
             }
           </div>
         </Layout>
-      </main>
+
+        <Layout className='h-fit'>
+          <div className='flex flex-col items-center justify-center'>
+            <AnimatedText
+              className='text-center'
+              text="experiências / vivências" />
+            <p className='text-2xl pt-8'>Desde &apos;95 a fazer história... </p>
+
+            <div className='flex flex-row items-center justify-center xl:flex-wrap md:flex-wrap gap-10 pt-16'>
+              {projectsSubMenu.map((projects, index) => (
+                <>
+                  <div className='relative min-h-40 min-w-80 flex items-center justify-center max-w-96 bg-gradient-to-tr via-dark/60 to-80% from-dirt to-oliveDark/60 shadow-primary shadow-md text-light hover:-translate-y-1 hover:cursor-pointer'>
+                    <Link key={index} href={projects.href} className=" w-full h-full">
+                      <LinkArrow className="w-8 absolute top-0 right-0 m-2" />
+                      <h2 className='text-center text-7xl'>{projects.title}</h2>
+                    </Link>
+                  </div></>
+              ))}
+
+            </div>
+          </div>
+        </Layout>
+
+        <Layout className='h-screen bg-dirt/40'>
+
+        </Layout>
+
+
+      </main >
     </>
   )
 }

@@ -25,6 +25,7 @@ module.exports = {
         purple: "#674d69",
         // blue: "#32598c",
         blue: "#2b62ab",
+        dirt: "#5e4a3d",
       },
     },
     screens: {
