@@ -3,9 +3,11 @@ import { LeftArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
+import { stagingMedia } from '@/constants';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
+import { ImageGallery } from 'react-image-grid-gallery';
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -63,14 +65,21 @@ const Staging = () => {
                                 text="Encenação"
                                 className='w-full mb-6 xs:text-5xl text-center'
                             />
-                            <div className='flex self-center pb-16'>
+
+                            <SeparatorBar size="big" />
+
+                            <ImageGallery
+                                imagesInfoArray={stagingMedia}
+                                columnWidth={600}
+                                gapSize={24}
+                            />
+
+                            <div className='flex justify-end sm:justify-center py-16 sm:py-32'>
                                 <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
                                     <LeftArrow />
                                     <h3 className='text-2xl italic'>Voltar</h3>
                                 </Link>
                             </div>
-
-                            <SeparatorBar size="big" />
 
                             <div className='flex flex-col items-center justify-center'>
                                 <h3 className='text-2xl italic mb-12'> Outros projectos</h3>

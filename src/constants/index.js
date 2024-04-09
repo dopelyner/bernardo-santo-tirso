@@ -18,30 +18,31 @@ export const homeMedia = [
 export const stagingMedia = [
     {
         src: '/images/staging/MUSIC FOR CHAMELEONS.jpg',
-        description: 'MUSIC FOR CHAMELEONS',
-        author: '',
+        caption: 'MUSIC FOR CHAMELEONS',
+        alt: 'MUSIC FOR CHAMELEONS',
     },
     {
         src: '/images/staging/MUSIC FOR CHAMELEONS 2.jpg',
-        description: 'MUSIC FOR CHAMELEONS',
-        author: '',
+        caption: 'MUSIC FOR CHAMELEONS',
+        alt: 'MUSIC FOR CHAMELEONS',
     },
     {
         src: '/images/staging/MUSIC FOR CHAMELEONS 3.jpg',
-        description: 'MUSIC FOR CHAMELEONS',
-        author: '',
+        caption: 'MUSIC FOR CHAMELEONS',
+        alt: 'MUSIC FOR CHAMELEONS',
     },
     {
         src: '/images/staging/MUSIC FOR CHAMELEONS 4.jpg',
-        description: 'MUSIC FOR CHAMELEONS',
-        author: '',
+        caption: 'MUSIC FOR CHAMELEONS',
+        alt: 'MUSIC FOR CHAMELEONS',
     },
     {
         src: '/images/staging/MUSIC FOR CHAMELEONS 5.jpg',
-        description: 'MUSIC FOR CHAMELEONS',
-        author: '',
+        caption: 'MUSIC FOR CHAMELEONS',
+        alt: 'MUSIC FOR CHAMELEONS',
     },
 ]
+
 export const lightsMedia = [
     {
         src: '/images/light/MOSTRA-TE 23 - DESENHO DE LUZ.jpg',

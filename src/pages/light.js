@@ -72,13 +72,13 @@ const Light = () => {
                                 columnWidth={400}
                                 gapSize={24}
                             />
-                            <div className='flex justify-end py-16'>
+                            <div className='flex justify-end sm:justify-center py-16 sm:py-32'>
                                 <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
                                     <LeftArrow />
                                     <h3 className='text-2xl italic'>Voltar</h3>
                                 </Link>
                             </div>
-                            
+
                             <div className='flex flex-col items-center justify-center'>
                                 <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
                                 <div className='flex flex-row gap-20 lg:flex-col'>
