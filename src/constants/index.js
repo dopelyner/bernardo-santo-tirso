@@ -4,11 +4,90 @@ export const imageLinks = {
     BIOGRAPHY: biography,
 }
 
+export const spotlight = {
+    image: '/images/spotlight-projector.png'
+}
+
 export const homeMedia = [
     { path: '/images/original/IMG-20240322-WA0004.png', },
     { path: '/images/original/IMG-20240322-WA0005.png', },
     { path: '/images/original/IMG-20240322-WA0006.png', },
     { path: '/images/original/IMG-20240322-WA0007.png', },
+]
+
+export const stagingMedia = [
+    {
+        src: '/images/staging/MUSIC FOR CHAMELEONS.jpg',
+        description: 'MUSIC FOR CHAMELEONS',
+        author: '',
+    },
+    {
+        src: '/images/staging/MUSIC FOR CHAMELEONS 2.jpg',
+        description: 'MUSIC FOR CHAMELEONS',
+        author: '',
+    },
+    {
+        src: '/images/staging/MUSIC FOR CHAMELEONS 3.jpg',
+        description: 'MUSIC FOR CHAMELEONS',
+        author: '',
+    },
+    {
+        src: '/images/staging/MUSIC FOR CHAMELEONS 4.jpg',
+        description: 'MUSIC FOR CHAMELEONS',
+        author: '',
+    },
+    {
+        src: '/images/staging/MUSIC FOR CHAMELEONS 5.jpg',
+        description: 'MUSIC FOR CHAMELEONS',
+        author: '',
+    },
+]
+export const lightsMedia = [
+    {
+        src: '/images/light/MOSTRA-TE 23 - DESENHO DE LUZ.jpg',
+        caption: 'MOSTRA-TE 23 - DESENHO DE LUZ',
+        alt: 'José Caldeira',
+    },
+    {
+        src: '/images/light/1_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/2_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/3_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/4_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/5_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/6_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/7_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
+    {
+        src: '/images/light/8_Jose Caldeira.jpg',
+        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
+        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+    },
 ]
 
 export const socialLinks = [
