@@ -72,7 +72,8 @@ const Light = () => {
                                 columnWidth={400}
                                 gapSize={24}
                             />
-                            <div className='flex justify-end sm:justify-center py-16 sm:py-32'>
+                            
+                            <div className='flex justify-start sm:justify-center py-16 sm:py-32'>
                                 <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
                                     <LeftArrow />
                                     <h3 className='text-2xl italic'>Voltar</h3>

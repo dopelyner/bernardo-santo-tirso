@@ -84,7 +84,6 @@ const Cinema = () => {
                                 subTitle="Realizado por The spill"
                                 videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/the-spill-bitch-is-gone"
                             />
-
                             <SeparatorBar />
 
                             <ProjectItem
@@ -94,7 +93,7 @@ const Cinema = () => {
                             />
                         </div>
 
-                        <div className='flex self-center pb-16'>
+                        <div className='flex justify-start sm:justify-center lg:justify-start lg:py-32 py-16 sm:py-32'>
                             <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
                                 <LeftArrow />
                                 <h3 className='text-2xl italic'>Voltar</h3>
@@ -113,8 +112,6 @@ const Cinema = () => {
                             <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
                         </div>
                     </div>
-
-
 
                 </Layout>
             </main>

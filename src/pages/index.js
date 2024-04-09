@@ -58,8 +58,8 @@ export default function Home() {
               {projectsSubMenu.map((projects, index) => (
                 <>
                   <div className='relative min-h-40 min-w-72 flex items-center justify-center max-w-96 bg-gradient-to-tr via-dark/60 to-80% from-dirt to-oliveDark/60 shadow-primary shadow-md text-light hover:-translate-y-1 hover:cursor-pointer'>
-                    <Link key={index} href={projects.href} className=" w-full h-full">
-                      <LinkArrow className="w-8 absolute top-0 right-0 m-2" />
+                    <Link key={index} href={projects.href} className="h-full">
+                      <LinkArrow className="!w-8 absolute top-0 right-0 m-2" />
                       <h2 className='text-center text-7xl'>{projects.title}</h2>
                     </Link>
                   </div></>
