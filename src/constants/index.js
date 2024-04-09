@@ -41,6 +41,112 @@ export const stagingMedia = [
         caption: 'MUSIC FOR CHAMELEONS',
         alt: 'MUSIC FOR CHAMELEONS',
     },
+    {
+        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ.jpg',
+        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+    },
+    {
+        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_2.png',
+        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+    },
+    {
+        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_3.jpg',
+        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+    },
+    {
+        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_5.jpg',
+        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+    },
+    {
+        src: '/images/staging/HILOWLIFE_1.jpg',
+        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
+        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+    },
+    {
+        src: '/images/staging/HILOWLIFE_2.jpg',
+        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
+        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+    },
+    {
+        src: '/images/staging/HILOWLIFE_3.jpg',
+        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
+        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+    },
+    {
+        src: '/images/staging/HILOWLIFE_4.jpg',
+        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
+        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+    },
+    {
+        src: '/images/staging/HILOWLIFE_5.jpg',
+        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
+        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+    },
+    {
+        src: '/images/staging/IFTING_1.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_2.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_3.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_4.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_4.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_5.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_6.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_7.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_7.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_8.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_9.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+    {
+        src: '/images/staging/IFTING_10.jpeg',
+        caption: 'IFTING',
+        alt: 'IFTING_1.jpeg',
+    },
+
 ]
 
 export const lightsMedia = [

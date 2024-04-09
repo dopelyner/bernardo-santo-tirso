@@ -70,7 +70,7 @@ const Staging = () => {
 
                             <ImageGallery
                                 imagesInfoArray={stagingMedia}
-                                columnWidth={600}
+                                columnWidth={400}
                                 gapSize={24}
                             />
 
