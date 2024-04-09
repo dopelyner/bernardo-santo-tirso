@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <footer className='relative w-full font-medium text-lg sm:text-base'>
-            <Layout className='flex flex-row justify-between xl:p-8 lg:p-16 md:justify-between py-10 text-center md:flex-col sm:flex-row lg:py-10 border-t-2 border-solid
+            <Layout className='flex flex-row justify-between sm:justify-center xl:p-8 lg:p-16 md:justify-between py-10 text-center md:flex-col sm:flex-row lg:py-10 border-t-2 border-solid
              border-dark dark:border-light dark:text-light'>
                 <Image
                     src={spotlight.image}
