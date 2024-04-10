@@ -3,11 +3,10 @@ import { ArrowHorizontal, LinkArrow } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import TitleStickText from '@/components/TitleStickText'
 import TransitionEffect from '@/components/TransitionEffect'
-import { homeMedia, lightsMedia, projectsSubMenu } from '@/constants'
+import { homeMedia, projectsSubMenu } from '@/constants'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ImageGallery } from 'react-image-grid-gallery'
 
 export default function Home() {
 
@@ -54,7 +53,8 @@ export default function Home() {
               text="experiências / vivências" />
             <p className='text-2xl pt-8'>Desde &apos;95 a produzir momentos... </p>
 
-            <div className='flex flex-row items-center justify-center xl:flex-wrap md:flex-wrap gap-10 pt-16'>
+            <div
+              className='flex flex-row items-center justify-center xl:flex-wrap md:flex-wrap gap-10 pt-16'>
               {projectsSubMenu.map((projects, index) => (
                 <>
                   <div className='relative min-h-40 min-w-72 flex items-center justify-center max-w-96 bg-gradient-to-tr via-dark/60 to-80% from-dirt to-oliveDark/60 shadow-primary shadow-md text-light hover:-translate-y-1 hover:cursor-pointer'>

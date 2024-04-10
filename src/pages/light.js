@@ -79,6 +79,8 @@ const Light = () => {
                                     <h3 className='text-2xl italic'>Voltar</h3>
                                 </Link>
                             </div>
+                            
+                            <SeparatorBar size="big" />
 
                             <div className='flex flex-col items-center justify-center'>
                                 <h3 className='text-2xl italic mb-12'> Outros projectos</h3>

@@ -28,17 +28,6 @@ const Footer = () => {
 
                 <div className='flex flex-wrap gap-10 items-center justify-center sm:hidden'>
                     <MotionLink
-                        href={socialLinks.instagramURL}
-                        target={'_blank'}
-                        className='mt-2 hover:-translate-y-0.5'
-                    >
-                        <div className='flex flex-row-reverse items-center gap-1'>
-                            <LinkArrow className="!w-5" />
-                            <span className='hover:font-bold'>Instagram</span>
-                        </div>
-                    </MotionLink>
-
-                    <MotionLink
                         href={socialLinks.facebookURL}
                         target={'_blank'}
                         className='mt-2 hover:-translate-y-0.5'
@@ -46,6 +35,17 @@ const Footer = () => {
                         <div className='flex flex-row-reverse items-center gap-1'>
                             <LinkArrow className="!w-5" />
                             <span className='hover:font-bold'>Facebook</span>
+                        </div>
+                    </MotionLink>
+                    
+                    <MotionLink
+                        href={socialLinks.instagramURL}
+                        target={'_blank'}
+                        className='mt-2 hover:-translate-y-0.5'
+                    >
+                        <div className='flex flex-row-reverse items-center gap-1'>
+                            <LinkArrow className="!w-5" />
+                            <span className='hover:font-bold'>Instagram</span>
                         </div>
                     </MotionLink>
 
