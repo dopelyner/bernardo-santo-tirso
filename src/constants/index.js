@@ -197,14 +197,12 @@ export const lightsMedia = [
     },
 ]
 
-export const socialLinks = [
-    {
-        instagramURL: "https://www.instagram.com/bernardosantotirso_/",
-        facebookURL: "https://www.facebook.com/bernardo.ribeiro.14",
-        linkedinURL: "https://www.linkedin.com/in/bernardosantotirso/",
-        instagramDeveloper: "https://instagram.com/tiagolyner",
-    }
-]
+export const socialLinks = {
+    instagramURL: "https://www.instagram.com/bernardosantotirso_/",
+    facebookURL: "https://www.facebook.com/bernardo.ribeiro.14",
+    linkedinURL: "https://www.linkedin.com/in/bernardosantotirso/",
+    instagramDeveloper: "https://instagram.com/tiagolyner",
+}
 
 export const emailAddress = {
     email: "taplino@gmail.com",

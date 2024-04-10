@@ -122,15 +122,12 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
 const Navbar = () => {
 
-    const { instagramURL, facebookURL, linkedinURL } = socialLinks[0]
-
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false);
     const ref = useRef()
 
     const handleClick = () => {
         setIsOpen((prevIsOpen) => !prevIsOpen); // Toggle the isOpen state
-
     }
 
     return (
@@ -151,7 +148,7 @@ const Navbar = () => {
 
 
                 <nav className='flex items-center justify-center flex-wrap'>
-                    <motion.a href={facebookURL} target={'_blank'}
+                    <motion.a href={socialLinks.facebookURL} target={'_blank'}
                         className="w-6 mr-3 sm:mx-1"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -159,7 +156,7 @@ const Navbar = () => {
                         <FacebookIcon className="!fill-dark dark:!fill-light" />
                     </motion.a>
 
-                    <motion.a href={instagramURL} target={'_blank'}
+                    <motion.a href={socialLinks.instagramURL} target={'_blank'}
                         className="w-6 mr-3 sm:mx-1"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -167,7 +164,7 @@ const Navbar = () => {
                         <InstagramIcon className="!fill-dark dark:!fill-light" />
                     </motion.a>
 
-                    <motion.a href={linkedinURL} target={'_blank'}
+                    <motion.a href={socialLinks.linkedinURL} target={'_blank'}
                         className="w-6 mr-3 sm:mx-1"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -192,8 +189,10 @@ const Navbar = () => {
             {
                 isOpen ?
                     <motion.div
-                        initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
-                        animate={{ scale: 1, opacity: 1 }}
+                        initial={{ scale: 0, opacity: 0, x: "50%", y: "-50%" }}
+                        animate={{ scale: 1, opacity: 1, x: "-50%", y: "-50%" }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+
                         className='min-w-[70vw] min-h-screen flex flex-col justify-between items-center fixed top-1/2 left-2/3 
                              z-30 bg-dark/90 dark:bg-light/75 backdrop-blur-md pt-16'
                         ref={ref}
@@ -208,7 +207,7 @@ const Navbar = () => {
                         </nav>
 
                         <nav className='flex items-center justify-center flex-wrap mt-10 gap-x-6 py-16'>
-                            <motion.a href={facebookURL} target={'_blank'}
+                            <motion.a href={socialLinks.facebookURL} target={'_blank'}
                                 className="w-6 mr-3 sm:scale-150"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -216,7 +215,7 @@ const Navbar = () => {
                                 <FacebookIcon className="dark:!fill-dark" />
                             </motion.a>
 
-                            <motion.a href={instagramURL} target={'_blank'}
+                            <motion.a href={socialLinks.instagramURL} target={'_blank'}
                                 className="w-6 mr-3 sm:scale-150"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
@@ -224,7 +223,7 @@ const Navbar = () => {
                                 <InstagramIcon className="dark:!fill-dark" />
                             </motion.a>
 
-                            <motion.a href={linkedinURL} target={'_blank'}
+                            <motion.a href={socialLinks.linkedinURL} target={'_blank'}
                                 className="w-6 mr-3 sm:mx-1"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}

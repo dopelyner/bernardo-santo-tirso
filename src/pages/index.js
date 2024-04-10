@@ -50,11 +50,11 @@ export default function Home() {
         <Layout className='h-fit'>
           <div className='flex flex-col items-center justify-center'>
             <AnimatedText
-              className='text-center'
+              className='text-center sm:text-7xl'
               text="experiências / vivências" />
             <p className='text-2xl pt-8'>Desde &apos;95 a produzir momentos... </p>
 
-            <div className='flex flex-row items-center justify-center xl:flex-wrap md:flex-wrap gap-10   pt-16'>
+            <div className='flex flex-row items-center justify-center xl:flex-wrap md:flex-wrap gap-10 pt-16'>
               {projectsSubMenu.map((projects, index) => (
                 <>
                   <div className='relative min-h-40 min-w-72 flex items-center justify-center max-w-96 bg-gradient-to-tr via-dark/60 to-80% from-dirt to-oliveDark/60 shadow-primary shadow-md text-light hover:-translate-y-1 hover:cursor-pointer'>
