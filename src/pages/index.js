@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </Layout>
 
-        <Layout className='h-fit'>
+        {/* <Layout className='h-fit'>
           <div className='flex flex-col items-center justify-center'>
             <AnimatedText
               className='text-center sm:text-7xl'
@@ -67,7 +67,7 @@ export default function Home() {
 
             </div>
           </div>
-        </Layout>
+        </Layout> */}
 
       </main >
     </>
