@@ -15,7 +15,7 @@ const Footer = () => {
              border-dark dark:border-light dark:text-light'>
 
 
-                <div className='flex flex-col items-start justify-center'>
+                <div className='flex flex-col items-start justify-center sm:items-center'>
                     <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
                     <MotionLink
                         href={socialLinks.instagramDeveloper}
@@ -26,7 +26,7 @@ const Footer = () => {
                     </MotionLink>
                 </div>
 
-                <div className='flex flex-wrap gap-10 items-center justify-center sm:hidden'>
+                <div className='flex flex-wrap gap-10 items-center justify-center sm:hidden lg:gap-4'>
                     <MotionLink
                         href={socialLinks.facebookURL}
                         target={'_blank'}
