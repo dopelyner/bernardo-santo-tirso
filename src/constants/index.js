@@ -149,54 +149,81 @@ export const stagingMedia = [
 
 ]
 
-export const lightsMedia = [
-    {
-        src: '/images/light/MOSTRA-TE 23 - DESENHO DE LUZ.jpg',
-        caption: 'MOSTRA-TE 23 - DESENHO DE LUZ',
-        alt: 'José Caldeira',
-    },
-    {
-        src: '/images/light/1_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/2_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/3_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/4_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/5_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/6_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/7_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-    {
-        src: '/images/light/8_Jose Caldeira.jpg',
-        caption: 'CATARINA FONSECA DANÇA | Fotografia de José Caldeira',
-        alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
-    },
-]
+export const lightsMedia = {
+    MOSTRATE23_DESENHO_DE_LUZ: [
+        {
+            src: '/images/light/MOSTRA-TE 23 - DESENHO DE LUZ.jpg',
+            caption: 'MOSTRA-TE 23 | DESENHO DE LUZ - Fotografia de José Caldeira',
+            alt: 'MOSTRA-TE 23 | DESENHO DE LUZ - Fotografia de José Caldeira',
+        },
+    ],
+    CATARINA_FONSECA_DANCA: [
+        {
+            src: '/images/light/1_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/2_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
 
+        {
+            src: '/images/light/4_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/5_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/6_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/7_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/3_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/8_Jose Caldeira.jpg',
+            caption: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+            alt: 'CATARINA FONSECA DANÇA - Fotografia de José Caldeira',
+        },
+
+    ],
+    OVERDRAMA: [
+        {
+            src: '/images/light/OVERDRAMA_1.png',
+            caption: 'Produção V - OVERDRAMA',
+            alt: 'Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/OVERDRAMA_2.png',
+            caption: 'Produção V - OVERDRAMA',
+            alt: 'Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/OVERDRAMA_3.png',
+            caption: 'Produção V - OVERDRAMA',
+            alt: 'Fotografia de José Caldeira',
+        },
+        {
+            src: '/images/light/OVERDRAMA_4.jpg',
+            caption: 'Produção V - OVERDRAMA',
+            alt: 'Fotografia de José Caldeira',
+        },
+    ]
+}
 export const socialLinks = {
     instagramURL: "https://www.instagram.com/bernardosantotirso_/",
     facebookURL: "https://www.facebook.com/bernardo.ribeiro.14",
