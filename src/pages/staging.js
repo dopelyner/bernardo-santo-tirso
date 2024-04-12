@@ -110,7 +110,7 @@ const Staging = () => {
                                 </div>
                                 <ImageGallery
                                     imagesInfoArray={stagingMedia.IFTING}
-                                    columnWidth={400}
+                                    columnWidth={600}
                                     gapSize={24}
                                 />
                             </div>
