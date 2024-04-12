@@ -15,139 +15,142 @@ export const homeMedia = [
     { path: '/images/original/IMG-20240322-WA0007.png', },
 ]
 
-export const stagingMedia = [
-    {
-        src: '/images/staging/MUSIC FOR CHAMELEONS.jpg',
-        caption: 'MUSIC FOR CHAMELEONS',
-        alt: 'MUSIC FOR CHAMELEONS',
-    },
-    {
-        src: '/images/staging/MUSIC FOR CHAMELEONS 2.jpg',
-        caption: 'MUSIC FOR CHAMELEONS',
-        alt: 'MUSIC FOR CHAMELEONS',
-    },
-    {
-        src: '/images/staging/MUSIC FOR CHAMELEONS 3.jpg',
-        caption: 'MUSIC FOR CHAMELEONS',
-        alt: 'MUSIC FOR CHAMELEONS',
-    },
-    {
-        src: '/images/staging/MUSIC FOR CHAMELEONS 4.jpg',
-        caption: 'MUSIC FOR CHAMELEONS',
-        alt: 'MUSIC FOR CHAMELEONS',
-    },
-    {
-        src: '/images/staging/MUSIC FOR CHAMELEONS 5.jpg',
-        caption: 'MUSIC FOR CHAMELEONS',
-        alt: 'MUSIC FOR CHAMELEONS',
-    },
-    {
-        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ.jpg',
-        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-    },
-    {
-        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_2.png',
-        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-    },
-    {
-        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_3.jpg',
-        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-    },
-    {
-        src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_5.jpg',
-        caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-        alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
-    },
-    {
-        src: '/images/staging/HILOWLIFE_1.jpg',
-        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
-        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
-    },
-    {
-        src: '/images/staging/HILOWLIFE_2.jpg',
-        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
-        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
-    },
-    {
-        src: '/images/staging/HILOWLIFE_3.jpg',
-        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
-        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
-    },
-    {
-        src: '/images/staging/HILOWLIFE_4.jpg',
-        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
-        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
-    },
-    {
-        src: '/images/staging/HILOWLIFE_5.jpg',
-        caption: 'HI LOW LIFE | Fotografia de Rafael Faria',
-        alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
-    },
-    {
-        src: '/images/staging/IFTING_1.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_2.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_3.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_4.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_4.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_5.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_6.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_7.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_7.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_8.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_9.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
-    {
-        src: '/images/staging/IFTING_10.jpeg',
-        caption: 'IFTING',
-        alt: 'IFTING_1.jpeg',
-    },
+export const stagingMedia = {
+    MUSIC_FOR_CAMELEONS: [
+        {
+            src: '/images/staging/MUSIC FOR CHAMELEONS.jpg',
+            caption: 'MUSIC FOR CHAMELEONS',
+            alt: 'MUSIC FOR CHAMELEONS',
+        },
+        {
+            src: '/images/staging/MUSIC FOR CHAMELEONS 2.jpg',
+            caption: 'MUSIC FOR CHAMELEONS',
+            alt: 'MUSIC FOR CHAMELEONS',
+        },
+        {
+            src: '/images/staging/MUSIC FOR CHAMELEONS 3.jpg',
+            caption: 'MUSIC FOR CHAMELEONS',
+            alt: 'MUSIC FOR CHAMELEONS',
+        },
+        {
+            src: '/images/staging/MUSIC FOR CHAMELEONS 4.jpg',
+            caption: 'MUSIC FOR CHAMELEONS',
+            alt: 'MUSIC FOR CHAMELEONS',
+        },
+        {
+            src: '/images/staging/MUSIC FOR CHAMELEONS 5.jpg',
+            caption: 'MUSIC FOR CHAMELEONS',
+            alt: 'MUSIC FOR CHAMELEONS',
+        },
+    ],
+    CURSO_PROF_ARTES_ESPETACULO: [
+        {
+            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ.jpg',
+            caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+            alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        },
+        {
+            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_2.png',
+            caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+            alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        },
+        {
+            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_3.jpg',
+            caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+            alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        },
+        {
+            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_5.jpg',
+            caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+            alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
+        },
+    ],
+    HIHOWLIFE: [
+        {
+            src: '/images/staging/HILOWLIFE_1.jpg',
+            caption: 'HI LOW LIFE - Fotografia de Rafael Faria',
+            alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+        },
+        {
+            src: '/images/staging/HILOWLIFE_2.jpg',
+            caption: 'HI LOW LIFE - Fotografia de Rafael Faria',
+            alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+        },
+        {
+            src: '/images/staging/HILOWLIFE_3.jpg',
+            caption: 'HI LOW LIFE - Fotografia de Rafael Faria',
+            alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+        },
+        {
+            src: '/images/staging/HILOWLIFE_4.jpg',
+            caption: 'HI LOW LIFE - Fotografia de Rafael Faria',
+            alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+        },
+        {
+            src: '/images/staging/HILOWLIFE_5.jpg',
+            caption: 'HI LOW LIFE - Fotografia de Rafael Faria',
+            alt: 'HI LOW LIFE - Fotografia de Rafael Faria',
+        },
+    ],
+    IFTING: [
+        {
+            src: '/images/staging/IFTING_1.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_2.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_3.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_4.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
 
-]
+        {
+            src: '/images/staging/IFTING_5.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_6.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_7.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_7.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_8.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_9.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+        {
+            src: '/images/staging/IFTING_10.jpeg',
+            caption: 'IFTING',
+            alt: 'IFTING_1.jpeg',
+        },
+    ]
+}
 
 export const lightsMedia = {
     MOSTRATE23_DESENHO_DE_LUZ: [
