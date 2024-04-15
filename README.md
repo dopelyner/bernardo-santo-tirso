@@ -1,10 +1,11 @@
 # Nextjs, Tailwind CSS and Framer-motion
 
-![Home Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-dark.png?raw=true)
+![Light Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-light.png?raw=true)
 ![Biography Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/biography-light.png?raw=true)
-![Projects Dark](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/projects-dark.png?raw=true)
+![Cinema Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/cinema-light.png?raw=true)
+![Light Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/light-light.png?raw=true)
+![Staging Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/staging-light.png?raw=true)
 ![Contacts Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/contacts-light.png?raw=true)
-
 
 ##  Techologies 
 - [Nextjs](https://nextjs.org/) - the React Framework for the Web
