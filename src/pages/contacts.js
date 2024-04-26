@@ -78,8 +78,8 @@ const ContactForm = () => {
                     name='name'
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="ex: Bernardo Santo Tirso"
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark shadow-md shadow-primary dark:text-light outline-none border-none font-medium'
+                    placeholder="Bernardo Santo Tirso"
+                    className='bg-transparent py-2 text-lg placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark border-b-2 border-primary dark:text-light outline-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
@@ -89,19 +89,19 @@ const ContactForm = () => {
                     name='email'
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="ex: bernardo.s.tirso@gmail.com"
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light shadow-md shadow-primary outline-none border-none font-medium'
+                    placeholder="bernardo.s.tirso@gmail.com"
+                    className='bg-transparent py-2 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark border-b-2 border-primary dark:text-light outline-none font-medium'
                 />
             </label>
             <label className='flex flex-col'>
                 <span className='text-dark dark:text-light font-medium mb-4 text-2xl'>Mensagem</span>
                 <textarea
-                    rows={4}
+                    rows={1}
                     name='message'
                     value={form.message}
                     onChange={handleChange}
-                    placeholder='ex: És um verdadeiro artista ! Podemos conversar ?'
-                    className='bg-grey/30 py-4 px-6 placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark dark:text-light shadow-md shadow-primary outline-none border-none font-medium'
+                    placeholder='És um verdadeiro artista ! Podemos conversar ?'
+                    className='bg-transparent py-2 min-h-fit placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark border-b-2 border-primary dark:text-light outline-none font-medium'
                 />
             </label>
 
@@ -125,7 +125,7 @@ const contacts = () => {
             </Head>
 
             <main className='w-full min-h-screen flex flex-row items-center justify-center overflow-hidden dark:text-light'>
-                <Layout className='pt-16 pb-0'>
+                <Layout className='pt-16 pb-0 sm:pb-0'>
 
                     <div className='w-full mb-24 flex flex-col xs:text-6xl'>
                         <AnimatedText
@@ -150,7 +150,7 @@ const contacts = () => {
                         className='w-full lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
                     />
 
-                    <div className='mt-32 flex xl:flex-col xl:items-center xl:justify-center '>
+                    <div className='mt-32 flex xl:flex-col xl:items-center xl:justify-center md:flex-col-reverse'>
                         <div className=' flex flex-col items-center justify-center mr-20 lg:m-0 xl:mr-0 md:w-max'>
                             <div className='w-full flex justify-end items-end 2xl:bottom-0'>
                                 <Image
