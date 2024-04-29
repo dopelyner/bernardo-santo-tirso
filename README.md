@@ -1,11 +1,12 @@
 # Nextjs, Tailwind CSS and Framer-motion
-
-![Light Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-light.png?raw=true)
-![Biography Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/biography-light.png?raw=true)
-![Cinema Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/cinema-light.png?raw=true)
-![Light Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/light-light.png?raw=true)
-![Staging Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/staging-light.png?raw=true)
-![Contacts Light](https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/contacts-light.png?raw=true)
+<div>
+  <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/home-light.png?raw=true" alt="Alt text" width="300"/>
+  <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/biography-light.png?raw=true" alt="Alt text" width="300"/>
+  <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/cinema-light.png?raw=true" alt="Alt text" width="300"/>
+  <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/light-light.png?raw=true" alt="Alt text" width="300"/>
+  <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/staging-light.png?raw=true" alt="Alt text" width="300"/>
+  <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/contacts-light.png?raw=true" alt="Alt text" width="300"/>
+</div>
 
 ##  Techologies 
 - [Nextjs](https://nextjs.org/) - the React Framework for the Web
