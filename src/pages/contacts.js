@@ -100,14 +100,14 @@ const ContactForm = () => {
                     name='message'
                     value={form.message}
                     onChange={handleChange}
-                    placeholder='És um verdadeiro artista ! Podemos conversar ?'
+                    placeholder='A mensagem...'
                     className='bg-transparent py-2 min-h-fit placeholder:text-dark/40 dark:placeholder:text-light/50 text-dark border-b-2 border-primary dark:text-light outline-none font-medium'
                 />
             </label>
 
             <button
                 type='submit'
-                className='bg-secondary py-3 px-8 place-self-end outline-none w-fit text-dark dark:text-light font-bold shadow-md shadow-primary hover:-translate-y-0.5'
+                className='bg-secondary py-3 px-8 place-self-end outline-none w-fit text-dark dark:text-light font-bold hover:bg-dark hover:text-light shadow-md shadow-primary hover:-translate-y-0.5'
             >
                 {loading ? "A enviar..." : "Enviar"}
             </button>
@@ -151,7 +151,7 @@ const contacts = () => {
                     />
 
                     <div className='mt-32 flex xl:flex-col xl:items-center xl:justify-center md:flex-col-reverse'>
-                        <div className=' flex flex-col items-center justify-center mr-20 lg:m-0 xl:mr-0 md:w-max'>
+                        <div className='flex flex-col items-center justify-center mr-20 lg:m-0 xl:mr-0 md:w-max'>
                             <div className='w-full flex justify-end items-end 2xl:bottom-0'>
                                 <Image
                                     src={"../../images/bernardosantotirso.png"}
@@ -166,6 +166,7 @@ const contacts = () => {
                         <div className='w-3/5 xl:w-full 2xl:mb-16'>
                             <ContactForm />
                         </div>
+
                     </div>
 
                 </Layout>
