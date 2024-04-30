@@ -3,6 +3,7 @@ import { LeftArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
+import { cinemaMedia } from '@/constants';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -57,7 +58,7 @@ const Cinema = () => {
 
                     <div className='flex flex-col items-center justify-center lg:mt-0'>
 
-                        <div className='flex flex-col '>
+                        <div className='flex flex-col'>
                             <AnimatedText
                                 text="Cinema"
                                 className='w-full mb-6 xs:text-5xl text-center'
@@ -65,32 +66,15 @@ const Cinema = () => {
 
                             <SeparatorBar size="big" />
 
-                            <ProjectItem
-                                title="Ride"
-                                subTitle="Filme de Animação realizado por Paul Bush"
-                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/ride"
-                            />
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="O céu aqui é mais baixo"
-                                subTitle="Realizado por Henrique Vilão"
-                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/o-ceu-aqui-e-mais-baixo"
-                            />
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="The spill - B**ch is gone (videoclipe)"
-                                subTitle="Realizado por The Spill"
-                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/the-spill-bitch-is-gone"
-                            />
-                            <SeparatorBar />
-
-                            <ProjectItem
-                                title="Ao acaso, um rapaz"
-                                subTitle="Realizado por João Macedo"
-                                videoURL="https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/ao-acaso-um-rapaz"
-                            />
+                            {cinemaMedia.map((video, index) => (
+                                <ProjectItem
+                                    key={index}
+                                    title={video.title}
+                                    subTitle={video.subTitle}
+                                    videoURL={video.videoURL}
+                                />
+                            ))
+                            }
                         </div>
 
                         <div className='flex justify-start sm:justify-center lg:justify-start lg:py-32 py-16 sm:py-32'>

@@ -227,6 +227,30 @@ export const lightsMedia = {
         },
     ]
 }
+
+export const cinemaMedia = [
+    {
+        title: "Ride",
+        subTitle: "Filme de Animação realizado por Paul Bush",
+        videoURL: "https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/ride",
+    },
+    {
+        title: "O céu aqui é mais baixo",
+        subTitle: "Realizado por Henrique Vilão",
+        videoURL: "https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/o-ceu-aqui-e-mais-baixo",
+    },
+    {
+        title: "The spill - B**ch is gone (videoclipe)",
+        subTitle: "Realizado por The Spill",
+        videoURL: "https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/the-spill-bitch-is-gone"
+    },
+    {
+        title: "Ao acaso, um rapaz",
+        subTitle: "Realizado por João Macedo",
+        videoURL: "https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/ao-acaso-um-rapaz",
+    },
+]
+
 export const socialLinks = {
     instagramURL: "https://www.instagram.com/bernardosantotirso_/",
     facebookURL: "https://www.facebook.com/bernardo.ribeiro.14",
