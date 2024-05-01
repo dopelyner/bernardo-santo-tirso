@@ -41,7 +41,7 @@ const Biography = () => {
 
                 </Layout>
 
-                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-dark dark:bg-greyDark'>
+                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 '>
                     <div className='relative w-1/2 xl:min-w-max 2xl:w-1/2 sm:w-full flex flex-col self-center'>
                         <Image
                             priority
@@ -56,7 +56,7 @@ const Biography = () => {
                     </div>
 
                     <div className='flex flex-col w-full'>
-                        <AnimatedText text="A Grande Caminhada" className='text-center sm:text-7xl p-16 text-light' />
+                        <AnimatedText text="A Grande Caminhada" className='text-center sm:text-7xl p-16 text-dark' />
 
                         <div className='flex justify-center items-center'>
 
@@ -66,14 +66,14 @@ const Biography = () => {
                                         key={index}
                                         aria-label={item.title}
                                         title={item.title}
-                                        className='text-6xl px-8 py-4 text-start sm:w-full flex flex-col border-b-blue
-                                    hover:text-blue border-b-2 text-light hover:-translate-y-1'
+                                        className='text-6xl px-8 py-4 text-start sm:w-full flex flex-col border-b-[#d0b399]
+                                    hover:text-[#d0b399] dark:hover:text-[#d0b399] border-b-2 hover:border-none text-dark dark:text-light '
                                         indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
                                     >
-                                        <p className='text-2xl text-light pb-2 text-justify'>{item.content[0]}</p>
-                                        <p className='text-2xl text-light py-2 text-justify'>{item.content[1]}</p>
-                                        <p className='text-2xl text-light py-2 text-justify'>{item.content[2]}</p>
-                                        <p className='text-2xl text-light pt-2 text-justify'>{item.content[3]}</p>
+                                        <p className='text-2xl text-dark dark:text-light pb-2 text-justify'>{item.content[0]}</p>
+                                        <p className='text-2xl text-dark dark:text-light py-2 text-justify'>{item.content[1]}</p>
+                                        <p className='text-2xl text-dark dark:text-light py-2 text-justify'>{item.content[2]}</p>
+                                        <p className='text-2xl text-dark dark:text-light pt-2 text-justify'>{item.content[3]}</p>
                                     </AccordionItem>
                                 ))}
                             </Accordion>
