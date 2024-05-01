@@ -240,7 +240,7 @@ export const cinemaMedia = [
         videoURL: "https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/o-ceu-aqui-e-mais-baixo",
     },
     {
-        title: "The spill - B**ch is gone (videoclipe)",
+        title: "B**ch is gone (videoclipe)",
         subTitle: "Realizado por The Spill",
         videoURL: "https://res.cloudinary.com/dohak5bnv/video/upload/f_auto:video,q_auto/the-spill-bitch-is-gone"
     },

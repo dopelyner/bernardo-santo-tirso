@@ -14,7 +14,7 @@ const ProjectItem = ({ title, subTitle, videoURL }) => {
         <div className='flex flex-col justify-center items-center mb-24'>
             <AnimatedText
                 text={title}
-                className='mt-0 italic text-5xl xs:text-4xl text-center'
+                className='mt-0 italic text-5xl lg:text-6xl xs:text-4xl text-center'
             />
             <h3
                 className='mt-0 text-2xl xs:text-xl text-center mb-2'>
