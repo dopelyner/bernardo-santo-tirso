@@ -20,12 +20,7 @@ module.exports = {
         primaryDark: "#808080",
         grey: "#808080",
         greyDark: "#252525",
-        olive: '#a8b893',
-        oliveDark: "#515f3f",
-        purple: "#674d69",
-        // blue: "#32598c",
-        blue: "#2b62ab",
-        dirt: "#5e4a3d",
+        gold: "#d0b399",
       },
     },
     screens: {

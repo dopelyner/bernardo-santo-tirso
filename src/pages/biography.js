@@ -2,6 +2,7 @@ import AnimatedText from '@/components/AnimatedText'
 import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
+import SeparatorBar from '@/components/SeparatorBar'
 import { biographyAccordion, imageLinks, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import Head from 'next/head'
@@ -66,8 +67,8 @@ const Biography = () => {
                                         key={index}
                                         aria-label={item.title}
                                         title={item.title}
-                                        className='text-6xl px-8 py-4 text-start sm:w-full flex flex-col border-b-[#d0b399]
-                                    hover:text-[#d0b399] dark:hover:text-[#d0b399] border-b-2 hover:border-none text-dark dark:text-light '
+                                        className='text-6xl px-8 py-4 text-start sm:w-full flex flex-col border-b-gold dark:border-b-dark
+                                    hover:text-gold dark:hover:text-gold border-b-2 hover:border-none text-dark dark:text-light '
                                         indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
                                     >
                                         <p className='text-2xl text-dark dark:text-light pb-2 text-justify'>{item.content[0]}</p>
@@ -82,26 +83,16 @@ const Biography = () => {
                     </div>
                 </section>
 
-                <div className='flex flex-col items-center justify-center my-20'>
-                    <h3 className='text-5xl italic xl:hidden'>Projectos</h3>
+                <div className='flex flex-col items-center justify-center mt-40 mb-20 '>
+                    <h3 className='text-5xl italic '>Projectos</h3>
+                    <SeparatorBar size="big" className="pt-6" />
 
-                    <div className='flex flex-row xl:flex-col my-12 gap-20'>
+                    <div className='flex flex-row xl:flex-col gap-20'>
                         <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
                         <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
                         <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
                         <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
                     </div>
-                </div>
-
-                <div className='w-full flex justify-center items-center'>
-                    <Image
-                        priority
-                        src={"../../images/bernardosantotirso.png"}
-                        alt='Bernardo Santo Tirso'
-                        width={600}
-                        height={600}
-                        className='xs:w-[400px]'
-                    />
                 </div>
 
             </main >
