@@ -4,7 +4,7 @@ import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
-import { biographyAccordion, imageLinks, quotes } from '@/constants'
+import { biographyAccordion, imageLinks, projectsSubMenu, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -46,7 +46,7 @@ const Biography = () => {
                                 text-center text-xl p-6 xl:p-2 sm:p-2 sm:text-sm'>Fotografia de João Pádua</h3>
                     </div>
 
-                    <div className='flex flex-col w-full'>
+                    <div className='flex flex-col w-full '>
                         <AnimatedText text="A Grande Caminhada" className='text-center sm:text-7xl p-16 text-dark' />
 
                         <div className='flex justify-center items-center'>
@@ -61,10 +61,13 @@ const Biography = () => {
                                     hover:text-gold dark:hover:text-gold border-b-2 hover:border-none text-dark dark:text-light '
                                         indicator={({ isOpen }) => (isOpen ? <MinusCircle /> : <PlusCircle />)}
                                     >
-                                        <p className='text-2xl text-dark dark:text-light pb-2 text-justify'>{item.content[0]}</p>
-                                        <p className='text-2xl text-dark dark:text-light py-2 text-justify'>{item.content[1]}</p>
-                                        <p className='text-2xl text-dark dark:text-light py-2 text-justify'>{item.content[2]}</p>
-                                        <p className='text-2xl text-dark dark:text-light pt-2 text-justify'>{item.content[3]}</p>
+                                        {item.content.map((content, i) => (
+                                            <p
+                                                key={i}
+                                                className='text-2xl text-dark dark:text-light py-1 text-justify'>{content}
+                                            </p>
+
+                                        ))}
                                     </AccordionItem>
                                 ))}
                             </Accordion>
@@ -78,10 +81,16 @@ const Biography = () => {
                     <SeparatorBar size="big" className="pt-6" />
 
                     <div className='flex flex-row xl:flex-col gap-20'>
-                        <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
-                        <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
-                        <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
-                        <CustomLink href="/staging" title="Encenação" className='w-full text-8xl xs:text-5xl text-center' />
+                        {projectsSubMenu.map((item, index) => (
+                            <>
+                                <CustomLink
+                                    index={index}
+                                    href={item.href}
+                                    title={item.title}
+                                    className='w-full text-8xl xs:text-5xl text-center'
+                                />
+                            </>
+                        ))}
                     </div>
                 </div>
 
