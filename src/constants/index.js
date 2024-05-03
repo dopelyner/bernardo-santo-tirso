@@ -323,7 +323,7 @@ export const quotes = {
         line3: "Descansa entretanto",
     },
     quote3: {
-        line1: "Partilha os teus afectos",
+        line1: "Partilha os teus afetos",
         line2: "Exprime os teus sentimentos",
         line3: "Deixa a tua marca",
     },

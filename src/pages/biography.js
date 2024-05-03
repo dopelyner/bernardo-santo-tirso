@@ -84,7 +84,7 @@ const Biography = () => {
                 </section>
 
                 <div className='flex flex-col items-center justify-center mt-40 mb-20 '>
-                    <h3 className='text-5xl italic '>Projectos</h3>
+                    <h3 className='text-5xl italic '>Projetos</h3>
                     <SeparatorBar size="big" className="pt-6" />
 
                     <div className='flex flex-row xl:flex-col gap-20'>

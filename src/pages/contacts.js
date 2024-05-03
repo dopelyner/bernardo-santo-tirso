@@ -120,7 +120,7 @@ const contacts = () => {
     return (
         <>
             <Head>
-                <title>Bernardo Santo Tirso | Contatos</title>
+                <title>Bernardo Santo Tirso | Contactos</title>
                 <meta name="Bernardo Santo Tirso" content='Contatos...' />
             </Head>
 
@@ -146,7 +146,7 @@ const contacts = () => {
                     <SeparatorBar size="big" />
 
                     <AnimatedText
-                        text="Contatos"
+                        text="Contactos"
                         className='w-full lg:text-7xl md:text-6xl sm:text-5xl xs:text-6xl text-center'
                     />
 
