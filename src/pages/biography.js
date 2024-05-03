@@ -1,3 +1,4 @@
+import AnimatedQuotes from '@/components/AnimatedQuotes'
 import AnimatedText from '@/components/AnimatedText'
 import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
@@ -20,21 +21,10 @@ const Biography = () => {
             <main className='w-full flex flex-col justify-center items-center min-h-screen overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16 xs:py-0 xs:pb-6'>
 
-                    <div className='w-full mb-24 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
-                        <AnimatedText
-                            text={`“` + quotes.quote1.line1}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
-                        />
-                        <AnimatedText
-                            text={quotes.quote1.line2}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
-                        />
-                        <AnimatedText
-                            text={quotes.quote1.line3 + `”`}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
-                        />
-                        <h2 className='text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 1/3</h2>
-                    </div>
+                    <AnimatedQuotes
+                        lines={[quotes.quote1.line1, quotes.quote1.line2, quotes.quote1.line3]}
+                        author={quotes.author + " 1/3"}
+                    />
 
                     <div className='hidden sm:flex sm:justify-end'>
                         <ArrowVertical />

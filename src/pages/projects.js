@@ -1,3 +1,4 @@
+import AnimatedQuotes from '@/components/AnimatedQuotes'
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
@@ -17,21 +18,10 @@ const Projects = () => {
             <main className='w-full flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16'>
 
-                    <div className='w-full mb-24 xs:-mb-6 flex flex-col lg:p-8 xs:text-6xl xs:p-8'>
-                        <AnimatedText
-                            text={`“` + quotes.quote2.line1}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
-                        />
-                        <AnimatedText
-                            text={quotes.quote2.line2}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
-                        />
-                        <AnimatedText
-                            text={quotes.quote2.line3 + `”`}
-                            className='xs:text-5xl xl:text-7xl lg:text-6xl xs:mr-12 xs:p-4 normal-case italic'
-                        />
-                        <h2 className='text-2xl text-end mr-32 xs:m-0 xs:mb-32'>{quotes.author} 2/3</h2>
-                    </div>
+                <AnimatedQuotes
+                        lines={[quotes.quote2.line1, quotes.quote2.line2, quotes.quote2.line3]}
+                        author={quotes.author + " 2/3"}
+                    />
 
                     <SeparatorBar size="big" />
 
