@@ -24,21 +24,24 @@ export default function Home() {
             <ArrowHorizontal />
           </div>
 
-          <div className='w-full h-full lg:min-h-fit sm:flex sm:bottom-0 sm:h-fit absolute left-[50%] translate-x-[-50%] z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bg-transparent/60 xs:bg-transparent dark:bg-transparent/50'>
+          <div className='w-full h-full lg:min-h-fit sm:flex sm:bottom-0 sm:h-fit absolute left-1/2 -translate-x-1/2 z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bg-transparent/60 xs:bg-transparent dark:bg-transparent/50'>
             <TitleStickText title="Bernardo Santo Tirso" className='sm:w-fit p-0 text-light sm:scale-90 xs:scale-75' />
           </div>
 
           <div className='w-full h-auto flex items-center justify-center sm:justify-normal gap-10 overflow-clip sm:overflow-x-scroll' >
             {homeMedia.map((item, index) => (
-              <Image
-                priority
-                key={index}
-                src={item.src}
-                width={500}
-                height={500}
-                title='Bernardo Santo Tirso'
-                alt='Bernardo Santo Tirso w-full h-full'
-              />
+              <>
+                <Image
+                  priority
+                  key={index}
+                  src={item.src}
+                  width={500}
+                  height={500}
+                  title='Bernardo Santo Tirso'
+                  alt='Bernardo Santo Tirso'
+                  className='object-cover'
+                />
+              </>
             ))
             }
           </div>

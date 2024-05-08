@@ -132,7 +132,7 @@ const Navbar = () => {
 
     return (
         <header className='w-full px-32 py-12 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8'>
-            <button className='flex-col justify-center items-center hidden lg:flex group' onClick={handleClick}>
+            <button className='flex-col justify-center items-center hidden lg:flex group' onClick={handleClick} aria-label='Menu'>
                 <span className={`bg-dark dark:bg-light group-hover:bg-dark group-hover:dark:bg-light transition-all duration ease-out block h-0.5 w-6 rounded-sm  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light group-hover:bg-dark group-hover:dark:bg-light transition-all duration ease-out block h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'} `}></span>
                 <span className={`bg-dark dark:bg-light group-hover:bg-dark group-hover:dark:bg-light transition-all duration ease-out block h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -173,6 +173,7 @@ const Navbar = () => {
                     </motion.a>
 
                     <button
+                        aria-label='theme-switcher-button'
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
                         className={`ml-3 flex items-center justify-center rounded-full p-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
@@ -232,6 +233,7 @@ const Navbar = () => {
                             </motion.a>
 
                             <button
+                                aria-label='theme-switcher-button'
                                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
                                 className={` flex items-center justify-center rounded-full p-1
                                     ${mode === "light" ? "bg-light text-dark" : "bg-dark text-light"}`}>

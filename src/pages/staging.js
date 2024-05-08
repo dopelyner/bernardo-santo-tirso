@@ -52,7 +52,7 @@ const Staging = () => {
         <>
             <Head>
                 <title>Bernardo Santo Tirso | Encenação</title>
-                <meta name="Bernardo Santo Tirso" content='Projetos de fotografia...' />
+                <meta name="Bernardo Santo Tirso" content='Projetos de encenação...' />
             </Head>
 
             <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
