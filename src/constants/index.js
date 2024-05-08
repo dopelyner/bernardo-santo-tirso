@@ -9,10 +9,10 @@ export const spotlight = {
 }
 
 export const homeMedia = [
-    { path: '/images/original/IMG-20240322-WA0004.png', },
-    { path: '/images/original/IMG-20240322-WA0005.png', },
-    { path: '/images/original/IMG-20240322-WA0006.png', },
-    { path: '/images/original/IMG-20240322-WA0007.png', },
+    { path: '/images/original/IMG-20240322-WA0004.avif', },
+    { path: '/images/original/IMG-20240322-WA0005.avif', },
+    { path: '/images/original/IMG-20240322-WA0006.avif', },
+    { path: '/images/original/IMG-20240322-WA0007.avif', },
 ]
 
 export const stagingMedia = {
