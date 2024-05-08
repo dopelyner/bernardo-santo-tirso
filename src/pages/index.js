@@ -33,7 +33,7 @@ export default function Home() {
               <Image
                 priority
                 key={index}
-                src={item.path}
+                src={item.src}
                 width={500}
                 height={500}
                 title='Bernardo Santo Tirso'
