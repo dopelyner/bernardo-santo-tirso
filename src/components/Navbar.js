@@ -125,6 +125,7 @@ const Navbar = () => {
     const [mode, setMode] = useThemeSwitcher()
     const [isOpen, setIsOpen] = useState(false);
     const ref = useRef()
+    const currentPath = useRouter().asPath
 
     const handleClick = () => {
         setIsOpen((prevIsOpen) => !prevIsOpen); // Toggle the isOpen state
@@ -138,6 +139,8 @@ const Navbar = () => {
                 <span className={`bg-dark dark:bg-light group-hover:bg-dark group-hover:dark:bg-light transition-all duration ease-out block h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
             </button>
 
+            <p className='font-bold hidden sm:flex'>{currentPath === "/" ? "bernardo-santo-tirso/home" : ("bernardo-santo-tirso" + currentPath)}</p>
+
             <div className='w-full flex justify-between items-center lg:hidden text-2xl'>
                 <nav className='flex'>
                     <CustomLink href="/" title="Home" className='mx-2' />
@@ -145,7 +148,6 @@ const Navbar = () => {
                     <CustomLink href="/projects" title="Projetos" className='mx-2' subMenu={projectsSubMenu} />
                     <CustomLink href="/contacts" title="Contatos" className='mx-2' />
                 </nav>
-
 
                 <nav className='flex items-center justify-center flex-wrap'>
                     <motion.a href={socialLinks.facebookURL} target={'_blank'}
