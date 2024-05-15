@@ -33,7 +33,7 @@ export default function Home() {
               <>
                 <Image
                   priority
-                  key={index}
+                  key={"image-" + index}
                   src={item.src}
                   width={500}
                   height={500}
