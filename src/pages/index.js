@@ -30,10 +30,9 @@ export default function Home() {
 
           <div className='w-full h-auto flex items-center justify-center sm:justify-normal gap-10 overflow-clip sm:overflow-x-scroll' >
             {homeMedia.map((item, index) => (
-              <>
+              <div key={"image-" + index}>
                 <Image
                   priority
-                  key={"image-" + index}
                   src={item.src}
                   width={500}
                   height={500}
@@ -41,7 +40,7 @@ export default function Home() {
                   alt='Bernardo Santo Tirso'
                   className='object-cover'
                 />
-              </>
+              </div>
             ))
             }
           </div>
