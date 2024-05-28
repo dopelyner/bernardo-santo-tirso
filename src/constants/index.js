@@ -4,10 +4,6 @@ export const imageLinks = {
     BIOGRAPHY: biography,
 }
 
-export const spotlight = {
-    image: '/images/spotlight-projector.png'
-}
-
 export const homeMedia = [
     { src: '/images/original/IMG-20240322-WA0004.avif', },
     { src: '/images/original/IMG-20240322-WA0005.avif', },
@@ -260,12 +256,6 @@ export const socialLinks = {
 
 export const emailAddress = {
     email: "taplino@gmail.com",
-}
-
-export const videoLinks = {
-    URL_1: "https://www.youtube.com/watch?v=FVoTtWoMkaU",
-    URL_2: "https://vimeo.com/572113578",
-    URL_3: "vid1",
 }
 
 export const biographyAccordion = [
