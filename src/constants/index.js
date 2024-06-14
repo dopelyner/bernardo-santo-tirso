@@ -41,22 +41,22 @@ export const stagingMedia = {
     ],
     CURSO_PROF_ARTES_ESPETACULO: [
         {
-            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ.jpg',
+            src: '/images/staging/Curso Profissional de Artes do Espetaculo_Interpretacao_CMJ.jpg',
             caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
             alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
         },
         {
-            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_2.png',
+            src: '/images/staging/Curso Profissional de Artes do Espetaculo_Interpretacao_CMJ_2.png',
             caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
             alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
         },
         {
-            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_3.jpg',
+            src: '/images/staging/Curso Profissional de Artes do Espetaculo_Interpretacao_CMJ_3.jpg',
             caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
             alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
         },
         {
-            src: '/images/staging/Curso Profissional de Artes do Espetáculo_Interpretação_CMJ_5.jpg',
+            src: '/images/staging/Curso Profissional de Artes do Espetaculo_Interpretacao_CMJ_5.jpg',
             caption: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
             alt: 'CURSO PROFISSIONAL DE ARTES DO ESPETÁCULO',
         },
