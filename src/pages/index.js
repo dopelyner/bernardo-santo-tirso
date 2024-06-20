@@ -7,7 +7,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -17,20 +16,20 @@ export default function Home() {
 
       <TransitionEffect />
 
-      <main className='flex flex-col justify-center text-dark dark:text-light sm:justify-center sm:items-center'>
-        <Layout className='relative w-full min-h-fit px-0 py-0 xl:px-0 xl:py-0 lg:py-0 lg:px-0 sm:px-0 sm:py-0'>
+      <main className='text-dark dark:text-light'>
+        <div className='relative w-full p-0'>
 
-          <div className='absolute sm:flex right-0 -translate-x-6 pt-4 hidden z-50'>
+          <div className='absolute right-0 -translate-x-6 pt-4 hidden sm:flex z-50'>
             <ArrowHorizontal />
           </div>
 
-          <div className='w-full h-full lg:min-h-fit sm:flex sm:bottom-0 sm:h-fit absolute left-1/2 -translate-x-1/2 z-20 p-32 xl:p-16 xl:pt-40 sm:p-0 bg-transparent/60 xs:bg-transparent dark:bg-transparent/50'>
-            <TitleStickText title="Bernardo Santo Tirso" className='sm:w-fit p-0 text-light sm:scale-90 xs:scale-75' />
+          <div className='w-full h-full flex bottom-0 sm:h-fit pb-12 bg-transparent/60 sm:bg-transparent dark:bg-transparent/50 absolute z-5'>
+            <TitleStickText title="Bernardo Santo Tirso" className='text-light' />
           </div>
 
-          <div className='w-full h-auto flex items-center justify-center sm:justify-normal gap-10 overflow-clip sm:overflow-x-scroll' >
+          <div className='w-full h-auto flex items-center justify-center sm:justify-start gap-10 overflow-x-hidden sm:overflow-x-auto'>
             {homeMedia.map((item, index) => (
-              <div key={"image-" + index}>
+              <div key={"image-" + index} className='flex-shrink-0'>
                 <Image
                   priority
                   src={item.src}
@@ -41,12 +40,10 @@ export default function Home() {
                   className='object-cover'
                 />
               </div>
-            ))
-            }
+            ))}
           </div>
-        </Layout>
-
-      </main >
+        </div>
+      </main>
     </>
   )
 }
