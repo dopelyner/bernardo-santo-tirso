@@ -8,7 +8,7 @@
   <img src="https://github.com/dopelyner/bernardo-santo-tirso/blob/master/public/images/showcase/contacts-light.png?raw=true" alt="Alt text" width="300"/>
 </p>
 
-##  Techologies 
+##  Technologies 
 - [Nextjs](https://nextjs.org/) - the React Framework for the Web
 - [TailwindCSS](https://tailwindcss.com/) - a popular utility-first CSS styling framework;
 - [Framer Motion](https://www.framer.com/motion/) - the most popular library used to bring your React website to life with animations
