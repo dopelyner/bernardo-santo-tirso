@@ -100,12 +100,12 @@ const Light = () => {
                             gapSize={24}
                         />
 
-                        <div className='flex justify-end sm:justify-center py-16 sm:py-32 '>
+                        {/* <div className='flex justify-end sm:justify-center py-16 sm:py-32 '>
                             <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center hover:-translate-y-1'>
                                 <LeftArrow />
                                 <h3 className='text-2xl italic hover:font-bold'>Voltar</h3>
                             </Link>
-                        </div>
+                        </div> */}
 
                         <SeparatorBar size="big" />
 
