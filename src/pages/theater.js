@@ -1,11 +1,9 @@
 import AnimatedText from '@/components/AnimatedText';
-import { LeftArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import Link from 'next/link';
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 const ProjectItem = ({ title, subTitle, videoURL }) => {
@@ -73,13 +71,6 @@ const Theater = () => {
                                 className='w-full mb-6 italic text-xl text-center'
                             />
                         </div>
-
-                        {/* <div className='flex justify-start sm:justify-center py-16 sm:py-32'>
-                            <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
-                                <LeftArrow />
-                                <h3 className='text-2xl italic'>Voltar</h3>
-                            </Link>
-                        </div> */}
 
                         <div className='flex flex-col items-center justify-center'>
                             <h3 className='text-2xl italic mb-12'> Outros projectos</h3>

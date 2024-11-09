@@ -27,7 +27,7 @@ const Light = () => {
                         <div className='mb-16'>
                             <div className='flex flex-col items-end mb-4 '>
                                 <p className='text-3xl sm:text-2xl'>Produção V - OVERDRAMA</p>
-                                <p className=' text-2xl sm:text-xl'>Fotografia de José Caldeira</p>
+                                {/* <p className=' text-2xl sm:text-xl'>Fotografia de José Caldeira</p> */}
                             </div>
                             <ImageGallery
                                 imagesInfoArray={lightsMedia.OVERDRAMA}
@@ -40,7 +40,7 @@ const Light = () => {
                         <div className='mb-16 '>
                             <div className='flex flex-col items-end mb-4'>
                                 <p className='text-3xl sm:text-2xl'>CATARINA FONSECA DANÇA</p>
-                                <p className=' text-2xl sm:text-xl'>Fotografia de José Caldeira</p>
+                                {/* <p className=' text-2xl sm:text-xl'>Fotografia de José Caldeira</p> */}
                             </div>
                             <ImageGallery
                                 imagesInfoArray={lightsMedia.CATARINA_FONSECA_DANCA}
@@ -52,7 +52,7 @@ const Light = () => {
                         <SeparatorBar size="small" className="!justify-end mb-8" />
                         <div className='flex flex-col items-end mb-4'>
                             <p className='text-3xl sm:text-2xl'>MOSTRA-TE 23 - DESENHO DE LUZ</p>
-                            <p className=' text-2xl sm:text-xl'>Fotografia de José Caldeira</p>
+                            {/* <p className=' text-2xl sm:text-xl'>Fotografia de José Caldeira</p> */}
                         </div>
                         <ImageGallery
                             imagesInfoArray={lightsMedia.MOSTRATE23_DESENHO_DE_LUZ}
@@ -60,14 +60,7 @@ const Light = () => {
                             gapSize={24}
                         />
 
-                        {/* <div className='flex justify-end sm:justify-center py-16 sm:py-32 '>
-                            <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center hover:-translate-y-1'>
-                                <LeftArrow />
-                                <h3 className='text-2xl italic hover:font-bold'>Voltar</h3>
-                            </Link>
-                        </div> */}
-
-                        <SeparatorBar size="big" />
+                        <SeparatorBar size="big" className="mt-20" />
 
                         <div className='flex flex-col items-center justify-center'>
                             <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
