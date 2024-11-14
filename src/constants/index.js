@@ -224,6 +224,14 @@ export const lightsMedia = {
     ]
 }
 
+export const theaterMedia = [
+    {
+        title: "Histórias em Viagem - Radar 360º",
+        subTitle: "Projeto Odisseia | PARTIS – Santarém/Oeiras/Almada/Montijo/Moita/Barreiro-2017",
+        description: "Histórias em Viagem é um projeto que utiliza a pedagogia como investigação para recolher a matéria-prima criativa. Esta criação começa de fora para dentro, num percurso imersivo, a partir de um contexto global e caminhando até ao indivíduo tão específico e único.A partir da exploração de linguagens artísticas que bebem do teatro de rua e do teatro físico, decidimos aprofundar o espaço que existe dentro de cada interveniente, convidando os participantes a um processo de autoconhecimento e de partilha de si.Surgem memórias e plasticidades.Estas transformam- se em matéria bruta, do nosso trabalho e pesquisa artística. O público é convidado a fazer uma viagem e a construir uma história participada.Será um itinerário, onde o que é importante, não é o ponto de partida ou o ponto de chegada…mas sim o percurso… “O caminho faz - se caminhando” António Machado(poeta castelhano).A arte é o espaço de excelência para isto acontecer.E a rua, por si só, é um espaço de liberdade e habitação democrática… é de todos… Este projeto também fala da nossa viagem, como artistas de rua.",
+        videoURL: "https://vimeo.com/317700256",
+    },
+]
 export const cinemaMedia = [
     {
         title: "Ride",
