@@ -9,7 +9,7 @@ const TitleStickText = ({ title, className = "" }) => {
         <AnimatedText
             text={title}
             className={`${StickFont.className} ${className} text-[220px] 
-            text-center xl:text-[150px] 2xl:text-[200px] sm:text-[100px]`}
+            text-center xl:text-[150px] 2xl:text-[200px] sm:text-[75px]`}
         />
     )
 }

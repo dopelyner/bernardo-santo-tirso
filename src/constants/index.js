@@ -1,4 +1,12 @@
-import biography from '../../public/images/biography-og.png'
+import { AiOutlineHome } from "react-icons/ai";
+import { BsCameraReels } from "react-icons/bs";
+import { FaTheaterMasks } from "react-icons/fa";
+import { GiLightProjector, GiTheaterCurtains } from "react-icons/gi";
+import { MdOutlineMenuBook } from "react-icons/md";
+
+
+
+import biography from '../../public/images/biography-og.png';
 
 export const imageLinks = {
     BIOGRAPHY: biography,
@@ -327,9 +335,11 @@ export const quotes = {
     },
 }
 
-export const projectsSubMenu = [
-    { href: '/cinema', title: 'Cinema' },
-    { href: '/theater', title: 'Teatro' },
-    { href: '/light', title: 'Luz' },
-    { href: '/staging', title: 'Encenação' },
+export const dockerMenu = [
+    { href: '/', title: 'Home', icon: (<AiOutlineHome/>) },
+    { href: '/biography', title: 'Biografia', icon: (<MdOutlineMenuBook />) },
+    { href: '/cinema', title: 'Cinema', icon: (<BsCameraReels />) },
+    { href: '/theater', title: 'Teatro', icon: (<FaTheaterMasks />) },
+    { href: '/light', title: 'Luz', icon: (<GiLightProjector />) },
+    { href: '/staging', title: 'Encenação', icon: (<GiTheaterCurtains />) },
 ];
