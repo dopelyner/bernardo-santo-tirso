@@ -1,7 +1,7 @@
 import { socialLinks } from '@/constants';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { LinkArrow } from './Icons';
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from './Icons';
 import Layout from './Layout';
 
 const MotionLink = motion(Link)
@@ -12,7 +12,6 @@ const Footer = () => {
         <footer className='relative w-full font-medium text-lg sm:text-base'>
             <Layout className='flex flex-row justify-between sm:justify-center xl:p-8 lg:p-16 md:justify-between py-10 text-center md:flex-col sm:flex-row lg:py-10 border-t-2 border-solid
              border-dark dark:border-light dark:text-light'>
-
 
                 <div className='flex flex-col items-start justify-center sm:items-center'>
                     <span>{new Date().getFullYear()} Bernardo Santo Tirso &copy; Todos os direitos reservados.</span>
@@ -26,41 +25,30 @@ const Footer = () => {
                 </div>
 
                 <div className='flex flex-wrap gap-10 items-center justify-center sm:hidden lg:gap-4'>
-                    <MotionLink
-                        href={socialLinks.facebookURL}
-                        target={'_blank'}
-                        className='mt-2 hover:-translate-y-0.5'
+                    <motion.a href={socialLinks.facebookURL} target={'_blank'}
+                        className="w-6 mr-3 sm:mx-1"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.9 }}
                     >
-                        <div className='flex flex-row-reverse items-center gap-1'>
-                            <LinkArrow className="!w-5" />
-                            <span className='hover:font-bold'>Facebook</span>
-                        </div>
-                    </MotionLink>
+                        <FacebookIcon className="!fill-dark dark:!fill-light" />
+                    </motion.a>
 
-                    <MotionLink
-                        href={socialLinks.instagramURL}
-                        target={'_blank'}
-                        className='mt-2 hover:-translate-y-0.5'
+                    <motion.a href={socialLinks.instagramURL} target={'_blank'}
+                        className="w-6 mr-3 sm:mx-1"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.9 }}
                     >
-                        <div className='flex flex-row-reverse items-center gap-1'>
-                            <LinkArrow className="!w-5" />
-                            <span className='hover:font-bold'>Instagram</span>
-                        </div>
-                    </MotionLink>
+                        <InstagramIcon className="!fill-dark dark:!fill-light" />
+                    </motion.a>
 
-                    <MotionLink
-                        href={socialLinks.linkedinURL}
-                        target={'_blank'}
-                        className='mt-2 hover:-translate-y-0.5'
+                    <motion.a href={socialLinks.linkedinURL} target={'_blank'}
+                        className="w-6 mr-3 sm:mx-1"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 0.9 }}
                     >
-                        <div className='flex flex-row-reverse items-center gap-1'>
-                            <LinkArrow className="!w-5" />
-                            <span className='hover:font-bold'>Linkedin</span>
-                        </div>
-                    </MotionLink>
+                        <LinkedinIcon className="!fill-dark dark:!fill-light" />
+                    </motion.a>
                 </div>
-
-
             </Layout>
         </footer>
     )
