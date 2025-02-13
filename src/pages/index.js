@@ -26,6 +26,8 @@ export default function Home() {
             <ArrowHorizontal />
           </div> */}
 
+          <FloatingDock items={dockerMenu} desktopClassName={"flex justify-center w-full absolute z-20 bottom-20 bg-transparent"} />
+
           <div className='w-screen h-screen flex flex-col justify-center text-center gap-10 items-center bg-transparent/60 dark:bg-transparent/50 absolute z-5'>
             <TitleStickText title="Bernardo Santo Tirso" className='text-light' />
             <p className="text-3xl text-light">

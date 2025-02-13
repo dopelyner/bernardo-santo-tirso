@@ -2,7 +2,7 @@ import AnimatedQuotes from '@/components/AnimatedQuotes'
 import AnimatedText from '@/components/AnimatedText'
 import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
-import { CustomLink } from '@/components/Navbar'
+import Navbar, { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
 import { biographyAccordion, dockerMenu, imageLinks, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
@@ -17,6 +17,7 @@ const Biography = () => {
                 <title>Bernardo Santo Tirso | Biografia</title>
                 <meta name="Bernardo Santo Tirso" content='Biografia...' />
             </Head>
+            <Navbar />
 
             <main className='w-full flex flex-col justify-center items-center min-h-screen overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16 xs:py-0 xs:pb-6'>
