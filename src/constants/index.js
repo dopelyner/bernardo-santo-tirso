@@ -232,14 +232,78 @@ export const lightsMedia = {
     ]
 }
 
-export const theaterMedia = [
-    {
-        title: "Histórias em Viagem - Radar 360º",
-        subTitle: "Projeto Odisseia | PARTIS – Santarém/Oeiras/Almada/Montijo/Moita/Barreiro-2017",
-        description: "Histórias em Viagem é um projeto que utiliza a pedagogia como investigação para recolher a matéria-prima criativa. Esta criação começa de fora para dentro, num percurso imersivo, a partir de um contexto global e caminhando até ao indivíduo tão específico e único.A partir da exploração de linguagens artísticas que bebem do teatro de rua e do teatro físico, decidimos aprofundar o espaço que existe dentro de cada interveniente, convidando os participantes a um processo de autoconhecimento e de partilha de si.Surgem memórias e plasticidades.Estas transformam- se em matéria bruta, do nosso trabalho e pesquisa artística. O público é convidado a fazer uma viagem e a construir uma história participada.Será um itinerário, onde o que é importante, não é o ponto de partida ou o ponto de chegada…mas sim o percurso… “O caminho faz - se caminhando” António Machado(poeta castelhano).A arte é o espaço de excelência para isto acontecer.E a rua, por si só, é um espaço de liberdade e habitação democrática… é de todos… Este projeto também fala da nossa viagem, como artistas de rua.",
-        videoURL: "https://vimeo.com/317700256",
-    },
-]
+export const theaterMedia = {
+    // {
+    //     title: "Histórias em Viagem - Radar 360º",
+    //     subTitle: "Projeto Odisseia | PARTIS – Santarém/Oeiras/Almada/Montijo/Moita/Barreiro-2017",
+    //     description: "Histórias em Viagem é um projeto que utiliza a pedagogia como investigação para recolher a matéria-prima criativa. Esta criação começa de fora para dentro, num percurso imersivo, a partir de um contexto global e caminhando até ao indivíduo tão específico e único.A partir da exploração de linguagens artísticas que bebem do teatro de rua e do teatro físico, decidimos aprofundar o espaço que existe dentro de cada interveniente, convidando os participantes a um processo de autoconhecimento e de partilha de si.Surgem memórias e plasticidades.Estas transformam- se em matéria bruta, do nosso trabalho e pesquisa artística. O público é convidado a fazer uma viagem e a construir uma história participada.Será um itinerário, onde o que é importante, não é o ponto de partida ou o ponto de chegada…mas sim o percurso… “O caminho faz - se caminhando” António Machado(poeta castelhano).A arte é o espaço de excelência para isto acontecer.E a rua, por si só, é um espaço de liberdade e habitação democrática… é de todos… Este projeto também fala da nossa viagem, como artistas de rua.",
+    //     videoURL: "https://vimeo.com/317700256",
+    // },
+    PROJECTO_ODISSEIA_2017: [
+        {
+            src: '/images/theather/Projeto_Odisseia_PARTIS_1.jpg',
+            caption: 'PROJECTO ODISSEIA | PARTIS - Santarém/Oeiras/Almada/Montijo/Moita/Barreiro - 2017',
+            alt: 'PROJECTO ODISSEIA | PARTIS - Santarém/Oeiras/Almada/Montijo/Moita/Barreiro - 2017',
+        },
+        {
+            src: '/images/theather/Projeto_Odisseia_PARTIS_2.jpg',
+            caption: 'PROJECTO ODISSEIA | PARTIS - Santarém/Oeiras/Almada/Montijo/Moita/Barreiro - 2017',
+            alt: 'PROJECTO ODISSEIA | PARTIS - Santarém/Oeiras/Almada/Montijo/Moita/Barreiro - 2017',
+        },
+        {
+            src: '/images/theather/Projeto_Odisseia_PARTIS_3.jpg',
+            caption: 'PROJECTO ODISSEIA | PARTIS - Santarém/Oeiras/Almada/Montijo/Moita/Barreiro - 2017',
+            alt: 'PROJECTO ODISSEIA | PARTIS - Santarém/Oeiras/Almada/Montijo/Moita/Barreiro - 2017',
+        },
+
+    ],
+    PROJECTO_NOSNOUS_2022: [
+        {
+            src: '/images/theather/Projeto_NósNous_2022_ Foto_Filipe_Ferreira_1.jpg',
+            caption: 'PROJECTO NÓS NOUS 2022 | - Fotografia de Filipe Ferreira',
+            alt: 'PROJECTO NÓS NOUS 2022 | - Fotografia de Filipe Ferreira',
+        },
+        {
+            src: '/images/theather/Projeto_NósNous_2022_ Foto_Filipe_Ferreira_2.jpg',
+            caption: 'PROJECTO NÓS NOUS 2022 | - Fotografia de Filipe Ferreira',
+            alt: 'PROJECTO NÓS NOUS 2022 | - Fotografia de Filipe Ferreira',
+        },
+    ],
+    OS_TRANSPORTADORES: [
+        {
+            src: '/images/theather/OS_TRANSPORTADORES_Foto _Susana_Neves.jpg',
+            caption: 'OS TRANSPORTADORES | Radar 360º - Fotografia de Susana Neves',
+            alt: 'OS TRANSPORTADORES | Radar 360º - Fotografia de Susana Neves',
+        },
+        {
+            src: '/images/theather/OS_TRANSPORTADORES_Foto_Município Montemor_o_Novo.webp',
+            caption: 'OS TRANSPORTADORES | Radar 360º - Fotografia do Município de Montemor-o-Novo',
+            alt: 'OS TRANSPORTADORES | Radar 360º - Fotografia do Município de Montemor-o-Novo',
+        },
+    ],
+    A_TERRA_DA_IGUALDADE: [
+        {
+            src: '/images/theather/A_TERRA_DA_IGUALDADE_1.jpeg',
+            caption: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+            alt: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+        },
+        {
+            src: '/images/theather/A_TERRA_DA_IGUALDADE_2.jpeg',
+            caption: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+            alt: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+        },
+        {
+            src: '/images/theather/A_TERRA_DA_IGUALDADE_3.jpeg',
+            caption: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+            alt: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+        },
+        {
+            src: '/images/theather/A_TERRA_DA_IGUALDADE_4.jpeg',
+            caption: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+            alt: 'A TERRA DA IGUALDADE | JANGADA TEATRO',
+        },
+    ],
+}
 export const cinemaMedia = [
     {
         title: "Ride",
@@ -336,7 +400,7 @@ export const quotes = {
 }
 
 export const dockerMenu = [
-    { href: '/', title: 'Home', icon: (<AiOutlineHome/>) },
+    // { href: '/', title: 'Home', icon: (<AiOutlineHome/>) },
     { href: '/biography', title: 'Biografia', icon: (<MdOutlineMenuBook />) },
     { href: '/cinema', title: 'Cinema', icon: (<BsCameraReels />) },
     { href: '/theater', title: 'Teatro', icon: (<FaTheaterMasks />) },
