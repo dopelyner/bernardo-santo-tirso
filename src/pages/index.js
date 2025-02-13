@@ -1,6 +1,7 @@
+import { FloatingDock } from '@/components/FloatingDock'
 import TitleStickText from '@/components/TitleStickText'
 import TransitionEffect from '@/components/TransitionEffect'
-import { homeMedia } from '@/constants'
+import { dockerMenu, homeMedia } from '@/constants'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -21,6 +22,8 @@ export default function Home() {
           {/* <div className='absolute right-0 -translate-x-6 pt-4 hidden sm:flex z-6'>
             <ArrowHorizontal />
           </div> */}
+
+          <FloatingDock items={dockerMenu} desktopClassName={"flex justify-center w-full absolute z-20 bottom-20 bg-transparent"} />
 
           <div className='w-screen h-screen flex flex-col justify-center text-center gap-10 items-center bg-transparent/60 dark:bg-transparent/50 absolute z-5'>
             <TitleStickText title="Bernardo Santo Tirso" className='text-light' />
