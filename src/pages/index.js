@@ -1,4 +1,5 @@
 import { FloatingDock } from '@/components/FloatingDock'
+import { ArrowHorizontal } from '@/components/Icons'
 import TitleStickText from '@/components/TitleStickText'
 import TransitionEffect from '@/components/TransitionEffect'
 import { dockerMenu, homeMedia } from '@/constants'
@@ -18,10 +19,6 @@ export default function Home() {
       <main className='text-dark dark:text-light'>
 
         <div className='relative w-full p-0'>
-
-          {/* <div className='absolute right-0 -translate-x-6 pt-4 hidden sm:flex z-6'>
-            <ArrowHorizontal />
-          </div> */}
 
           <FloatingDock items={dockerMenu} desktopClassName={"flex justify-center w-full absolute z-20 bottom-20 bg-transparent"} />
 

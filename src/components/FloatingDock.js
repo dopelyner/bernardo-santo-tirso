@@ -34,7 +34,7 @@ const FloatingDockMobile = ({
                 {open && (
                     <motion.div
                         layoutId="nav"
-                        className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2">
+                        className="absolute  mb-2 inset-x-0 flex flex-col gap-2">
                         {items.map((item, idx) => (
                             <motion.div
                                 key={item.title}
@@ -54,7 +54,7 @@ const FloatingDockMobile = ({
                                 <Link
                                     href={item.href}
                                     key={item.title}
-                                    className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center">
+                                    className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex flex-col items-center justify-center">
                                     <div className="h-4 w-4">{item.icon}</div>
                                 </Link>
                             </motion.div>
@@ -82,7 +82,7 @@ const FloatingDockDesktop = ({
             onMouseMove={(e) => mouseX.set(e.pageX)}
             onMouseLeave={() => mouseX.set(Infinity)}
             className={cn(
-                " hidden md:flex h-16 gap-4 items-center bg-gray-50  w-fit px-4 pb-3",
+                "mx-auto hidden md:flex h-16 gap-4 items-center bg-gray-50 w-fit px-4 pb-3",
                 className
             )}>
             {items.map((item) => (
@@ -91,8 +91,8 @@ const FloatingDockDesktop = ({
             <button
                 aria-label='theme-switcher-button'
                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                className={`rounded-full bg-gray-50 dark:bg-neutral-800 px-4 py-4 
-                                ${mode === "light" ? "bg-dark text-dark" : "bg-light text-light"}`}>
+                className={`rounded-full bg-gray-50 dark:bg-neutral-700 px-4 py-4 
+                                ${mode === "light" ? "bg-neutral-700 text-light" : "bg-light text-light"}`}>
                 {
                     mode === "dark"
                         ? <SunIcon />
@@ -169,7 +169,7 @@ function IconContainer({
                 <motion.div
                     animate={{ zoom: 1.25 }}
                     style={{ width: widthIcon, height: heightIcon }}
-                    className="flex items-center justify-center">
+                    className="flex items-center justify-center ">
                     {icon}
                 </motion.div>
             </motion.div>

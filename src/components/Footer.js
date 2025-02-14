@@ -1,12 +1,14 @@
 import { socialLinks } from '@/constants';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from './Icons';
+import { FacebookIcon, InstagramIcon, LinkedinIcon, MoonIcon, SunIcon } from './Icons';
 import Layout from './Layout';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const MotionLink = motion(Link)
 
 const Footer = () => {
+    const [mode, setMode] = useThemeSwitcher()
 
     return (
         <footer className='relative w-full font-medium text-lg sm:text-base'>
@@ -48,6 +50,18 @@ const Footer = () => {
                     >
                         <LinkedinIcon className="!fill-dark dark:!fill-light" />
                     </motion.a>
+
+                    <button
+                        aria-label='theme-switcher-button'
+                        onClick={() => setMode(mode === "light" ? "dark" : "light")}
+                        className={`rounded-full bg-gray-50 dark:bg-neutral-800 px-4 py-4 
+                                                    ${mode === "light" ? "bg-neutral-900 text-light" : "bg-light text-light"}`}>
+                        {
+                            mode === "dark"
+                                ? <SunIcon />
+                                : <MoonIcon />
+                        }
+                    </button>
                 </div>
             </Layout>
         </footer>
