@@ -150,7 +150,7 @@ const Navbar = () => {
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
-                    <motion.a href={socialLinks.facebookURL} target={'_blank'}
+                    {/* <motion.a href={socialLinks.facebookURL} target={'_blank'}
                         className="w-6 mr-3 sm:mx-1"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
@@ -172,7 +172,7 @@ const Navbar = () => {
                         whileTap={{ scale: 0.9 }}
                     >
                         <LinkedinIcon className="!fill-dark dark:!fill-light" />
-                    </motion.a>
+                    </motion.a> */}
 
                     <button
                         aria-label='theme-switcher-button'
