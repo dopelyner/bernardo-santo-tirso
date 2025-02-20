@@ -4,7 +4,7 @@ import { ArrowVertical } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
-import { projectsSubMenu, quotes } from '@/constants'
+import { dockerMenu, projectsSubMenu, quotes } from '@/constants'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -33,10 +33,10 @@ const Projects = () => {
                     <div className='flex flex-col xl:mb-12 xs:mb-16 items-center justify-center lg:mt-0'>
 
                         <div className='flex flex-col mt-24 gap-y-12'>
-                            {projectsSubMenu.map((item, index) => (
+                            {dockerMenu.map((item, index) => (
                                 <>
                                     <CustomLink
-                                        index={index}
+                                        key={index}
                                         href={item.href}
                                         title={item.title}
                                         className='w-full text-8xl xs:text-5xl text-center'

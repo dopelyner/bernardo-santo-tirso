@@ -2,7 +2,7 @@ import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout';
 import { CustomLink } from '@/components/Navbar';
 import SeparatorBar from '@/components/SeparatorBar';
-import { stagingMedia } from '@/constants';
+import { menu, stagingMedia } from '@/constants';
 import Head from 'next/head';
 import { ImageGallery } from 'react-image-grid-gallery';
 
@@ -78,22 +78,22 @@ const Staging = () => {
                                 />
                             </div>
 
-                            {/* <div className='flex justify-end sm:justify-center lg:justify-center lg:py-32 py-16 sm:py-32'>
-                                <Link href="/projects" title='Projects' className='flex flex-col gap-2 items-center'>
-                                    <LeftArrow />
-                                    <h3 className='text-2xl italic'>Voltar</h3>
-                                </Link>
-                            </div> */}
-
                             <SeparatorBar size="big" />
                             <div className='flex flex-col items-center justify-center'>
-                                <h3 className='text-2xl italic mb-12'> Outros projectos</h3>
-                                <div className='flex flex-row gap-20 lg:flex-col'>
-                                    <CustomLink href="/cinema" title="Cinema" className='w-full text-8xl xs:text-5xl text-center' />
-                                    <CustomLink href="/theater" title="Teatro" className='w-full text-8xl xs:text-5xl text-center' />
-                                    <CustomLink href="/light" title="Luz" className='w-full text-8xl xs:text-5xl text-center' />
+                                <div className='flex flex-row xl:flex-col gap-20'>
+                                    {menu.map((item, index) => (
+                                        <>
+                                            <CustomLink
+                                                index={index}
+                                                href={item.href}
+                                                title={item.title}
+                                                className='w-full text-6xl xs:text-5xl text-center'
+                                            />
+                                        </>
+                                    ))}
                                 </div>
                             </div>
+
                         </div>
                     </div>
 

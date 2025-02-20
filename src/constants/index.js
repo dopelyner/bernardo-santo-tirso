@@ -407,3 +407,11 @@ export const dockerMenu = [
     { href: '/light', title: 'Luz', icon: (<GiLightProjector />) },
     { href: '/staging', title: 'Encenação', icon: (<GiTheaterCurtains />) },
 ];
+export const menu = [
+    { href: '/', title: 'Início', icon: (<AiOutlineHome/>) },
+    { href: '/biography', title: 'Biografia', icon: (<MdOutlineMenuBook />) },
+    { href: '/cinema', title: 'Cinema', icon: (<BsCameraReels />) },
+    { href: '/theater', title: 'Teatro', icon: (<FaTheaterMasks />) },
+    { href: '/light', title: 'Luz', icon: (<GiLightProjector />) },
+    { href: '/staging', title: 'Encenação', icon: (<GiTheaterCurtains />) },
+];
