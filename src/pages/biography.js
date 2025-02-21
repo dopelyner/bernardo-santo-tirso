@@ -4,7 +4,7 @@ import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import Navbar, { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
-import { biographyAccordion, dockerMenu, imageLinks, quotes } from '@/constants'
+import { biographyAccordion, dockerMenu, imageLinks, menu, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -81,13 +81,13 @@ const Biography = () => {
                     <SeparatorBar size="big" className="pt-6" />
 
                     <div className='flex flex-row xl:flex-col gap-20'>
-                        {dockerMenu.map((item, index) => (
+                        {menu.map((item, index) => (
                             <>
                                 <CustomLink
                                     index={index}
                                     href={item.href}
                                     title={item.title}
-                                    className='w-full text-8xl xs:text-5xl text-center'
+                                    className='w-full text-6xl xs:text-5xl text-center'
                                 />
                             </>
                         ))}
