@@ -22,7 +22,7 @@ const Footer = () => {
                         target={'_blank'}
                         className='mt-2 hover:-translate-y-0.5'
                     >
-                        <span className='hover:font-bold'>Developed by Tiago Lino</span>
+                        <span className='hover:font-bold'>Desenvolvido por Tiago Lino</span>
                     </MotionLink>
                 </div>
 
