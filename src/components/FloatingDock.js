@@ -91,7 +91,7 @@ const FloatingDockDesktop = ({
             <button
                 aria-label='theme-switcher-button'
                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                className={`rounded-full bg-gray-50 dark:bg-neutral-700 px-4 py-4 
+                className={`rounded-full bg-gray-50 dark:bg-neutral-700 px-4 py-4 hover:bg-neutral-500 dark:hover:bg-neutral-500
                                 ${mode === "light" ? "bg-neutral-700 text-light" : "bg-light text-light"}`}>
                 {
                     mode === "dark"
