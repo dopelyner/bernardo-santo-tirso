@@ -1,5 +1,4 @@
 import { FloatingDock } from '@/components/FloatingDock'
-import { ArrowHorizontal } from '@/components/Icons'
 import TitleStickText from '@/components/TitleStickText'
 import TransitionEffect from '@/components/TransitionEffect'
 import { dockerMenu, homeMedia } from '@/constants'
@@ -18,7 +17,7 @@ export default function Home() {
 
       <main className='text-dark dark:text-light'>
 
-        <div className='relative w-full p-0'>
+        <div className='relative w-full p-0 '>
 
           <FloatingDock items={dockerMenu} desktopClassName={"flex justify-center w-full absolute z-20 bottom-20 bg-transparent"} />
 
@@ -29,9 +28,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='w-screen h-screen flex items-center justify-center '>
+          <div className='w-screen h-screen flex items-center justify-center sm:flex-col'>
             {homeMedia.map((item, index) => (
-              <div key={"image-" + index} className='w-screen h-full sm:h-screen flex justify-center '>
+              <div key={"image-" + index} className='w-screen h-full flex justify-center '>
                 <Image
                   priority
                   src={item.src}
@@ -39,7 +38,7 @@ export default function Home() {
                   height={500}
                   title='Bernardo Santo Tirso'
                   alt={"image-" + index}
-                  className='object-cover sm:h-screen'
+                  className='object-cover h-80'
                 />
               </div>
             ))}
