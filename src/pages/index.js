@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className='text-dark dark:text-light'>
 
-        <div className='relative w-full p-0 '>
+        <div className='relative w-full p-0'>
 
           <FloatingDock items={dockerMenu} desktopClassName={"flex justify-center w-full absolute z-20 bottom-20 bg-transparent"} />
 
@@ -30,7 +30,7 @@ export default function Home() {
 
           <div className='w-screen h-screen flex items-center justify-center sm:flex-col'>
             {homeMedia.map((item, index) => (
-              <div key={"image-" + index} className='w-screen h-full flex justify-center '>
+              <div key={"image-" + index} className='w-screen h-screen sm:h-80'>
                 <Image
                   priority
                   src={item.src}
@@ -38,7 +38,7 @@ export default function Home() {
                   height={500}
                   title='Bernardo Santo Tirso'
                   alt={"image-" + index}
-                  className='object-cover h-80'
+                  className='object-cover h-full sm:gap-0 s '
                 />
               </div>
             ))}

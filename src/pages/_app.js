@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${EconomicaFont.className} bg-light dark:bg-dark w-full min-h-screen`}>
+      <main className={`${EconomicaFont.className} bg-light dark:bg-dark w-full h-screen`}>
 
         {/* <Navbar /> */}
         {/* <FloatingDock items={dockerMenu} desktopClassName={"flex justify-center w-full absolute z-20 bottom-20 bg-transparent"} /> */}
