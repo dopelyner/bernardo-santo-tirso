@@ -14,7 +14,7 @@ const Staging = () => {
                 <meta name="Bernardo Santo Tirso" content='Projetos de encenação...' />
             </Head>
 
-            <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
+            <main className='w-full flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16'>
 
                     <div className='flex flex-col items-center justify-center lg:mt-0'>

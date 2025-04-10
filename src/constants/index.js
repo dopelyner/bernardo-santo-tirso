@@ -328,6 +328,7 @@ export const cinemaMedia = [
 ]
 
 export const socialLinks = {
+    homeURL: "/",
     instagramURL: "https://www.instagram.com/bernardosantotirso_/",
     facebookURL: "https://www.facebook.com/bernardo.ribeiro.14",
     linkedinURL: "https://www.linkedin.com/in/bernardosantotirso/",
@@ -340,15 +341,17 @@ export const emailAddress = {
 
 export const biographyAccordion = [
     {
+        id: "education",
         title: "Início da Carreira e Educação",
         content: [
             "Bernardo Santo Tirso Ribeiro é ator, nasceu em Aveiro – São Bernardo, em 1995.",
-            "Concluiu o curso profissional de artes do espetáculo – interpretação em 2015,no Conservatório de Música da Jobra.",
+            "Concluiu o curso profissional de artes do espetáculo – interpretação em 2015, no Conservatório de Música da Jobra.",
             "Frequentou aulas de formação musical e trompete na escola PALCO CENTRAL.",
             "Frequentou o primeiro ano de Interpretação na ESMAE.",
         ],
     },
     {
+        id: "advanced-training",
         title: "Formação Avançada e Workshops",
         content: [
             "Licenciou-se em Teatro – variante Luz e Som na ESMAE em 2023.",
@@ -357,6 +360,7 @@ export const biographyAccordion = [
         ]
     },
     {
+        id: "theather-experience",
         title: "Experiência Profissional em Teatro",
         content: [
             "Frequentou a Formação Avançada de Interpretação e Criação Coreográfica (Companhia Instável).",
@@ -364,6 +368,7 @@ export const biographyAccordion = [
         ]
     },
     {
+        id: "cinema-music",
         title: "Experiência em Cinema e Música",
         content: [
             "No cinema realça a participação no Filme de Animação – RIDE – realizado por Paul Bush em 2017 e a primeira curta metragem realizada por Henrique Vilão “O céu aqui é mais baixo”.",
@@ -372,6 +377,7 @@ export const biographyAccordion = [
         ]
     },
     {
+        id: "photography",
         title: "Experiência em Fotografia",
         content: [
             "Apaixonado pela fotografia, iniciou o projeto 50.mm, em 2019.",
@@ -408,7 +414,7 @@ export const dockerMenu = [
     { href: '/staging', title: 'Encenação', icon: (<GiTheaterCurtains />) },
 ];
 export const menu = [
-    { href: '/', title: 'Início', icon: (<AiOutlineHome/>) },
+    { href: '/', title: 'Início', icon: (<AiOutlineHome />) },
     { href: '/biography', title: 'Biografia', icon: (<MdOutlineMenuBook />) },
     { href: '/cinema', title: 'Cinema', icon: (<BsCameraReels />) },
     { href: '/theater', title: 'Teatro', icon: (<FaTheaterMasks />) },

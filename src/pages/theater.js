@@ -11,10 +11,13 @@ const Theater = () => {
         <>
             <Head>
                 <title>Bernardo Santo Tirso | Teatro</title>
-                <meta name="Bernardo Santo Tirso" content='Projetos de teatro...' />
+                <meta name="description" content="Projetos de teatro de Bernardo Santo Tirso." />
+                <meta property="og:title" content="Bernardo Santo Tirso | Teatro" />
+                <meta name="og:description" content="Todos os projetos de teatro de Bernardo Santo Tirso." />
+                <meta property="og:type" content="website" />
             </Head>
 
-            <main className='w-full mb-16 flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
+            <main className='w-full flex flex-col items-center min-h-screen justify-center overflow-hidden text-dark dark:text-light'>
                 <Layout className='pt-16'>
 
                     <div className='flex flex-col mb-16 '>
