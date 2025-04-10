@@ -4,7 +4,7 @@ import { ArrowVertical, MinusCircle, PlusCircle } from '@/components/Icons'
 import Layout from '@/components/Layout'
 import Navbar, { CustomLink } from '@/components/Navbar'
 import SeparatorBar from '@/components/SeparatorBar'
-import { biographyAccordion, dockerMenu, imageLinks, menu, quotes } from '@/constants'
+import { biographyAccordion, imageLinks, menu, quotes } from '@/constants'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -15,7 +15,10 @@ const Biography = () => {
         <>
             <Head>
                 <title>Bernardo Santo Tirso | Biografia</title>
-                <meta name="Bernardo Santo Tirso" content='Biografia...' />
+                <meta name="description" content="Biografia completa de Bernardo Santo Tirso - Trajetória, conquistas e projetos." />
+                <meta property="og:title" content="Bernardo Santo Tirso | Biografia" />
+                <meta property="og:description" content="Conheça a biografia completa de Bernardo Santo Tirso." />
+                <meta property="og:type" content="website" />
             </Head>
             <Navbar />
 
@@ -33,21 +36,21 @@ const Biography = () => {
 
                 </Layout>
 
-                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 '>
-                    <div className='relative w-1/2 xl:min-w-max 2xl:w-1/2 sm:w-full flex flex-col self-center'>
+                <section className='w-full min-h-full flex flex-row xl:flex-col justify-center items-start gap-x-6 bg-light dark:bg-dark'>
+                    <div className='relative w-full min-h-screen'>
                         <Image
                             priority
                             src={imageLinks.BIOGRAPHY}
-                            width="100%"
-                            height="100%"
-                            alt='Bernardo Sto Tirso 1'
-                            className='w-max h-max xl:w-max'
+                            fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            alt='Bernardo Santo Tirso profile'
+                            className='object-cover'
                         />
                         <h3 className='absolute -bottom-0 bg-dark/60 w-full text-light italic 
                                 text-center text-xl p-6 xl:p-2 sm:p-2 sm:text-sm'>Fotografia de João Pádua</h3>
                     </div>
 
-                    <div className='flex flex-col w-full '>
+                    <div className='flex flex-col w-full'>
                         <AnimatedText text="Curriculum" className='text-center sm:text-7xl p-16 text-dark' />
 
                         <div className='flex justify-center items-center'>
@@ -76,7 +79,7 @@ const Biography = () => {
                     </div>
                 </section>
 
-                <div className='flex flex-col items-center justify-center mt-40 mb-20 '>
+                <div className='flex flex-col items-center justify-center mt-40 mb-20  dark:text-dark '>
                     <h3 className='text-5xl italic '>Projetos</h3>
                     <SeparatorBar size="big" className="pt-6" />
 
@@ -84,6 +87,7 @@ const Biography = () => {
                         {menu.map((item, index) => (
                             <>
                                 <CustomLink
+                                    key={item.href || index}
                                     index={index}
                                     href={item.href}
                                     title={item.title}

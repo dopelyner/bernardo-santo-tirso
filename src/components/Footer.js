@@ -1,6 +1,7 @@
 import { socialLinks } from '@/constants';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { FaHome } from 'react-icons/fa';
 import { FacebookIcon, InstagramIcon, LinkedinIcon, MoonIcon, SunIcon } from './Icons';
 import Layout from './Layout';
 import useThemeSwitcher from './hooks/useThemeSwitcher';
@@ -21,12 +22,20 @@ const Footer = () => {
                         href={socialLinks.instagramDeveloper}
                         target={'_blank'}
                         className='mt-2 hover:-translate-y-0.5'
-                    >
-                        <span className='hover:font-bold'>Desenvolvido por Tiago Lino</span>
+                    >Desenvolvido por
+                        <span className='hover:font-bold'> Tiago Lino</span>
                     </MotionLink>
                 </div>
 
                 <div className='flex flex-wrap gap-10 items-center justify-center sm:hidden lg:gap-4'>
+                    <motion.a href={socialLinks.homeURL}
+                        className="w-6 mr-3 sm:mx-1"
+                        whileHover={{ y: -2 }}
+                        whileTap={{ scale: 1.2 }}
+                    >
+                        <FaHome className="!fill-dark dark:!fill-light" />
+                    </motion.a>
+
                     <motion.a href={socialLinks.facebookURL} target={'_blank'}
                         className="w-6 mr-3 sm:mx-1"
                         whileHover={{ y: -2 }}
